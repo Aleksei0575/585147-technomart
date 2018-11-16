@@ -8,15 +8,15 @@
   </head>
   <body>
   	<header class="main-header"> <!--Задаем класс для последующей стилизации-->
-  		<div class="container"> <!--Блок центровщик верхней панели-->
-  			<div class="header-top-menu"><!--Это блок верхней панели-->
+  		<div class="container"> <!--Блок центровщик шапки-->
+  			<section class="header-top-menu"><!--Это блок верхней панели-->
   				<a class="top-menu-logo">Техномарт</a><!--Эта ссылка на гл. страницу-->
   				<input type="search" name="search" placeholder="Поиск:">
   				<a class="bookmarks" href="#">Закладки</a>
   				<a class="cart" href="#">Корзина</a>
   				<a class="order" href="#">Офрмить заказ</a>
-  			</div><!--Блок верхней панели закончен-->
-  			<div class="header-info">
+  			</section><!--Блок верхней панели закончен-->
+  			<section class="header-info"><!--Блок средней панели шапки сайта-->
   				<h1 class="header-page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1><!--Далее шрифт уменьшу с помощью стилей CSS-->
   				<p class="header-contact-information">
   					<input type="tel" name="tel" pattern="[0-9]{1}-[^0-9]-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
@@ -26,7 +26,7 @@
   					<li class="login-link"><a href="#">Войти</a></li>
   					<li class="registration"><a href="#">Регистрация</a></li>
   				</ul>
-  			</div>
+  			</section>
   			<nav class="header-navigation"><!--Навигация в шапке сайта-->
   				<ul>
   					<li><a href="#">Главная</a></li>
@@ -53,7 +53,7 @@
   				</ul>
   				<a class="btn-about-company" href="#">Подробнее о компании</a>
   			</section>
-  			<section class="right-column"><!--Правый блок адрес-->
+  			<section class="right-column"><!--Правый блок адрес компании-->
   				<h2 class="address-title">Контакты</h2>
   				<p class="address-info">Вы можете забрать товар сами, заехав в наш офис:</p>
   				<a href="#">
@@ -63,6 +63,48 @@
   			</section>
   		</section>
   	</main>
+  	<footer class="main-footer"><!--Блок футера-->
+  		<div class="container"><!--Блок центровщик футера-->		
+  			<section class="footer-top"><!--Блок верхней панели в футере-->
+  				<a class="footer-top-logo">Техномарт</a>
+  				<ul>
+  					<li><a href="#">Компания</a></li>
+  					<li><a href="#">Новости</a></li>
+  					<li><a href="#">Каталог</a></li>
+  					<li><a href="#">Доставка</a></li>
+  					<li><a href="#">Контакты</a></li>
+  				</ul>
+  			</section>
+  			<section class="footer-middle"><!--Блок с адресом компании-->
+  				<p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55</p>
+  				<ul class="footer-goods-company">
+  					<li><a href="#">Материалы</a></li>
+  					<li><a href="#">Техника</a></li>
+  					<li><a href="#">Иструменты</a></li>
+  					<li><a href="#">Спецпредложения</a></li>
+  				</ul>
+  			</section>
+  			<div class="footer-bottom">
+  				<section class="footer-contacts"> <!--Блок авторские права-->
+					<p>© 2010-2013 Компания «Техномарт»</p>
+                    <p>Все права защищены</p>
+				</section>
+				<section class="footer-social"> <!--Блок соцсети-->
+					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+					<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+					<a href="#" class="social-btn social-btn-inst">Инстаграмм</a>
+				</section>
+				<section class="footer-contacts"> <!--Блок обратной связи-->
+					<p>Обратная связь:</p>
+                    <a class="btn-feedback-form" href="#">info@technomart.ru</a>
+				</section>
+				<section class="footer-copyright"> <!--Блок разработчика-->
+					<p>Разработано -</p>
+                    <a class="btn-developer" href="#">htmlacademy.ru</a>
+				</section>
+  			</div>
+  		</div>
+  	</footer>
     
 
   </body>
