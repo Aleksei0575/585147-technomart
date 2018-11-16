@@ -3,10 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <meta name="keywords" content="строительные материалы, стрительный инструмент, строительная техника, перфораторы, дрели, bosch, makita, dewalt, интерскол, hitachi, lg, aeg, metabo">
+    <meta name="description" content="интернет магазин строительных материалов и инструментов для ремонта">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+  	<header class="main-header"> <!--Задаем класс для последующей стилизации-->
+  		<div class="container"> <!--Блок центровщик верхней панели-->
+  			<div class="header-top-menu"><!--Это блок верхней панели-->
+  				<a class="top-menu-logo">Техномарт</a><!--Эта ссылка на гл. страницу-->
+  				<input type="search" name="search" placeholder="Поиск:">
+  				<a class="bookmarks" href="#">Закладки</a>
+  				<a class="cart" href="#">Корзина</a>
+  				<a class="order" href="#">Офрмить заказ</a>
+  			</div><!--Блок верхней панели закончен-->
+  			<div class="header-info">
+  				<h1 class="header-page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1><!--Далее шрифт уменьшу с помощью стилей CSS-->
+  				<p class="header-contact-information">
+  					<input type="tel" name="tel" pattern="[0-9]{1}-[^0-9]-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+  					<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+  				</p>
+  				<ul class="user-navigation">
+  					<li class="login-link"><a href="#">Войти</a></li>
+  					<li class="registration"><a href="#">Регистрация</a></li>
+  				</ul>
+  			</div>
+  			<nav class="header-navigation"><!--Навигация в шапке сайта-->
+  				<ul>
+  					<li><a href="#">Главная</a></li>
+  					<li><a href="#">Компания</a></li>
+  					<li><a href="#">Каталог</a></li>
+  					<li><a href="#">Новости</a></li>
+  					<li><a href="#">Спецпредложения</a></li>
+  					<li><a href="#">Доставка</a></li>
+  					<li><a href="#">Контакты</a></li>
+  				</ul>
+  			</nav>
+  		</div>
+  	</header>
+    
 
   </body>
 </html>
