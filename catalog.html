@@ -7,28 +7,29 @@
     <meta name="description" content="интернет магазин строительных материалов и инструментов для ремонта">
   </head>
   <body>
-  	<header class="main-header"> <!--Скопировал шапку с главной и немного подправил-->
+  	<header class="header"> <!--Скопировал шапку с главной и немного подправил-->
   		<div class="container"> <!--Блок центровщик шапки-->
-  			<section class="header-top-menu"><!--Это блок верхней панели-->
+  			<div class="header-top-menu"><!--Это блок верхней панели-->
   				<a class="top-menu-logo" href="index.html">Техномарт</a><!--Эта ссылка на гл. страницу-->
   				<input type="search" name="search" placeholder="Поиск:">
   				<a class="bookmarks" href="#">Закладки</a>
   				<a class="cart" href="#">Корзина</a>
   				<a class="order" href="#">Офрмить заказ</a>
-  			</section><!--Блок верхней панели закончен-->
-  			<section class="header-info"><!--Блок средней панели шапки сайта-->
+  			</div><!--Блок верхней панели закончен-->
+  			<div class="header-info"><!--Блок средней панели шапки сайта-->
   				<p class="header-page-title">Интернет-магазин строительных материалов и инструментов для ремонта</p><!--На странице каталога это уже абзац-->
   				<p class="header-contact-information">
-  					<input type="tel" name="tel" pattern="[0-9]{1}-[^0-9]-[0-9]{3}-[0-9]{2}-[0-9]{2}" required></p>
+            <a href="tel:+1234567890">+7 (812) 555-05-55</a>
+          </p>
   				<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <section class="user-navigation">
+          <div class="user-navigation">
   				  <a class="user-navigation" href="#">Равшан Джамшутович</a>
             <ul class="user-navigation">
   					   <li class="user-orders"><a href="#">Мои заказы</a></li>
   					   <li class="user-account"><a href="#">Мой кабинет</a></li>
   				  </ul>
-          </section> 
-  			</section>
+          </div> 
+  			</div>
   			<nav class="header-navigation"><!--Навигация без изменений-->
   				<ul>
   					<li><a href="index.html">Главная</a></li>
@@ -199,48 +200,49 @@
             <p class="catalog-item-discount">12 500 Р.</p>
           </section>
       </section>
-      <footer class="main-footer"><!--Блок футера-->
-        <div class="container"><!--Блок центровщик футера-->    
-          <section class="footer-top"><!--Блок верхней панели в футере-->
-            <a class="footer-top-logo">Техномарт</a>
-            <ul>
-              <li><a href="#">Компания</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Каталог</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </section>
-          <section class="footer-middle"><!--Блок с адресом компании-->
-            <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55</p>
-            <ul class="footer-goods-company">
-              <li><a href="#">Материалы</a></li>
-              <li><a href="#">Техника</a></li>
-              <li><a href="#">Иструменты</a></li>
-              <li><a href="#">Спецпредложения</a></li>
-            </ul>
-          </section>
-          <div class="footer-bottom">
-            <section class="footer-contacts"> <!--Блок авторские права-->
-              <p>© 2010-2013 Компания «Техномарт»</p>
-              <p>Все права защищены</p>
-            </section>
-            <section class="footer-social"> <!--Блок соцсети-->
-              <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-              <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-              <a href="#" class="social-btn social-btn-inst">Инстаграмм</a>
-            </section>
-            <section class="footer-contacts"> <!--Блок обратной связи-->
-              <p>Обратная связь:</p>
-              <a class="btn-feedback-form" href="#">info@technomart.ru</a>
-            </section>
-            <section class="footer-copyright"> <!--Блок разработчика-->
-              <p>Разработано -</p>
-              <a class="btn-developer" href="#">htmlacademy.ru</a>
-            </section>
+    </main>
+    <footer class="footer"><!--Блок футера-->
+      <div class="container"><!--Блок центровщик футера-->    
+        <div class="footer-top"><!--Блок верхней панели в футере-->
+          <a class="footer-top-logo">Техномарт</a>
+          <ul>
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-middle"><!--Блок с адресом компании-->
+          <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55</p>
+          <ul class="footer-goods-company">
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">Техника</a></li>
+            <li><a href="#">Иструменты</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-contacts"> <!--Блок авторские права-->
+            <p>© 2010-2013 Компания «Техномарт»</p>
+            <p>Все права защищены</p>
+          </div>
+          <div class="footer-social"> <!--Блок соцсети-->
+            <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+            <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+            <a href="#" class="social-btn social-btn-inst">Инстаграмм</a>
+          </div>
+          <div class="footer-contacts-mail"> <!--Блок обратной связи-->
+            <p>Обратная связь:</p>
+            <a class="btn-feedback-form" href="mailto:email@echoecho.com?subject=SweetWords">info@technomart.ru
+            </a>
+          </div>
+          <div class="footer-copyright"> <!--Блок разработчика-->
+            <p>Разработано -</p>
+            <a class="btn-developer" href="#">htmlacademy.ru</a>
           </div>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
   </body>
 </html>
