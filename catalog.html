@@ -67,21 +67,26 @@
       </section>
       <section class="catalog-block">
         <h2 class="visually-hidden">Перечень товаров</h2><!--Заголовок раздела в последующем скроется-->
-          <section class="catalog-item"><!--Блок для описания позиции. Будет несколько таких согласно макета-->
-            <figure class="catalog-item-img"><!--Блок с картинкой товара-->
-              <a href="catalog-item.html">
-                <img src="http://placehold.it/150x100" alt="Перфоратор BOSCH BFG 6000">
-              </a>
-            </figure>
-            <div class="catalog-item-buttons"><!--В этом блоке реализованы кнопки-->
-              <a class="button-buy" href="#">Купить</a>
-              <a class="button-bookmark" href="#">В закладки</a>
-            </div>
-            <p class="catalog-item-category">Перфоратор BOSCH</p><!--В каждом абзаце отдельный параметр-->
-            <p class="catalog-item-title">BFG 3000</p>
-            <p class="catalog-item-price">22 500 Р.</p>
-            <p class="catalog-item-discount">15 500 Р.</p>
-          </section>
+          <ul class="catalog-item-list"><!--Блок для описания позиции. Будет несколько таких согласно макета-->
+            <li class="catalog-item"><!--Начало карточки одного из товаров-->
+              <h3>
+                <a href="#"><!--В дальнейшем будет ссылка на catalog-item.html-->
+                  <span class="catalog-category">Перфоратор BOSCH</span>
+                  <span class="catalog-item-title">BFG 3000</span>
+                </a>
+              </h3>
+              <p class="catalog-item-image">
+                <a href="#"><!--В дальнейшем будет ссылка на catalog-item.html-->
+                  <img src="http://placehold.it/150x100" alt="Перфоратор BOSCH BFG 3000">
+                </a>
+              </p>
+              <p class="catalog-item-price">
+                <b>22 500 Р.</b>
+                <a class="button" href="#">15 500 Р.</a>
+              </p>
+            </li>
+          </ul>
+          
           <section class="catalog-item">
             <figure class="catalog-item-img">
               <a href="catalog-item.html">
