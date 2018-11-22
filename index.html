@@ -271,5 +271,32 @@
   			</div>
   		</div>
   	</footer>
+    <section class="modal modal-login">
+        <h2 class="visually-hidden">Форма связи с компанией</h2>
+        <!-- Модальное окно -форма для связи с компанией -->
+        <form class="user-name" action="/echo" method="post">
+          <p>
+            <label class="visually-hidden" for="user-name">Имя Фамилия</label>
+            <input class="user-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-emale">Ваш e-mail:</label>
+            <input class="user-email" id="user-emale" type="email" name="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="text-letter">Текст письма:</label>
+            <textarea id="text-letter" name="letter" rows="5">В свободной форме</textarea>
+          </p>
+        </form>
+        <button class="form-submit" type="submit">
+          Отправить
+        </button>
+    </section>
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p>
+          <img src="img/big-map.jpg" width="940" height="446" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        </p>
+    </section>
   </body>
 </html>
