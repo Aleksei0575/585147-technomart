@@ -53,7 +53,53 @@
         <h1 class="page-title">Перфораторы</h1>
         <section class="filter-block">
           <h2 class="filter-title">Фильтр:</h2>
-          <div class="filter-parameters">
+          <form class="filter" method="get" action="/echo">
+            <fieldset>
+              <legend>Цена:</legend>
+              <label for="price">
+                0 <input type="range" name="range" min="0" max="30000" step="1"> 30000
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Призводители:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+                  <label for="filter-bosch">Bosch</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="интерскол" id="filter-interskol">
+                  <label for="filter-interskol">Интерскол</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                  <label for="filter-makita">Makita</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                  <label for="filter-dewalt">Dewalt</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                  <label for="filter-hitachi">Hitachi</label>
+                </li>
+              </ul> 
+            </fieldset>
+            <fieldset>
+              <legend>Питание:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-supply" id="filter-battery" checked>
+                  <label for="filter-battery">Аккумуляторные</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-supply" id="power-grid">
+                  <label for="power-grid">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+          <!-- <div class="filter-parameters">
             <h3>Производители:</h3> 
             <p class="company">Bosch</p> 
             <p class="company">Интерскол</p>
@@ -64,7 +110,7 @@
             <h3>Питание:</h3> 
             <p class="company">Аккумуляторные</p> 
             <p class="company">Сетевые</p>   
-          </div> 
+          </div>  -->
         </section>
         <section class="catalog-block">
           <h2 class="visually-hidden">Перечень товаров</h2><!--Заголовок раздела в последующем скроется-->
