@@ -53,12 +53,11 @@
         <h1 class="page-title">Перфораторы</h1>
         <section class="filter-block">
           <h2 class="filter-title">Фильтр:</h2>
-          <form class="filter" method="get" action="/echo">
+          <form class="filter" method="get" action="/echo"><!-- Блок с фильтром -->
             <fieldset>
               <legend>Цена:</legend>
-              <label for="price">
-                0 <input type="range" name="range" min="0" max="30000" step="1"> 30000
-              </label>
+              <label for="price"></label>
+                0 <input type="range" name="range" min="0" max="30000" id="price" step="1"> 30000
             </fieldset>
             <fieldset>
               <legend>Призводители:</legend>
@@ -99,18 +98,6 @@
               </ul>
             </fieldset>
           </form>
-          <!-- <div class="filter-parameters">
-            <h3>Производители:</h3> 
-            <p class="company">Bosch</p> 
-            <p class="company">Интерскол</p>
-            <p class="company">Makita</p>
-            <p class="company">Dewalt</p> 
-            <p class="company">Hitachi</p>
-            <hr>
-            <h3>Питание:</h3> 
-            <p class="company">Аккумуляторные</p> 
-            <p class="company">Сетевые</p>   
-          </div>  -->
         </section>
         <section class="catalog-block">
           <h2 class="visually-hidden">Перечень товаров</h2><!--Заголовок раздела в последующем скроется-->
@@ -297,5 +284,19 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal-buy-curt">
+      <h2 class="visually-hidden">Форма оформления заказа</h2>
+      <!-- Модальное окно - форма оформления заказа -->
+      <p>
+        Товар добавлен в корзину!
+      </p>
+      <div class="buy-order">
+        <button type="submit" class="button form-submit button-buy-order">Оформить заказ</button>
+        <a href="#" class="button modal-close">Продолжить покупки</a>
+      </div>
+      <button type="button" class="order-close">
+        <span class="visually-hidden">Закрыть</span><!-- Для чтения ридером и стилизации -->
+      </button>   
+    </section>
   </body>
 </html>
