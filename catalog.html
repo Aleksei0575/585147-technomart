@@ -11,7 +11,10 @@
   		<div class="container"> <!--Блок центровщик шапки-->
   			<div class="header-top-menu"><!--Это блок верхней панели-->
   				<a class="top-menu-logo" href="index.html" aria-label="Ссылка на главную страницу сайта">Техномарт</a><!--Эта ссылка на гл. страницу-->
-  				<input type="search" name="search" placeholder="Поиск:">
+  				<form class="search" method="GET" action="https://echo.htmlacademy.ru">
+            <label class="visually-hidden" for="user-search">Логин</label>
+            <input id="user-search" type="search" name="search" placeholder="Поиск:">
+          </form>
   				<a class="bookmarks" href="#">Закладки</a>
   				<a class="cart" href="#">Корзина</a>
   				<a class="order" href="#">Офрмить заказ</a>
@@ -46,6 +49,7 @@
     <main class="main-content"><!--Блок основного контента страницы-->
       <div class="container"> <!--Блок центровщик шапки-->
         <ul class="breadcrumbs"><!--Делал по образу и подобию как в видео Barbershop-->
+          <li><a href="#">Домой</a></li>
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Инструменты</a></li>
           <li class="breadcrumbs-current">Перфораторы</li>
@@ -53,7 +57,7 @@
         <h1 class="page-title">Перфораторы</h1>
         <section class="filter-block">
           <h2 class="filter-title">Фильтр:</h2>
-          <form class="filter" method="get" action="/echo" aria-label="Форма с фильтром"><!-- Блок с фильтром -->
+          <form class="filter" method="GET" action="https://echo.htmlacademy.ru" aria-label="Форма с фильтром"><!-- Блок с фильтром -->
             <fieldset>
               <legend aria-label="Цена от и до">Цена:</legend>
               <label for="price"></label>
@@ -97,6 +101,9 @@
                 </li>
               </ul>
             </fieldset>
+            <button type="submit" class="filter-button button">
+              Показать
+            </button>
           </form>
         </section>
         <section class="catalog-block">
@@ -291,8 +298,10 @@
         Товар добавлен в корзину!
       </p>
       <div class="buy-order">
-        <button type="submit" class="button form-submit button-buy-order" aria-label="Здесь откроется форма заказа товара">Оформить заказ</button>
-        <a href="#" class="button modal-close" aria-label="Продолжить покупки">Продолжить покупки</a>
+        <form class="buy-order">
+          <button type="submit" class="button form-submit button-buy-order" aria-label="Здесь откроется форма заказа товара">Оформить заказ</button>
+          <a href="#" class="button modal-close" aria-label="Продолжить покупки">Продолжить покупки</a>
+        </form>
       </div>
       <button type="button" class="order-close" aria-label="Кнопка закрытия этого окна">
         <span class="visually-hidden">Закрыть</span><!-- Для чтения ридером и стилизации -->

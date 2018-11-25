@@ -11,7 +11,10 @@
   		<div class="container"> <!--Блок центровщик шапки-->
   			<div class="header-top-menu"><!--Это блок верхней панели-->
   				<a class="top-menu-logo" href="#" aria-label="Логотип главной страницы">Техномарт</a><!--Эта ссылка на гл. страницу-->
-  				<input type="search" name="search" placeholder="Поиск:">
+          <form class="search" method="GET" action="https://echo.htmlacademy.ru">
+            <label class="visually-hidden" for="user-search">Поиск</label>
+  				  <input id="user-search" type="search" name="search" placeholder="Поиск:">
+          </form>
   				<a class="bookmarks" href="#">Закладки</a>
   				<a class="cart" href="#">Корзина</a>
   				<a class="order" href="#">Офрмить заказ</a>
@@ -45,31 +48,51 @@
   		  <section class="promo-block"><!-- Промо блок -->
           <h2 class="visually-hidden">Предложение товаров и услуг от компании</h2>
           <ul class="company-offer">
-            <li class="company-offer-item">Материалы
+            <li class="company-offer-item">
+              <h3>Материалы</h3>
               <p>
                 <a href="#" class="btn">На любой вкус</a>
               </p>
+              <p class="item-icon">
+                <img src="http://placehold.it/44x65" alt="Изображение иконки товара или услуги">
+              </p>
             </li>
-            <li class="company-offer-item">Инструмент
+            <li class="company-offer-item">
+              <h3>Инструмент</h3>
               <p>
                 <a href="#" class="btn">На все случаи</a>
               </p>
+              <p class="item-icon">
+                <img src="http://placehold.it/44x65" alt="Изображение иконки товара или услуги">
+              </p>
             </li>
-            <li class="company-offer-item">Техника
+            <li class="company-offer-item">
+              <h3>Техника</h3>
               <p>
                 <a href="#" class="btn">Для стройки</a>
               </p>
+              <p class="item-icon">
+                <img src="http://placehold.it/44x65" alt="Изображение иконки товара или услуги">
+              </p>
             </li>
-            <li class="company-offer-item">Скидки 50%
+            <li class="company-offer-item">
+              <h3>Скидки 50%</h3>
               <p>
                 <a href="#" class="btn">На 350 товаров</a>
               </p>
+              <p class="item-icon">
+                <img src="http://placehold.it/44x65" alt="Изображение иконки товара или услуги">
+              </p>
             </li> 
-            <li class="company-offer-item">Доставка
+            <li class="company-offer-item">
+              <h3>Доставка</h3>
               <p>
                 <a href="#" class="btn">Бесплатно</a>
               </p>
-          </li>
+              <p class="item-icon">
+                <img src="http://placehold.it/44x65" alt="Изображение иконки товара или услуги">
+              </p>
+            </li>
             <li class="company-offer-item slider">Доставка <!-- Здесь реализован слайдер -->
               <div class="slide-1">
                 <h3 class="slide-title">Перфораторы</h3>
@@ -187,23 +210,45 @@
             <p class="slogan">Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
-          <ul class="list-services">
-            <li class="delivery-selected-active">
-              <h3 class="delivery-title">Доставка</h3>
-              <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-              <img src="http://placehold.it/100x100" alt="Картинка в блоке">
-            </li>
-            <li class="guaranty-selected-active">
-              <h3 class="guaranty-title">Гарантия</h3>
-              <p class="service-description">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-            </li>
-            <li class="credit-selected-active">
-              <h3 class="guaranty-title">Кредит</h3>
-              <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-              <a href="#" class="btn">Отправить заявку</a>
-            </li>
-          </ul>
+          <section class="service-block-left">
+            <h3 class="visually-hidden">Выбор сервиса компании</h3>
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <ul>
+                <li class="delivery-selected-active">
+                  <input class="visually-hidden input-radio" type="radio" name="delivery" id="delivery" checked>
+                  <label for="delivery">Доставка</label>
+                </li>
+                <li class="guaranty-selected-active">
+                  <input class="visually-hidden input-radio" type="radio" name="guaranty" id="guaranty">
+                  <label for="guaranty">Гарантия</label>
+                </li>
+                <li class="credit-selected-active">
+                  <input class="visually-hidden input-radio" type="radio" name="credit" id="credit">
+                  <label for="credit">Кредит</label>
+                </li>
+              </ul>
+            </form>
+          </section>
+          <section class="service-block-right">
+            <h3 class="visually-hidden">Описание сервиса компании</h3>
+            <ul class="list-services">
+              <li class="delivery-selected-active">
+                <span class="delivery-selected-active">Доставка</span>
+                <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                <img src="http://placehold.it/100x100" alt="Картинка в блоке">
+              </li>
+              <li class="guaranty-selected-active">
+                <span class="guaranty-title">Гарантия</span>
+                <p class="service-description">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+              </li>
+              <li class="credit-selected-active">
+                <span class="guaranty-title">Кредит</span>
+                <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                <a href="#" class="btn">Отправить заявку</a>
+              </li>
+            </ul>
+          </section>
         </section>
         <section class="company-promo"><!--Это один блок из левой и правой колонок-->
           <section class="left-column"><!--Левый блок О Компании-->
@@ -274,7 +319,7 @@
     <section class="modal modal-login">
         <h2 class="visually-hidden">Форма связи с компанией</h2>
         <!-- Модальное окно - форма для связи с компанией -->
-        <form class="user-name" action="/echo" method="post">
+        <form class="user-name" action="https://echo.htmlacademy.ru" method="POST">
           <p>
             <label class="visually-hidden" for="user-name">Имя Фамилия</label>
             <input class="user-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
@@ -287,22 +332,22 @@
             <label for="text-letter">Текст письма:</label>
             <textarea id="text-letter" name="letter" rows="5">В свободной форме</textarea>
           </p>
+          <button class="form-submit" type="submit">
+            <span class="visually-hidden">Отправить</span><!-- Для чтения ридером и стилизации -->
+          </button>
         </form>
-        <button class="form-submit" type="submit">
-          <span class="visually-hidden">Отправить</span><!-- Для чтения ридером и стилизации -->
-        </button>
         <button class="modal-close" type="button">
           <span class="visually-hidden">Закрыть</span><!-- Для чтения ридером и стилизации -->
         </button>
     </section>
     <section class="modal modal-map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <p>
-          <img src="img/big-map.jpg" width="940" height="446" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-        </p>
-        <button class="modal-close" type="button">
-          <span class="visually-hidden">Закрыть</span><!-- Для чтения ридером и стилизации -->
-        </button>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/big-map.jpg" width="940" height="446" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      </p>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span><!-- Для чтения ридером и стилизации -->
+      </button>
     </section>
   </body>
 </html>
