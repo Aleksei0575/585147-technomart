@@ -15,6 +15,7 @@ body {
 a {
 	text-decoration: none;
 }
+
 /*Верхняя панель хедера*/
 .header-top-menu {
 	background-color: #293449;
@@ -44,10 +45,41 @@ a {
 	display: none;
 }
 
-.bookmarks {
+/*Средняя панель хедера*/
+.header-page-title,
+.contact-information a,
+.address,
+.user-navigation {
 	font-family: "Cuprum", "Arial", sans-serif;
-	font-size: 17px;
-	line-height: 18px;
-	font-weight: normal;
-	color: #ffffff;
 }
+
+.header-page-title {
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: normal;
+	color: #ef505b;
+}
+
+.contact-information a {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #ee3643;
+}
+
+.address {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #32425c;
+}
+
+.user-navigation {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #000000;
+	list-style: none;
+}
+
+/*Панель главной навигаци*/
