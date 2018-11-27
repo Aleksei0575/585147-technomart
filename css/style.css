@@ -41,16 +41,25 @@ a {
 	color: #ffffff;
 }
 
-.search .visually-hidden {
+.search .visually-hidden,
+.promo-block .visually-hidden {
 	display: none;
 }
 
 /*Средняя панель хедера*/
+.header-info {
+	background-color: #f3f7f8;
+}
+
 .header-page-title,
 .contact-information a,
 .address,
 .user-navigation {
 	font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.contact-information a:hover {
+	background-color: yellow;
 }
 
 .header-page-title {
@@ -83,3 +92,24 @@ a {
 }
 
 /*Панель главной навигаци*/
+.header-navigation {
+	background-color: #32425c;
+}
+
+.header-navigation li {
+	list-style: none;
+	display: inline-block;
+}
+
+.header-navigation a {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 17px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+	background-color: #293449;
+}
