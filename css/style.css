@@ -8,7 +8,7 @@ body {
 	line-height: 24px;
 	font-weight: normal;
 	color: #000000;
-	
+
 	background-color: #ffffff;
 }
 
@@ -182,6 +182,7 @@ a {
 	line-height: 36px;
 	font-weight: bold;
 	color: #ffffff;
+	text-transform: uppercase;
 }
 
 .slider .slide-description {
@@ -201,12 +202,111 @@ a {
 }
 
 .slider {
-	background-color: #3bbce3;
-	
-	
+	background-image: url(../img/slider.jpg);
+	background-repeat: no-repeat;
 }
 
+/*Блок популярные товары*/
+.popular-items-block {
+	background-color: #f9f5f0;
+}
 
+.popular-items-block .block-title {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	color: #32425c;
+}
 
+.popular-items-block a {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #ffffff;
+	text-transform: uppercase;
+}
 
+.popular-items-block a {
+	background-color: #ee3643;
+}
 
+.popular-items-list {
+	list-style: none;
+}
+
+.popular-item  h3 {
+	font-family: "PT Sans", "Arial", sans-serif;;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.item-buy,
+.item-bookmarks {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.item-buy {
+	color: #ffffff;
+}
+
+.item-buy {
+	background-color: #63a63e;
+}
+
+.item-bookmarks {
+	color: #32425c;
+}
+
+.catalog-item-price b {
+	font-family: "PT Sans", "Arial", sans-serif;;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+}
+
+.catalog-item-price b {
+	color: #999999;
+}
+
+.item-discount {
+	color: #ffffff;
+}
+
+.item-discount {
+	background-image: url(../img/red-button.svg);
+	background-repeat: no-repeat;
+}
+
+/* Блок популярные компании */
+.popular-company-block {
+	background-color: #f9f5f0;
+}
+
+.popular-company-block .block-title {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	color: #32425c;
+}
+
+.popular-company-block a {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.popular-company-block a {
+	background-color: #ee3643;
+}
