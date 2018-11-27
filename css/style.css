@@ -58,10 +58,6 @@ a {
 	font-family: "Cuprum", "Arial", sans-serif;
 }
 
-.contact-information a:hover {
-	background-color: yellow;
-}
-
 .header-page-title {
 	font-size: 16px;
 	line-height: 23px;
@@ -92,10 +88,6 @@ a {
 }
 
 /*Панель главной навигаци*/
-.header-navigation {
-	background-color: #32425c;
-}
-
 .header-navigation li {
 	list-style: none;
 	display: inline-block;
@@ -109,7 +101,112 @@ a {
 	color: #ffffff;
 }
 
+.header-navigation {
+	background-color: #32425c;
+}
+
 .site-navigation a:hover,
 .site-navigation a:focus {
 	background-color: #293449;
 }
+
+/*Основной контент*/
+.company-offer {
+	list-style: none;
+}
+
+.company-offer h3 {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.company-offer-item a {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.company-offer .materials {
+	background-color: #ffbf47;
+}
+
+.materials a:hover,
+.materials a:focus {
+	background-color: #cccccc;
+}
+
+.company-offer .tools {
+	background-color: #3bbce3;
+}
+
+.tools a:hover,
+.tools a:focus {
+	background-color: #cccccc;
+}
+
+.company-offer .mechanism {
+	background-color: #dc91d8;
+}
+
+.mechanism a:hover,
+.mechanism a:focus {
+	background-color: #cccccc;
+}
+
+.company-offer .discount {
+	background-color: #8ed78f;
+}
+
+.discount a:hover,
+.discount a:focus {
+	background-color: #cccccc;
+}
+
+.company-offer .delivery {
+	background-color: #ffc047;
+}
+
+.delivery a:hover,
+.delivery a:focus {
+	background-color: #cccccc;
+}
+
+.slider .slide-title {
+	font-family: "Cuprum", "Arial", sans-serif;;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.slider .slide-description {
+	font-family: "PT Sans", "Arial", sans-serif;;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.slider a {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.slider {
+	background-color: #3bbce3;
+	
+	
+}
+
+
+
+
+
