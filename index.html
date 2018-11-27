@@ -216,16 +216,16 @@
           <div class="service-block-info">
             <h3 class="visually-hidden">Выбор сервиса компании</h3>
             <ul>
-              <li class="delivery-selected-active"><!--Вот блок переделаный-->
-                <input class="visually-hidden input-radio" type="radio" name="delivery" id="delivery" checked>
+              <li class="delivery-selected-active"><!--Блок выбора сервиса-->
+                <input class="visually-hidden input-radio" type="radio" name="selected-service" id="delivery" checked><!--Указал одинаковое имя для радиокнопок-->
                 <label for="delivery">Доставка</label>
               </li>
               <li class="guaranty-selected-active">
-                <input class="visually-hidden input-radio" type="radio" name="guaranty" id="guaranty">
+                <input class="visually-hidden input-radio" type="radio" name="selected-service" id="guaranty">
                 <label for="guaranty">Гарантия</label>
               </li>
               <li class="credit-selected-active">
-                <input class="visually-hidden input-radio" type="radio" name="credit" id="credit">
+                <input class="visually-hidden input-radio" type="radio" name="selected-service" id="credit">
                 <label for="credit">Кредит</label>
               </li>
             </ul>
@@ -320,21 +320,21 @@
         <form class="user-name" action="https://echo.htmlacademy.ru" method="POST">
           <p>
             <label class="visually-hidden" for="user-name">Имя Фамилия</label>
-            <input class="user-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+            <input class="user-name" id="user-name" type="text" value="" name="name" placeholder="Имя Фамилия">
           </p>
           <p>
             <label class="visually-hidden" for="user-emale">Ваш e-mail:</label>
-            <input class="user-email" id="user-emale" type="email" name="email" placeholder="email@example.com">
+            <input class="user-email" id="user-emale" type="email" value="" name="email" placeholder="email@example.com">
           </p>
           <p>
             <label for="text-letter">Текст письма:</label>
             <textarea id="text-letter" name="letter" rows="5">В свободной форме</textarea>
           </p>
-          <button class="form-submit" type="submit">
+          <button class="form-submit" type="submit" value="Отправить">
             <span class="visually-hidden">Отправить</span><!-- Для чтения ридером и стилизации -->
           </button>
         </form>
-        <button class="modal-close" type="button">
+        <button class="modal-close" type="button" value="Закрыть">
           <span class="visually-hidden">Закрыть</span><!-- Для чтения ридером и стилизации -->
         </button>
     </section>
@@ -343,7 +343,7 @@
       <p>
         <img src="img/big-map.jpg" width="940" height="446" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </p>
-      <button class="modal-close" type="button">
+      <button class="modal-close" type="button" value="Закрыть">
         <span class="visually-hidden">Закрыть</span><!-- Для чтения ридером и стилизации -->
       </button>
     </section>

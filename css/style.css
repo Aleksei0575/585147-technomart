@@ -1,7 +1,53 @@
+/*Базовая стилизауия*/
 body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #000000;
 	
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+/*Верхняя панель хедера*/
+.header-top-menu {
+	background-color: #293449;
+}
+
+.top-menu-logo {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.search input[type="search"],
+.bookmarks,
+.cart,
+.order {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.search .visually-hidden {
+	display: none;
+}
+
+.bookmarks {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #ffffff;
 }

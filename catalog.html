@@ -60,30 +60,44 @@
           <form class="filter" method="GET" action="https://echo.htmlacademy.ru" aria-label="Форма с фильтром"><!-- Блок с фильтром -->
             <fieldset>
               <legend aria-label="Цена от и до">Цена:</legend>
-              <label for="price"></label>
-                0 <input type="range" name="range" min="0" max="30000" id="price" step="1"> 30000
+              <div class="price-control">
+                <div class="price-scale">
+                  <span class="scale"></span>
+                  <span class="toggle-min"></span>
+                  <span class="toggle-max"></span>
+                </div>
+                <div class="input-price">
+                  <label class="visually-hidden" for="min-price">Минимальная цена</label> 
+                  <input class="min-price" id="min-price" type="text" name="text" value="0" placeholder="0">-
+                  <label class="visually-hidden" for="max-price">Максимальная цена</label> 
+                  <input class="max-price" id="max-price" type="text" name="text" value="30000" placeholder="30000">                
+                </div>
+              </div>
+<!-- Этот код отключен. Спросить у наставника -->
+              <!-- <label for="price"></label> -->
+                <!-- 0 <input type="range" name="range" min="0" max="30000" id="price" step="1"> 30000 -->
             </fieldset>
             <fieldset>
               <legend aria-label="Здесь выбираем производителей">Призводители:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" value="bosch" id="filter-bosch" checked>
                   <label for="filter-bosch">Bosch</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="интерскол" id="filter-interskol">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="интерскол" value="интерскол" id="filter-interskol">
                   <label for="filter-interskol">Интерскол</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" value="makita" id="filter-makita" checked>
                   <label for="filter-makita">Makita</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" value="dewalt" id="filter-dewalt">
                   <label for="filter-dewalt">Dewalt</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" value="hitachi" id="filter-hitachi">
                   <label for="filter-hitachi">Hitachi</label>
                 </li>
               </ul> 
@@ -92,11 +106,11 @@
               <legend aria-label="Здесь выбираем, от чего будет запитан иструмент">Питание:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-supply" id="filter-battery" checked>
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-supply" value="аккумуляторные" id="filter-battery" checked>
                   <label for="filter-battery">Аккумуляторные</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-supply" id="power-grid">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-supply" value="сетевые" id="power-grid">
                   <label for="power-grid">Сетевые</label>
                 </li>
               </ul>
