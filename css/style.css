@@ -445,13 +445,12 @@ a {
 	background-color: #ee3643;
 }
 
-/*Футер*/
+/*Футер* верх*/
 .footer {
 	background-color: #32425c;
 }
 
-
-.footer-top-logo {	
+.footer-top-logo {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 24px;
 	line-height: 24px;
@@ -475,4 +474,42 @@ a {
 
 .footer-user-navigation li {
 	display: inline-block;
+}
+
+/*Футер середина*/
+.footer-address {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #f3f7f9;
+}
+
+.footer-goods-company a {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #ffd180;
+}
+
+.footer-goods-company li {
+	display: inline-block;
+}
+
+.footer-bottom {
+	background-color: #293449;
+}
+
+.footer-contacts p {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.footer-social .social-btn-vk {
+	background-image: url(../img/icon-vk.svg);
+	background-repeat: no-repeat;
 }
