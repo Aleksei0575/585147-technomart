@@ -402,3 +402,77 @@ a {
 .credit-active a {
 	background-color: #fb8a8d;
 }
+
+/*Блок о компании и блок с адресом*/
+.company-promo h2 {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.company-promo p {
+	font-family: "PT Sans", "Arial", sans-serif;;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.company-promo .delivery {
+	list-style: none;
+}
+
+.company-promo .delivery {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.company-promo a {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.company-promo a {
+	background-color: #ee3643;
+}
+
+/*Футер*/
+.footer {
+	background-color: #32425c;
+}
+
+
+.footer-top-logo {	
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.footer-top li,
+.footer-goods-company li {
+	list-style: none;
+}
+
+.footer-user-navigation a {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #f3f7f9;
+}
+
+.footer-user-navigation li {
+	display: inline-block;
+}
