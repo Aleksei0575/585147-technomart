@@ -290,6 +290,10 @@ a {
 	background-color: #f9f5f0;
 }
 
+.popular-company {
+	list-style: none;
+}
+
 .popular-company-block .block-title {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
@@ -309,4 +313,92 @@ a {
 
 .popular-company-block a {
 	background-color: #ee3643;
+}
+
+/* Блок сервисы */
+.services-block {
+	background-color: #f4f8f9;
+}
+
+.services .services-block-title {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.services .slogan {
+	font-family: "PT Sans", "Arial", sans-serif;;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.service-block-info .visually-hidden {
+	display: none;
+}
+
+.list-services {
+	list-style: none;
+}
+
+.list-services label {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.delivery-selected-active {
+	color: #32425c;
+}
+
+.delivery-selected-active {
+	background-color: #ffffff;
+}
+
+.guaranty-selected-active,
+.credit-selected-active {
+	color: #ffffff;
+}
+
+.guaranty-selected-active,
+.credit-selected-active {
+	background-color: #32425c;
+}
+
+.delivery-active span,
+.guaranty-active span,
+.credit-active span {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: normal;
+	color: #32425c;
+	text-transform: uppercase;
+}
+
+.delivery-active p,
+.guaranty-active p,
+.credit-active p {
+	font-family: "PT Sans", "Arial", sans-serif;;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.credit-active a {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.credit-active a {
+	background-color: #fb8a8d;
 }
