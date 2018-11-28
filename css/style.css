@@ -186,7 +186,8 @@ a {
 }
 
 .sort-panel li,
-.pagination-list {
+.pagination-list,
+.filter-option {
 	list-style: none;
 }
 
