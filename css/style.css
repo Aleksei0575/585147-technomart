@@ -37,6 +37,7 @@ a {
 	font-weight: normal;
 	color: #ffffff;
 }
+
 /* Стили для текста - конец */
 /* Убрал скрытые заголовки */
 .visually-hidden {
@@ -45,6 +46,36 @@ a {
 /* Фон верхней части хедера */
 .header-top-menu {
 	background-color: #293449;
+}
+/* Подключение фоновых картинок */
+form::before {
+	display: inline-block;
+	content: " ";
+	background-image: url(../img/icon-search.svg);
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+	padding-left: 10px;
+}
+
+.bookmarks::before {
+	display: inline-block;
+	content: " ";
+	background-image: url("../img/icon-bookmark.svg");
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 16px;
+	padding-left: 10px;
+}
+
+.cart:before {
+	display: inline-block;
+	content: " ";
+	background-image: url("../img/icon-cart.svg");
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+	padding-left: 10px;
 }
 
 /* =================Средняя панель хедера ================*/
