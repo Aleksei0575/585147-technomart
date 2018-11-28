@@ -25,6 +25,8 @@ a {
 	font-weight: normal;
 	color: #ffffff;
 	text-transform: uppercase;
+
+	background-color: #ee3643;
 }
 
 .search input[type="search"],
@@ -37,7 +39,6 @@ a {
 	font-weight: normal;
 	color: #ffffff;
 }
-
 /* Стили для текста - конец */
 /* Убрал скрытые заголовки */
 .visually-hidden {
@@ -46,6 +47,10 @@ a {
 /* Фон верхней части хедера */
 .header-top-menu {
 	background-color: #293449;
+}
+
+.order {
+	background-color: #63a63e;
 }
 /* Подключение фоновых картинок */
 form::before {
@@ -129,6 +134,57 @@ form::before {
 .header-info {
 	background-color: #f3f7f8;
 }
+
+.contact-information a {
+	border: 3px solid #ffffff;
+}
+
+.login-link a,
+.registration a {
+	background-color: #ffffff;
+}
+
+.login-link::before {
+	display: inline-block;
+	content: "";
+	background-image: url(../img/icon-login.svg);
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 14px;
+	padding-left: 10px;
+	padding-bottom: 2px;
+	background-color: #ffffff;
+}
+
+.user-login {
+	background-color: #ffffff;
+}
+
+.user-login::before {
+	display: inline-block;
+	content: "";
+	background-image: url(../img/icon-user.svg);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 18px;
+	padding-left: 10px;
+}
+
+.user-login::after {
+	display: inline-block;
+	content: "";
+	background-image: url(../img/icon-logout.svg);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 17px;
+	margin-left: 10px;
+}
+
+.user-login:hover {
+	color: #ee3643;
+	background-color: #000000;
+}
+
 
 /* ============Панель главной навигаци ==============*/
 .header-navigation li {
