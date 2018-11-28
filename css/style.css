@@ -605,6 +605,7 @@ a {
 	line-height: 18px;
 	font-weight: normal;
 	color: #a9a9a9;
+	border: 2px solid #dee3e4;
 }
 
 .modal .visually-hidden {
