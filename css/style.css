@@ -53,7 +53,7 @@ a {
 	background-color: #63a63e;
 }
 /* Подключение фоновых картинок */
-form::before {
+.search::before {
 	display: inline-block;
 	content: " ";
 	background-image: url(../img/icon-search.svg);
@@ -707,10 +707,6 @@ form::before {
 	height: 15px;
 }
 
-.social-btn span {
-	display: none;
-}
-
 .social-btn-fb::before {
 	display: inline-block;
 	content: "";
@@ -730,7 +726,9 @@ form::before {
 	height: 21px;
 	margin-left: 10px;
 }
-
+.social-btn span {
+	display: none;
+}
 
 /* Блок обратной связи */
 .footer-contacts-mail {
@@ -776,7 +774,7 @@ form::before {
 
 /* Модальные окна */
 /* Форма связи*/
-.modal {
+.modal-login {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 18px;
@@ -808,6 +806,7 @@ form::before {
 	line-height: 18px;
 	font-weight: normal;
 	color: #ffffff;
+	text-transform: uppercase;
 
 	background-color: #ee3643;
 }
@@ -818,6 +817,7 @@ form::before {
 	line-height: 18px;
 	font-weight: normal;
 	color: #000000;
+	text-transform: uppercase;
 
 	background-color: #ffffff;
 }
@@ -827,7 +827,7 @@ form::before {
 }
 
 /* Форма закза */
-.modal p {
+.modal-buy-curt {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	line-height: 30px;
