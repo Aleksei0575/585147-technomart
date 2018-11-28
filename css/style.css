@@ -518,7 +518,7 @@ a {
 	color: #ffffff;
 }
 
-.social-btn-vk {
+/* .social-btn-vk { Подключать фоновые изображения
 	background-image: url(../img/icon-vk.svg);
 	background-repeat: no-repeat;
 }
@@ -531,7 +531,7 @@ a {
 .social-btn-inst {
 	background-image: url(../img/icon-insta.svg);
 	background-repeat: no-repeat;
-}
+} */
 
 /* Блок обратной связи */
 .footer-contacts-mail {
