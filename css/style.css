@@ -698,20 +698,39 @@ form::before {
 	color: #ffffff;
 }
 
-/* .social-btn-vk { Подключать фоновые изображения
-	background-image: url(../img/icon-vk.svg);
+.social-btn-vk::before {
+	display: inline-block;
+	content: "";
+	background-image: url("../img/icon-vk.svg");
 	background-repeat: no-repeat;
+	width: 26px;
+	height: 15px;
 }
 
-.social-btn-fb {
-	background-image: url(../img/icon-fb.svg);
-	background-repeat: no-repeat;
+.social-btn span {
+	display: none;
 }
 
-.social-btn-inst {
-	background-image: url(../img/icon-insta.svg);
+.social-btn-fb::before {
+	display: inline-block;
+	content: "";
+	background-image: url("../img/icon-fb.svg");
 	background-repeat: no-repeat;
-} */
+	width: 12px;
+	height: 22px;
+	margin-left: 10px;
+}
+
+.social-btn-inst::before {
+	display: inline-block;
+	content: "";
+	background-image: url("../img/icon-insta.svg");
+	background-repeat: no-repeat;
+	width: 21px;
+	height: 21px;
+	margin-left: 10px;
+}
+
 
 /* Блок обратной связи */
 .footer-contacts-mail {
