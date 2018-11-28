@@ -39,8 +39,7 @@ a {
 }
 /* Стили для текста - конец */
 /* Убрал скрытые заголовки */
-.search .visually-hidden,
-.promo-block .visually-hidden {
+.visually-hidden {
 	display: none;
 }
 /* Фон верхней части хедера */
@@ -85,6 +84,15 @@ a {
 	color: #000000;
 	list-style: none;
 }
+/*======= Стили для входа в личн. кабинет ======*/
+.user-orders a,
+.user-account a {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #32425c;
+	text-decoration: underline;
+}
 /* Стили для текста - конец */
 /* Фон оставшейся части хедера */
 .header-info {
@@ -113,8 +121,76 @@ a {
 .site-navigation a:focus {
 	background-color: #293449;
 }
+/* ==================================== */
 
-/* ==============Основной контент ==================*/
+/* =====Основной контент внутр. страницы====*/
+/* Общие стили внутр. страниц */
+/* Стили для текста*/
+.block-title,
+.breadcrumbs,
+.input-price input[type="text"],
+.filter-option label,
+.filter-option label,
+.sort-panel a,
+.filter legend,
+.filter-button,
+.pagination-list {
+	font-family: "PT Sans", "Arial", sans-serif;;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.breadcrumbs,
+.pagination-list {
+	text-transform: uppercase;
+}
+/* Убрал маркеры */
+.breadcrumbs li {
+	list-style: none;
+}
+
+.title {
+	background-color: #f2f6f8;
+}
+
+.title h1 {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	color: #32425c;
+}
+
+.filter legend {
+	font-size: 17px;
+	line-height: 30px;
+}
+
+.input-price input[type="text"] {
+	font-size: 17px;
+	line-height: 18px;
+}
+
+.filter-option label,
+.filter-option label {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.filter-button,
+.pagination-list {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.sort-panel li,
+.pagination-list {
+	list-style: none;
+}
+
+/* =========Основной контент гл. страница =====*/
 /* ==============Промо-блок ==================== */
 .company-offer {
 	list-style: none;
@@ -214,7 +290,7 @@ a {
 	background-repeat: no-repeat;
 }
 
-/*=================Блок популярные товары =================*/
+/*==========Блок популярные товары =================*/
 /* Общий фон всего блока */
 .popular-items-block {
 	background-color: #f9f5f0;
@@ -237,7 +313,9 @@ a {
 	text-transform: uppercase;
 }
 
-.popular-item  h3 {
+.popular-item  h3,
+.catalog-item h3,
+.catalog-item-new h3 {
 	font-family: "PT Sans", "Arial", sans-serif;;
 	font-size: 18px;
 	line-height: 20px;
@@ -262,7 +340,9 @@ a {
 	color: #32425c;
 }
 
-.catalog-item-price b {
+.catalog-item-price b,
+.item-discount,
+.item-discount a {
 	font-family: "PT Sans", "Arial", sans-serif;;
 	font-size: 17px;
 	line-height: 18px;
@@ -270,7 +350,8 @@ a {
 	color: #999999;
 }
 
-.item-discount {
+.item-discount,
+.item-discount a {
 	color: #ffffff;
 }
 /* Стили для текста - конец */
@@ -279,7 +360,8 @@ a {
 	background-color: #ee3643;
 }
 
-.popular-items-list {
+.popular-items-list,
+.catalog-item-list {
 	list-style: none;
 }
 
