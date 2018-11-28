@@ -16,11 +16,8 @@ a {
 	text-decoration: none;
 }
 
-/*Верхняя панель хедера*/
-.header-top-menu {
-	background-color: #293449;
-}
-
+/* ===============Верхняя панель хедера ==================*/
+/* Стили для текста - начало */
 .top-menu-logo {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 24px;
@@ -40,17 +37,19 @@ a {
 	font-weight: normal;
 	color: #ffffff;
 }
-
+/* Стили для текста - конец */
+/* Убрал скрытые заголовки */
 .search .visually-hidden,
 .promo-block .visually-hidden {
 	display: none;
 }
-
-/*Средняя панель хедера*/
-.header-info {
-	background-color: #f3f7f8;
+/* Фон верхней части хедера */
+.header-top-menu {
+	background-color: #293449;
 }
 
+/* =================Средняя панель хедера ================*/
+/* Стили для текста - начало */
 .header-page-title,
 .contact-information a,
 .address,
@@ -86,8 +85,13 @@ a {
 	color: #000000;
 	list-style: none;
 }
+/* Стили для текста - конец */
+/* Фон оставшейся части хедера */
+.header-info {
+	background-color: #f3f7f8;
+}
 
-/*Панель главной навигаци*/
+/* ============Панель главной навигаци ==============*/
 .header-navigation li {
 	list-style: none;
 	display: inline-block;
@@ -110,11 +114,12 @@ a {
 	background-color: #293449;
 }
 
-/*Основной контент*/
+/* ==============Основной контент ==================*/
+/* ==============Промо-блок ==================== */
 .company-offer {
 	list-style: none;
 }
-
+/* Стили для текста - начало */
 .company-offer h3 {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 24px;
@@ -130,7 +135,8 @@ a {
 	font-weight: normal;
 	color: #ffffff;
 }
-
+/* Стили для текста - конец */
+/* Здесь фоны и состояния для блочков товаров и услуг */
 .company-offer .materials {
 	background-color: #ffbf47;
 }
@@ -175,7 +181,8 @@ a {
 .delivery a:focus {
 	background-color: #cccccc;
 }
-
+/* Здесь стилизация для слайдера */
+/* Стили для текста - начало */
 .slider .slide-title {
 	font-family: "Cuprum", "Arial", sans-serif;;
 	font-size: 36px;
@@ -200,17 +207,19 @@ a {
 	font-weight: normal;
 	color: #ffffff;
 }
-
+/* Стили для текста - конец */
+/* Подключил фоновое изображение */
 .slider {
 	background-image: url(../img/slider.jpg);
 	background-repeat: no-repeat;
 }
 
-/*Блок популярные товары*/
+/*=================Блок популярные товары =================*/
+/* Общий фон всего блока */
 .popular-items-block {
 	background-color: #f9f5f0;
 }
-
+/* Стили для текста - начало */
 .popular-items-block .block-title {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
@@ -226,14 +235,6 @@ a {
 	font-weight: normal;
 	color: #ffffff;
 	text-transform: uppercase;
-}
-
-.popular-items-block a {
-	background-color: #ee3643;
-}
-
-.popular-items-list {
-	list-style: none;
 }
 
 .popular-item  h3 {
@@ -257,10 +258,6 @@ a {
 	color: #ffffff;
 }
 
-.item-buy {
-	background-color: #63a63e;
-}
-
 .item-bookmarks {
 	color: #32425c;
 }
@@ -270,14 +267,24 @@ a {
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;
-}
-
-.catalog-item-price b {
 	color: #999999;
 }
 
 .item-discount {
 	color: #ffffff;
+}
+/* Стили для текста - конец */
+/* Фоновые стили элементов блока */
+.popular-items-block a {
+	background-color: #ee3643;
+}
+
+.popular-items-list {
+	list-style: none;
+}
+
+.item-buy {
+	background-color: #63a63e;
 }
 
 .item-discount {
@@ -285,7 +292,8 @@ a {
 	background-repeat: no-repeat;
 }
 
-/* Блок популярные компании */
+/* ===================Блок популярные компании ==============*/
+/* Общий фон всего блока */
 .popular-company-block {
 	background-color: #f9f5f0;
 }
@@ -293,7 +301,7 @@ a {
 .popular-company {
 	list-style: none;
 }
-
+/* Стили для текста - начало */
 .popular-company-block .block-title {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
@@ -310,16 +318,17 @@ a {
 	color: #ffffff;
 	text-transform: uppercase;
 }
-
+/* Стили для текста - конец */
 .popular-company-block a {
 	background-color: #ee3643;
 }
 
-/* Блок сервисы */
+/* ====================Блок сервисы ======================*/
+/* Общий фон всего блока */
 .services-block {
 	background-color: #f4f8f9;
 }
-
+/* Стили для текста блока выбора услуги - начало */
 .services .services-block-title {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
@@ -337,19 +346,19 @@ a {
 	color: #000000;
 }
 
+.list-services label {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: bold;
+}
+/* Стили для текста - конец */
 .service-block-info .visually-hidden {
 	display: none;
 }
 
 .list-services {
 	list-style: none;
-}
-
-.list-services label {
-	font-family: "Cuprum", "Arial", sans-serif;
-	font-size: 21px;
-	line-height: 30px;
-	font-weight: bold;
 }
 
 .delivery-selected-active {
@@ -369,7 +378,7 @@ a {
 .credit-selected-active {
 	background-color: #32425c;
 }
-
+/* Стили для текста блока какая услуга выбрана - начало */
 .delivery-active span,
 .guaranty-active span,
 .credit-active span {
@@ -398,12 +407,16 @@ a {
 	font-weight: normal;
 	color: #ffffff;
 }
-
+/* Стили для текста - конец */
 .credit-active a {
 	background-color: #fb8a8d;
 }
 
-/*Блок о компании и блок с адресом*/
+/*============Блок о компании и блок с адресом==========*/
+.company-promo .delivery {
+	list-style: none;
+}
+/* Стили для текста - начало */
 .company-promo h2 {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
@@ -414,15 +427,11 @@ a {
 }
 
 .company-promo p {
-	font-family: "PT Sans", "Arial", sans-serif;;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: normal;
 	color: #000000;
-}
-
-.company-promo .delivery {
-	list-style: none;
 }
 
 .company-promo .delivery {
@@ -440,16 +449,16 @@ a {
 	font-weight: normal;
 	color: #ffffff;
 }
-
+/* Стили для текста - конец */
 .company-promo a {
 	background-color: #ee3643;
 }
 
-/*Футер* верх*/
+/*================Футер - верх=======================*/
 .footer {
 	background-color: #32425c;
 }
-
+/* Стили для текста - начало */
 .footer-top-logo {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 24px;
@@ -471,12 +480,13 @@ a {
 	font-weight: normal;
 	color: #f3f7f9;
 }
-
+/* Стили для текста - конец */
 .footer-user-navigation li {
 	display: inline-block;
 }
 
-/*Футер середина*/
+/*=================== Футер середина ===================*/
+/* Стили для текста - начало */
 .footer-address {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
@@ -492,16 +502,16 @@ a {
 	font-weight: normal;
 	color: #ffd180;
 }
-
+/* Стили для текста - конец */
 .footer-goods-company li {
 	display: inline-block;
 }
 
-/*Нижняя часть футера*/
+/*==================== Нижняя часть футера ===================*/
 .footer-bottom {
 	background-color: #293449;
 }
-
+/* Стили для текста - начало */
 .footer-contacts p {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 16px;
@@ -553,8 +563,8 @@ a {
 	font-weight: normal;
 	color: #ffd180;
 }
-
-/* Блок разработчика */
+/* Стили для текста - конец */
+/* ============== Блок разработчика =====================*/
 .footer-copyright {
 	text-align: right;
 }
@@ -573,4 +583,45 @@ a {
 	line-height: 18px;
 	font-weight: normal;
 	color: #ffd180;
+}
+
+/* Модальные окна */
+/* Общие стили формы*/
+.modal {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.user-data input[type="text"],
+.user-data input[type="email"],
+.user-data textarea[name="letter"] {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #a9a9a9;
+}
+
+.modal .visually-hidden {
+	display: none;
+}
+
+/* текстовый стиль кнопки*/
+.button-submit {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #ffffff;
+
+	background-color: #ee3643;
+}
+
+.button-submit {
+	text-align: center;
 }

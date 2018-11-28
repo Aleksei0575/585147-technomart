@@ -14,35 +14,35 @@
   		<div class="container"> <!--Блок центровщик шапки-->
   			<div class="header-top-menu"><!--Это блок верхней панели-->
   				<a class="top-menu-logo" href="#" aria-label="Логотип главной страницы">Техномарт</a><!--Эта ссылка на гл. страницу-->
-          <form class="search" method="GET" action="https://echo.htmlacademy.ru">
-            <label class="visually-hidden" for="user-search">Поиск</label>
-  				  <input id="user-search" type="search" name="search" placeholder="Поиск:">
-          </form>
+                <form class="search" method="GET" action="https://echo.htmlacademy.ru">
+                    <label class="visually-hidden" for="user-search">Поиск</label>
+                    <input id="user-search" type="search" name="search" placeholder="Поиск:">
+                </form>
   				<a class="bookmarks" href="#">Закладки</a>
   				<a class="cart" href="#">Корзина</a>
   				<a class="order" href="#">Офрмить заказ</a>
   			</div><!--Блок верхней панели закончен-->
   			<div class="header-info"><!--Блок средней панели шапки сайта-->
-          <h1 class="header-page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1><!--Далее шрифт уменьшу с помощью стилей CSS-->
-          <p class="contact-information">
+                <h1 class="header-page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1><!--Далее шрифт уменьшу с помощью стилей CSS-->
+                <p class="contact-information">
   					<a href="tel:+1234567890" aria-label="Номер телефона компании">+7 (812) 555-05-55</a>
-            </p>
+                </p>
   				<p class=" " aria-label="Адрес компании">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
   				<ul class="user-navigation">
-            <li class="login-link" aria-label="Войти в личный кабинет"><a href="#">Войти</a></li>
-            <li class="registration" aria-label="Форма регистрации"><a href="#">Регистрация</a></li>
+                    <li class="login-link" aria-label="Войти в личный кабинет"><a href="#">Войти</a></li>
+                    <li class="registration" aria-label="Форма регистрации"><a href="#">Регистрация</a></li>
   				</ul>
-          <nav class="header-navigation" aria-label="Меню главнйо страницы"><!--Навигация в шапке сайта-->
-            <ul class="site-navigation">
-              <li><a href="#" aria-label="Главная страница сайта">Главная</a></li>
-              <li><a href="#" aria-label="Переход на страницу компании">Компания</a></li>
-              <li><a href="catalog.html" aria-label="Переход на страницу каталога">Каталог</a></li>
-              <li><a href="#" aria-label="Переход на страницу новостей">Новости</a></li>
-              <li><a href="#" aria-label="Переход на страницу спецпрдложений">Спецпредложения</a></li>
-              <li><a href="#" aria-label="Информация о доставке товаров">Доставка</a></li>
-              <li><a href="#" aria-label="Переход на страницу контактов">Контакты</a></li>
-            </ul>
-          </nav>
+                <nav class="header-navigation" aria-label="Меню главнйо страницы"><!--Навигация в шапке сайта-->
+                    <ul class="site-navigation">
+                        <li><a href="#" aria-label="Главная страница сайта">Главная</a></li>
+                        <li><a href="#" aria-label="Переход на страницу компании">Компания</a></li>
+                        <li><a href="catalog.html" aria-label="Переход на страницу каталога">Каталог</a></li>
+                        <li><a href="#" aria-label="Переход на страницу новостей">Новости</a></li>
+                        <li><a href="#" aria-label="Переход на страницу спецпрдложений">Спецпредложения</a></li>
+                        <li><a href="#" aria-label="Информация о доставке товаров">Доставка</a></li>
+                        <li><a href="#" aria-label="Переход на страницу контактов">Контакты</a></li>
+                    </ul>
+                </nav>
   			</div>
   		</div>
   	</header>
@@ -272,7 +272,7 @@
       </div>
   	</main>
   	<footer class="footer"><!--Блок футера-->
-  		<div class="container"><!--Блок центровщик футера-->		
+  		<div class="container"><!--Блок центровщик футера-->
   			<div class="footer-top"><!--Блок верхней панели в футере-->
   				<a class="footer-top-logo" aria-label="Логотип главной страницы">Техномарт</a>
   				<ul class="footer-user-navigation">
@@ -317,25 +317,25 @@
     <section class="modal modal-login">
         <h2 class="visually-hidden">Форма связи с компанией</h2>
         <!-- Модальное окно - форма для связи с компанией -->
-        <form class="user-name" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="user-data" action="https://echo.htmlacademy.ru" method="POST">
           <p>
-            <label class="visually-hidden" for="user-name">Имя Фамилия</label>
+            <label for="user-name">Ваше имя:</label>
             <input class="user-name" id="user-name" type="text" value="" name="name" placeholder="Имя Фамилия">
           </p>
           <p>
-            <label class="visually-hidden" for="user-emale">Ваш e-mail:</label>
+            <label for="user-emale">Ваш e-mail:</label>
             <input class="user-email" id="user-emale" type="email" value="" name="email" placeholder="email@example.com">
           </p>
           <p>
             <label for="text-letter">Текст письма:</label>
             <textarea id="text-letter" name="letter" rows="5">В свободной форме</textarea>
           </p>
-          <button class="form-submit" type="submit" value="Отправить">
-            <span class="visually-hidden">Отправить</span><!-- Для чтения ридером и стилизации -->
+          <button class="button-submit" type="submit" value="Отправить">
+            <span>Отправить</span><!-- Для чтения ридером и стилизации -->
           </button>
         </form>
         <button class="modal-close" type="button" value="Закрыть">
-          <span class="visually-hidden">Закрыть</span><!-- Для чтения ридером и стилизации -->
+          <span>Закрыть</span><!-- Для чтения ридером и стилизации -->
         </button>
     </section>
     <section class="modal modal-map">
@@ -344,7 +344,7 @@
         <img src="img/big-map.jpg" width="940" height="446" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </p>
       <button class="modal-close" type="button" value="Закрыть">
-        <span class="visually-hidden">Закрыть</span><!-- Для чтения ридером и стилизации -->
+        <span>Закрыть</span><!-- Для чтения ридером и стилизации -->
       </button>
     </section>
   </body>
