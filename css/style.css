@@ -668,7 +668,7 @@ a {
 }
 
 /* Модальные окна */
-/* Общие стили формы*/
+/* Форма связи*/
 .modal {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
@@ -705,6 +705,31 @@ a {
 	background-color: #ee3643;
 }
 
+.button {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
 .button-submit {
 	text-align: center;
+}
+
+/* Форма закза */
+.modal p {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.modal-buy-curt {
+	background-color: #f1f1f1;
 }
