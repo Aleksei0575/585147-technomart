@@ -15,6 +15,7 @@ body {
 a {
 	text-decoration: none;
 }
+
 /* Универсальный класс для скрытых эл-тов */
 .visually-hidden {
 	position: absolute;
@@ -30,6 +31,90 @@ a {
 }
 
 /* =====Верхняя панель хедера ==================*/
+/* Сеточные стили */
+html,
+body {
+	min-width: 1200px;
+	min-height: 3150px;
+}
+/*===Контейнер обертка===
+для верхней панели хедера*/
+.top-menu-wrapper {
+	width: 100%;
+	background-color: #293449;
+}
+/*========================*/
+/*==Логотип Техгомарт=====*/
+.logo-bottom {
+	text-align: center;
+}
+
+.logo-bottom {
+	width: 220px;
+	height: 42px;
+}
+/*=========================*/
+.header-top-menu,
+.top-menu-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/*Центровщик вехней панели*/
+.header-top-menu {
+	width: 940px;
+	margin: 0 auto;
+}
+/*=========================*/
+/*Кнопка Оформить заказ*/
+.order {
+	text-align: center;
+}
+
+.order {
+	width: 150px;
+	height: 42px;
+}
+/*==========================*/
+
+.header-info,
+.header-info-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.header-page-title {
+	width: 200px;
+	height: 160px;
+}
+
+.header-info {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.header-info-wrapper {
+	width: 100%;
+	background-color: #f3f7f8;
+}
+
+.header {
+	margin-bottom: 60px;
+}
+
+/* Сброс маргинов и паддиногов */
+.user-navigation,
+.site-navigation,
+.header-page-title,
+.company-offer,
+ul,
+h3 {
+	margin: 0;
+	padding: 0;
+}
+
 /* Стили для текста - начало */
 .top-menu-logo {
 	font-family: "Cuprum", "Arial", sans-serif;
@@ -70,7 +155,7 @@ a {
 	background-repeat: no-repeat;
 	width: 15px;
 	height: 15px;
-	padding-left: 10px;
+	padding-left: 15px;
 }
 
 .bookmarks::before {
@@ -80,20 +165,20 @@ a {
 	background-repeat: no-repeat;
 	width: 14px;
 	height: 16px;
-	padding-left: 10px;
+	padding-left: 15px;
 }
 
-.cart:before {
+.cart::before {
 	display: inline-block;
 	content: " ";
 	background-image: url("../img/icon-cart.svg");
 	background-repeat: no-repeat;
 	width: 15px;
 	height: 15px;
-	padding-left: 10px;
+	padding-left: 15px;
 }
 
-/* =================Средняя панель хедера ================*/
+/* =====Средняя панель хедера ================*/
 /* Стили для текста - начало */
 .header-page-title,
 .contact-information a,
@@ -104,6 +189,7 @@ a {
 
 .header-page-title {
 	font-size: 16px;
+	font-style: italic;
 	line-height: 23px;
 	font-weight: normal;
 	color: #ef505b;
@@ -114,6 +200,16 @@ a {
 	line-height: 21px;
 	font-weight: normal;
 	color: #ee3643;
+}
+
+.contact-information a::before {
+	display: inline-block;
+	content: " ";
+	background-image: url("../img/icon-phone.svg");
+	background-repeat: no-repeat;
+	width: 19px;
+	height: 19px;
+	padding-left: 40px;
 }
 
 .address {
@@ -147,6 +243,16 @@ a {
 
 .contact-information a {
 	border: 3px solid #ffffff;
+}
+
+.contact-information a {
+	display: block;
+	text-align: center;
+}
+
+.contact-information a {
+	width: 260px;
+	height: 40px;
 }
 
 .login-link a,
