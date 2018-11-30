@@ -15,6 +15,19 @@ body {
 a {
 	text-decoration: none;
 }
+/* Универсальный класс для скрытых эл-тов */
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+  	
+  	width: 1px;
+  	height: 1px;
+  	margin: -1px;
+  	border: 0;
+  	padding: 0;
+
+  	overflow: hidden;
+}
 
 /* =====Верхняя панель хедера ==================*/
 /* Стили для текста - начало */
@@ -40,10 +53,7 @@ a {
 	color: #ffffff;
 }
 /* Стили для текста - конец */
-/* Убрал скрытые заголовки */
-.visually-hidden {
-	display: none;
-}
+
 /* Фон верхней части хедера */
 .header-top-menu {
 	background-color: #293449;
