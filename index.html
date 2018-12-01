@@ -11,45 +11,43 @@
   </head>
   <body>
   	<header class="header"> <!--Задаем класс для последующей стилизации-->
-  		<div class="top-menu-wrapper"><!--Блок верхней панели хедера-->
-        <div class="header-top-menu">
-  				<a class="top-menu-logo logo-bottom" href="#" aria-label="Логотип главной страницы">Техномарт</a><!--Эта ссылка на гл. страницу-->
-          <form class="search" method="GET" action="https://echo.htmlacademy.ru">
-            <label class="visually-hidden" for="user-search">Поиск</label>
-            <input id="user-search" type="search" name="search" placeholder="Поиск:">
-          </form>
-  				<a class="bookmarks" href="#">Закладки</a>
-  				<a class="cart" href="#">Корзина</a>
-  				<a class="order" href="#">Офрмить заказ</a>
+      <div class="container"> <!--Блок центровщик шапки-->
+        <div class="top-menu-wrapper">
+          <div class="header-top-menu"><!--Блок верхней панели хедера-->
+            <a class="top-menu-logo logo-bottom" href="#" aria-label="Логотип главной страницы">Техномарт</a><!--Эта ссылка на гл. страницу-->
+            <form class="search" method="GET" action="https://echo.htmlacademy.ru">
+              <label class="visually-hidden" for="user-search">Поиск</label>
+              <input id="user-search" type="search" name="search" placeholder="Поиск:">
+            </form>
+            <a class="bookmarks" href="#">Закладки</a>
+            <a class="cart" href="#">Корзина</a>
+            <a class="order" href="#">Офрмить заказ</a>
+          </div><!--Блок верхней панели закончен-->
         </div>
-  		</div><!--Блок верхней панели закончен-->
-  		<div class="header-info-wrapper">
         <div class="header-info"><!--Блок средней панели шапки сайта-->
           <h1 class="header-page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1><!--Далее шрифт уменьшу с помощью стилей CSS-->
-          <div class="contacts">
-            <p class="contact-information">
-  				    <a href="tel:+1234567890" aria-label="Номер телефона компании">+7 (812) 555-05-55</a>
-            </p>
-            <p class="address" aria-label="Адрес компании">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          </div>
+          <p class="contact-information">
+            <a href="tel:+1234567890" aria-label="Номер телефона компании">+7 (812) 555-05-55</a>
+          </p>
+          <p class="address" aria-label="Адрес компании">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <ul class="user-navigation">
             <li class="login-link" aria-label="Войти в личный кабинет"><a href="#">Войти</a></li>
             <li class="registration" aria-label="Форма регистрации"><a href="#">Регистрация</a></li>
           </ul>
-        </div>          
-        <nav class="header-navigation" aria-label="Меню главнйо страницы"><!--Навигация в шапке сайта-->
-          <ul class="site-navigation">
-            <li><a href="#" aria-label="Главная страница сайта">Главная</a></li>
-            <li><a href="#" aria-label="Переход на страницу компании">Компания</a></li>
-            <li><a href="catalog.html" aria-label="Переход на страницу каталога">Каталог</a></li>
-            <li><a href="#" aria-label="Переход на страницу новостей">Новости</a></li>
-            <li><a href="#" aria-label="Переход на страницу спецпрдложений">Спецпредложения</a></li>
-            <li><a href="#" aria-label="Информация о доставке товаров">Доставка</a></li>
-            <li><a href="#" aria-label="Переход на страницу контактов">Контакты</a></li>
-          </ul>
-        </nav>
+          <nav class="header-navigation" aria-label="Меню главнйо страницы"><!--Навигация в шапке сайта-->
+            <ul class="site-navigation">
+              <li><a href="#" aria-label="Главная страница сайта">Главная</a></li>
+              <li><a href="#" aria-label="Переход на страницу компании">Компания</a></li>
+              <li><a href="catalog.html" aria-label="Переход на страницу каталога">Каталог</a></li>
+              <li><a href="#" aria-label="Переход на страницу новостей">Новости</a></li>
+              <li><a href="#" aria-label="Переход на страницу спецпрдложений">Спецпредложения</a></li>
+              <li><a href="#" aria-label="Информация о доставке товаров">Доставка</a></li>
+              <li><a href="#" aria-label="Переход на страницу контактов">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-  	</header>
+    </header>
   	<main class="main-content"><!--В этом блоке будет основной контент страницы-->
       <div class="container"> <!--Блок центровщик-->
   		  <section class="promo-block"><!-- Промо блок -->
@@ -117,7 +115,7 @@
         <section class="popular-items"><!-- Блок популярные товары -->
           <div class="popular-items-block">
             <h2 class="block-title">Популярные товары:</h2>
-            <a href="#" class="btn">Все популярные товары</a>
+            <a href="#" class="btn-popular-items">Все популярные товары</a>
           </div>
           <ul class="popular-items-list">
             <li class="popular-item">
@@ -198,9 +196,9 @@
         <section class="popular-company"><!-- Блок популярные компании -->
           <div class="popular-company-block">
             <h2 class="block-title">Популярные производители:</h2>
-            <a href="#" class="btn">Все производители</a>
+            <a href="#" class="btn-popular-company">Все производители</a>
           </div>
-          <ul class="popular-company">
+          <ul class="popular-company-list">
             <li class="brand-company"><a href="#"><img src="img/bosch.jpg" width="126" height="37" alt="Bosch"></a></li>
             <li class="brand-company"><a href="#"><img src="img/makita.jpg" width="123" height="40" alt="Makita"></a></li>
             <li class="brand-company"><a href="#"><img src="img/de-walt.jpg" width="146" height="44" alt="DeWalt"></a></li>
@@ -235,17 +233,19 @@
             </ul>
             <ul class="list-services">
               <li class="delivery-active">
-                <span class="delivery-active">Доставка</span>
+                <span class="delivery">Доставка</span>
                 <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
                 Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-                <img src="img/delivery.jpg" width="468" height="261" alt="Картинка в блоке">
+                <p class="image-activ">
+                  <img src="img/delivery.jpg" width="468" height="261" alt="Картинка в блоке">
+                </p>
               </li>
-              <li class="guaranty-active">
-                <span class="guaranty-active">Гарантия</span>
+              <li class="guaranty-active visually-hidden">
+                <span class="guaranty">Гарантия</span>
                 <p class="service-description">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
               </li>
-              <li class="credit-active">
-                <span class="credit-active">Кредит</span>
+              <li class="credit-active visually-hidden">
+                <span class="credit">Кредит</span>
                 <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
                 <a href="#" class="btn">Отправить заявку</a>
               </li>
@@ -262,7 +262,9 @@
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
   				  </ul>
-  				  <a class="btn-about-company" href="#">Подробнее о компании</a>
+            <p class="about-company">
+  				    <a class="btn-about-company" href="#">Подробнее о компании</a>
+            </p> 
           </div>
           <div class="right-column"><!--Правый блок адрес компании-->
             <h2 class="address-title">Контакты</h2>

@@ -16,7 +16,8 @@ a {
 	text-decoration: none;
 }
 
-/* Универсальный класс для скрытых эл-тов */
+/* Универсальный класс 
+для скрытых эл-тов */
 .visually-hidden {
 	position: absolute;
 	clip: rect(0 0 0 0);
@@ -37,14 +38,15 @@ body {
 	min-width: 1200px;
 	min-height: 3150px;
 }
-/*===Контейнер обертка===
-для верхней панели хедера*/
-.top-menu-wrapper {
-	width: 100%;
-	background-color: #293449;
+/*===Контейнер центровщик ===*/
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
 }
+
 /*========================*/
-/*==Логотип Техгомарт=====*/
+/*==Логотип Техномарт=====*/
 .logo-bottom {
 	text-align: center;
 }
@@ -54,17 +56,12 @@ body {
 	height: 42px;
 }
 /*=========================*/
-.header-top-menu,
-.top-menu-wrapper {
+.header-top-menu {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-/*Центровщик вехней панели*/
-.header-top-menu {
-	width: 940px;
-	margin: 0 auto;
-}
+
 /*=========================*/
 /*Кнопка Оформить заказ*/
 .order {
@@ -76,9 +73,8 @@ body {
 	height: 42px;
 }
 /*==========================*/
-
-.header-info,
-.header-info-wrapper {
+/*Сетка для блока*/
+.header-info {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -89,16 +85,46 @@ body {
 	width: 200px;
 	height: 160px;
 }
-
-.header-info {
-	width: 940px;
-	margin: 0 auto;
+/*===========================*/
+.user-navigation li {
+	display: inline-block;
 }
 
-.header-info-wrapper {
+.registration {
+	margin-right: 20px;
+}
+
+/*Главное меню хедера*/
+/*Сетка для блока*/
+.header-navigation {
+	margin-bottom: 60px;
+}
+
+.site-navigation {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.site-navigation {
+	width: 940px;
+	height: 55px;
+}
+
+
+/*Тянучка фона хедера 
+на ширину браузера*/
+.header {
 	width: 100%;
 	background-color: #f3f7f8;
 }
+
+/* Тянучка не работает!!!
+
+.top-menu-wrapper {
+	width: 100%;
+	background-color: #293449;
+}*/
 
 .header {
 	margin-bottom: 60px;
@@ -197,6 +223,7 @@ h3 {
 
 .contact-information a {
 	font-size: 21px;
+	font-style: italic;
 	line-height: 21px;
 	font-weight: normal;
 	color: #ee3643;
@@ -302,7 +329,7 @@ h3 {
 }
 
 
-/* ============Панель главной навигаци ==============*/
+/* ===Панель главной навигаци ==*/
 .header-navigation li {
 	list-style: none;
 	display: inline-block;
@@ -394,8 +421,67 @@ h3 {
 	list-style: none;
 }
 
-/* =========Основной контент гл. страница =====*/
-/* ==============Промо-блок ==================== */
+/* =====Основной контент гл. страница =====*/
+/* ========Промо-блок ======== */
+.company-offer {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.company-offer-item {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.materials {
+	margin-bottom: 20px;
+	order: 1;
+}
+
+.tools {
+	order: 2;
+}
+
+.mechanism {
+	order: 3;
+}
+
+.slider {
+	margin-bottom: 20px;
+	order: 4;
+}
+
+.discount {
+	order: 5;
+}
+
+.delivery {
+	order: 6;
+	margin-bottom: 53px;
+	/*Сделал времено чтобы оттолкнуть
+	нижний блок*/
+}
+
+.materials,
+.tools,
+.mechanism,
+.discount,
+.delivery {
+	width: 300px;
+	height: 123px;
+}
+
+.slider {
+	width: 620px;
+	height: 266px;
+	/*margin-bottom: 53px;*/
+}
+
+
+
 .company-offer {
 	list-style: none;
 }
@@ -494,7 +580,50 @@ h3 {
 	background-repeat: no-repeat;
 }
 
-/*==========Блок популярные товары =================*/
+/*=====Блок популярные товары ==*/
+/*Сетка для блока*/
+.popular-items-block {
+	display: flex;
+	justify-content: space-around;
+}
+
+.btn-popular-items,
+.btn-popular-company {
+	width: 253px;
+	height: 38px;
+}
+
+.popular-items-block {
+	margin-bottom: 20px;
+}
+
+.popular-items-list {
+	margin-bottom: 20px;
+}
+
+.popular-items-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.catalog-category,
+.catalog-item-title {
+	display: block;
+}
+
+.catalog-category,
+.catalog-item-title {
+	text-align: center;
+}
+
+/*===========================*/
+
 /* Общий фон всего блока */
 .popular-items-block {
 	background-color: #f9f5f0;
@@ -534,6 +663,10 @@ h3 {
 	line-height: 18px;
 	font-weight: normal;
 	text-transform: uppercase;
+}
+
+.popular-item {
+	border: 1px solid #eaeaea;
 }
 
 .item-buy {
@@ -578,13 +711,41 @@ h3 {
 	background-repeat: no-repeat;
 }
 
-/* ===================Блок популярные компании ==============*/
+/* ====Блок популярные компании ==*/
+/*Сетка для блока*/
+.popular-company-block {
+	display: flex;
+	justify-content: space-around;
+}
+
+.popular-company-list {
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+	flex-wrap: wrap;
+}
+
+.popular-company-block {
+	margin-bottom: 20px;
+}
+
+.popular-company {
+	margin-bottom: 85px;
+}
+
+
 /* Общий фон всего блока */
 .popular-company-block {
 	background-color: #f9f5f0;
 }
 
-.popular-company {
+.brand-company {
+	width: 220px;
+	height: 145px;
+	border: 1px solid #eaeaea;
+}
+
+.popular-company-list {
 	list-style: none;
 }
 /* Стили для текста - начало */
@@ -609,7 +770,43 @@ h3 {
 	background-color: #ee3643;
 }
 
-/* ====================Блок сервисы ======================*/
+/* =====Блок сервисы ========*/
+/*Сетка для блока*/
+.services-block h2,
+.services-block p {
+	margin: 0;
+	padding: 0;
+}
+
+.services-block {
+	margin-bottom: 82px;
+}
+
+.services {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.services {
+	width: 400px;
+	height: 105px;
+	padding-top: 63px;
+	padding-bottom: 63px;
+}
+
+.service-block-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.list-services {
+	width: 240px;
+	height: 183px;
+}
+
+
+
 /* Общий фон всего блока */
 .services-block {
 	background-color: #f4f8f9;
@@ -698,7 +895,23 @@ h3 {
 	background-color: #fb8a8d;
 }
 
-/*============Блок о компании и блок с адресом==========*/
+/*====Блок о компании и блок с адресом==========*/
+/*Сетка для блока*/
+.company-promo {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+
+.left-column {
+	width: 540px;
+}
+
+.right-column {
+	width: 310px;
+}
+/*===========================*/
+
 .company-promo .delivery {
 	list-style: none;
 }
@@ -740,7 +953,72 @@ h3 {
 	background-color: #ee3643;
 }
 
-/*================Футер - верх=======================*/
+/*=======Футер - верх=========*/
+/*Сетка для блока*/
+.footer-top {
+	display: flex;
+	justify-content: space-between; 
+}
+
+.footer-top-logo {
+	width: 220px;
+	height: 42px;
+	background-color: #ee3643;
+}
+
+.footer-user-navigation {
+	display: flex;
+	justify-content: space-between;
+	width: 550px;
+}
+
+.footer-middle {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-address {
+	width: 380px;
+}
+
+.footer-goods-company {
+	display: flex;
+	justify-content: space-between;
+	width: 540px;
+}
+
+.footer-bottom,
+.footer-contacts,
+.footer-contacts-mail,
+.footer-copyright {
+	margin: 0;
+}
+
+.footer-bottom {
+	display: flex;
+	padding: 30px 0;
+}
+
+.footer-contacts {
+	width: 235px;
+	margin-right: 160px;
+}
+
+.footer-social {
+	width: 135px;
+	margin-right: 118px;
+}
+
+.footer-contacts-mail {
+	width: 140px;
+}
+
+.footer-copyright {
+	width: 110px;
+	margin-left: auto;
+}
+
+
 .footer {
 	background-color: #32425c;
 }
