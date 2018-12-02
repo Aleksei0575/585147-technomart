@@ -11,8 +11,8 @@
   </head>
   <body>
   	<header class="header"> <!--Задаем класс для последующей стилизации-->
-      <div class="container"> <!--Блок центровщик шапки-->
-        <div class="top-menu-wrapper">
+      <div class="top-menu-wrapper"> <!--Тянучка верхней панели хедера-->
+        <div class="container"><!--Блок центровщик верхней панели хедера-->
           <div class="header-top-menu"><!--Блок верхней панели хедера-->
             <a class="top-menu-logo logo-bottom" href="#" aria-label="Логотип главной страницы">Техномарт</a><!--Эта ссылка на гл. страницу-->
             <form class="search" method="GET" action="https://echo.htmlacademy.ru">
@@ -24,29 +24,39 @@
             <a class="order" href="#">Офрмить заказ</a>
           </div><!--Блок верхней панели закончен-->
         </div>
-        <div class="header-info"><!--Блок средней панели шапки сайта-->
-          <h1 class="header-page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1><!--Далее шрифт уменьшу с помощью стилей CSS-->
-          <p class="contact-information">
-            <a href="tel:+1234567890" aria-label="Номер телефона компании">+7 (812) 555-05-55</a>
-          </p>
-          <p class="address" aria-label="Адрес компании">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <ul class="user-navigation">
-            <li class="login-link" aria-label="Войти в личный кабинет"><a href="#">Войти</a></li>
-            <li class="registration" aria-label="Форма регистрации"><a href="#">Регистрация</a></li>
-          </ul>
-          <nav class="header-navigation" aria-label="Меню главнйо страницы"><!--Навигация в шапке сайта-->
-            <ul class="site-navigation">
-              <li><a href="#" aria-label="Главная страница сайта">Главная</a></li>
-              <li><a href="#" aria-label="Переход на страницу компании">Компания</a></li>
-              <li><a href="catalog.html" aria-label="Переход на страницу каталога">Каталог</a></li>
-              <li><a href="#" aria-label="Переход на страницу новостей">Новости</a></li>
-              <li><a href="#" aria-label="Переход на страницу спецпрдложений">Спецпредложения</a></li>
-              <li><a href="#" aria-label="Информация о доставке товаров">Доставка</a></li>
-              <li><a href="#" aria-label="Переход на страницу контактов">Контакты</a></li>
+      </div>  
+      <div class="header-info-wrapper"><!--Блок средней панели шапки сайта-->
+        <div class="container">
+          <div class="header-info">
+            <h1 class="header-page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1><!--Далее шрифт уменьшу с помощью стилей CSS-->
+            <div class="contact">
+              <p class="contact-information">
+              <a href="tel:+1234567890" aria-label="Номер телефона компании">+7 (812) 555-05-55</a>
+              </p>
+              <p class="address" aria-label="Адрес компании">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </div>
+            <ul class="user-navigation">
+              <li class="login-link" aria-label="Войти в личный кабинет">
+                <a href="#">Войти</a>
+              </li>
+              <li class="registration" aria-label="Форма регистрации">
+                <a href="#">Регистрация</a>
+              </li>
             </ul>
-          </nav>
+            <nav class="header-navigation" aria-label="Меню главнйо страницы"><!--Навигация в шапке сайта-->
+              <ul class="site-navigation">
+                <li><a href="#" aria-label="Главная страница сайта">Главная</a></li>
+                <li><a href="#" aria-label="Переход на страницу компании">Компания</a></li>
+                <li><a href="catalog.html" aria-label="Переход на страницу каталога">Каталог</a></li>
+                <li><a href="#" aria-label="Переход на страницу новостей">Новости</a></li>
+                <li><a href="#" aria-label="Переход на страницу спецпрдложений">Спецпредложения</a></li>
+                <li><a href="#" aria-label="Информация о доставке товаров">Доставка</a></li>
+                <li><a href="#" aria-label="Переход на страницу контактов">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </div>
+      </div>    
     </header>
   	<main class="main-content"><!--В этом блоке будет основной контент страницы-->
       <div class="container"> <!--Блок центровщик-->
@@ -257,7 +267,7 @@
   				  <h2 class="company-title">КОМПАНИЯ «Техномарт»</h2>
   				  <p class="company-info">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкомномть на гастарбайтерах.</p>
   				  <p class="company-delivery">Мы можем доставить товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-  				  <ul class="delivery">
+  				  <ul class="delivery-company">
               <li>Деловые линии</li>
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>

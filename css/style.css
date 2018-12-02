@@ -76,14 +76,15 @@ body {
 /*Сетка для блока*/
 .header-info {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
 .header-page-title {
 	width: 200px;
-	height: 160px;
+	margin-top: 44px;
+    margin-bottom: 44px;
 }
 /*===========================*/
 .user-navigation li {
@@ -113,18 +114,17 @@ body {
 
 
 /*Тянучка фона хедера 
-на ширину браузера*/
+на ширину браузера и верхней 
+панели*/
 .header {
 	width: 100%;
 	background-color: #f3f7f8;
 }
 
-/* Тянучка не работает!!!
-
 .top-menu-wrapper {
 	width: 100%;
-	background-color: #293449;
-}*/
+	background-color: #293449
+}
 
 .header {
 	margin-bottom: 60px;
@@ -133,7 +133,6 @@ body {
 /* Сброс маргинов и паддиногов */
 .user-navigation,
 .site-navigation,
-.header-page-title,
 .company-offer,
 ul,
 h3 {
@@ -471,7 +470,6 @@ h3 {
 .discount,
 .delivery {
 	width: 300px;
-	height: 123px;
 }
 
 .slider {
@@ -912,7 +910,7 @@ h3 {
 }
 /*===========================*/
 
-.company-promo .delivery {
+.company-promo .delivery-company {
 	list-style: none;
 }
 /* Стили для текста - начало */
