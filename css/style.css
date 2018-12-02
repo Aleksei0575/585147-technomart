@@ -36,7 +36,6 @@ a {
 html,
 body {
 	min-width: 1200px;
-	min-height: 3150px;
 }
 /*===Контейнер центровщик ===*/
 .container {
@@ -422,48 +421,38 @@ h3 {
 
 /* =====Основной контент гл. страница =====*/
 /* ========Промо-блок ======== */
-.company-offer {
+/* ========Сетка ======== */
+.top-line {
+	display: flex;
+	justify-content: space-between;
+	/*align-items: center;*/
+}
+
+.top-line {
+	margin-bottom: 20px;
+}
+
+.bottom-line {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
-.company-offer-item {
+.cards-item {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.materials {
+.vertical-line .discount {
 	margin-bottom: 20px;
-	order: 1;
 }
 
-.tools {
-	order: 2;
-}
-
-.mechanism {
-	order: 3;
-}
-
-.slider {
-	margin-bottom: 20px;
-	order: 4;
-}
-
-.discount {
-	order: 5;
-}
-
-.delivery {
-	order: 6;
+.promo-block {
 	margin-bottom: 53px;
-/*Сделал времено чтобы оттолкнуть
-	нижний блок*/
 }
-
+/*===========================*/
+/*Параметры блоков*/
 .materials,
 .tools,
 .mechanism,
@@ -476,7 +465,6 @@ h3 {
 .slider {
 	width: 620px;
 	height: 266px;
-/*margin-bottom: 53px;*/
 }
 
 
@@ -724,6 +712,12 @@ h3 {
 	flex-wrap: wrap;
 }
 
+.brand-company {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .popular-company-block {
 	margin-bottom: 20px;
 }
@@ -742,6 +736,7 @@ h3 {
 	width: 220px;
 	height: 145px;
 	border: 1px solid #eaeaea;
+    margin-bottom: 20px;
 }
 
 .popular-company-list {
@@ -1027,8 +1022,8 @@ h3 {
 }
 
 .footer-copyright {
-	width: 110px;
-	margin-left: auto;
+	width: 130px;
+	margin-right: auto;
 }
 
 
@@ -1062,7 +1057,7 @@ h3 {
 	display: inline-block;
 }
 
-/*=================== Футер середина ===================*/
+/*======== Футер середина ================*/
 /* Стили для текста - начало */
 .footer-address {
 	font-family: "Cuprum", "Arial", sans-serif;
@@ -1084,8 +1079,9 @@ h3 {
 	display: inline-block;
 }
 
-/*==================== Нижняя часть футера ===================*/
-.footer-bottom {
+/*====== Нижняя часть футера ===================*/
+.footer-bottom-wrapper {
+	width: 100%;
 	background-color: #293449;
 }
 /* Стили для текста - начало */
@@ -1142,7 +1138,7 @@ h3 {
 	text-align: right;
 }
 
-.footer-contacts-mail p {
+.footer-contacts-mail span {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
@@ -1163,7 +1159,7 @@ h3 {
 	text-align: right;
 }
 
-.footer-copyright p {
+.footer-copyright span {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
