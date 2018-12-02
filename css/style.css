@@ -460,7 +460,7 @@ h3 {
 .delivery {
 	order: 6;
 	margin-bottom: 53px;
-	/*Сделал времено чтобы оттолкнуть
+/*Сделал времено чтобы оттолкнуть
 	нижний блок*/
 }
 
@@ -470,12 +470,13 @@ h3 {
 .discount,
 .delivery {
 	width: 300px;
+	height: 123px;
 }
 
 .slider {
 	width: 620px;
 	height: 266px;
-	/*margin-bottom: 53px;*/
+/*margin-bottom: 53px;*/
 }
 
 
@@ -795,7 +796,7 @@ h3 {
 
 .service-block-info {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .list-services {
@@ -806,7 +807,8 @@ h3 {
 
 
 /* Общий фон всего блока */
-.services-block {
+.services-block-wrapper {
+	width: 100%;
 	background-color: #f4f8f9;
 }
 /* Стили для текста блока выбора услуги - начало */
@@ -879,6 +881,19 @@ h3 {
 	line-height: 24px;
 	font-weight: normal;
 	color: #000000;
+}
+
+.delivery-active p::after {
+	display: inline-block;
+	content: "";
+	position: absolute;
+	z-index: 0;
+	background-image: url("../img/delivery.jpg");
+	background-repeat: no-repeat;
+	width: 468px;
+	height: 261px;
+	margin-left: 78px;
+	margin-top: -186px;
 }
 
 .credit-active a {
