@@ -370,13 +370,138 @@ h3 {
 	color: #000000;
 }
 
+.inner-page .header {
+	margin-bottom: 23px; 
+}
+/*Сетка для пагинатора*/
+.breadcrumbs {
+	padding: 0;
+  	margin: 0;
+  	margin-bottom: 24px;
+}
+
+.breadcrumbs {
+	display: flex;
+}
+
 .breadcrumbs,
 .pagination-list {
 	text-transform: uppercase;
 }
+/*Сетка для пагинатора*/
+.inner-page .title {
+	height: 89px;
+	margin-bottom: 20px;
+}
+
+
 /* Убрал маркеры */
 .breadcrumbs li {
 	list-style: none;
+}
+
+.breadcrumbs li:first-child::before {
+	display: inline-block;
+	content: "";
+	background-image: url(../img/icon-home.svg);
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 12px;
+	padding-left: 10px;
+}
+
+/*Сетка для фильтра и каталога*/
+/*Сетка фильтра */
+/*===========================*/
+.filter-block {
+	width: 220px;
+	margin-right: 20px;
+}
+
+.catalog-columns {
+	display: flex;
+}
+
+/*Сетка для сортировки*/
+/*========================*/
+.sort-block {
+	width: 700px;
+	margin-bottom: 20px;
+}
+
+.sort-block h2,
+.filter-block h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.sort-block {
+	display: flex;
+	justify-content: space-between;
+}	
+
+.sort-panel {
+	display: flex;
+	justify-content: space-around;
+}
+/*=============================*/
+
+
+/*Сетка для каталога*/
+/*============================*/
+.catalog-block {
+	margin: 0;
+	padding: 0;
+}
+
+.catalog-block {
+	width: 700px;
+	margin-bottom: 33px;
+}
+
+.catalog-item-list {
+	margin: 0;
+	padding: 0;
+}
+
+.catalog-item-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.catalog-item {
+	width: 220px;
+    margin-bottom: 20px;
+	border: 1px solid #eaeaea;
+}
+
+.catalog-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/*===========================*/
+
+/*Сетка пагинатора*/
+/*=========================*/
+.pagination-list {
+	margin: 0;
+	padding: 0;
+}
+
+.pagination-list {
+	margin-bottom: 62px;
+}
+
+.pagination-list {
+	display: flex;
+}
+
+.pagination-list li {
+	width: 15px;
+	margin-right: 10px;
 }
 
 .title {
@@ -389,6 +514,10 @@ h3 {
 	line-height: 30px;
 	font-weight: normal;
 	color: #32425c;
+}
+
+.filter-block fieldset {
+	border: none;
 }
 
 .filter legend {
@@ -413,10 +542,47 @@ h3 {
 	line-height: 18px;
 }
 
+.pagination-list a {
+	color: #000000;
+}
+
+.pagination-btn {
+	border: 1px solid #eaeaea;
+}
+
+.pagination-btn-activ {
+	border: 1px solid #eaeaea;
+	background-color: #ee3643;
+}
+
 .sort-panel li,
 .pagination-list,
 .filter-option {
 	list-style: none;
+}
+
+.info-items-block {
+	height: 260px;
+}
+
+.info .info-block-title {
+	margin: 0;
+	padding: 0;
+}
+
+.info .info-block-title {
+	margin-bottom: 35px;
+	padding-top: 60px;
+}
+
+.info .info-item {
+	margin: 0;
+	padding: 0;
+}
+
+.info-block-wrapper {
+	width: 100%;
+	background-color: #f4f8f9;
 }
 
 /* =====Основной контент гл. страница =====*/
@@ -466,8 +632,6 @@ h3 {
 	width: 620px;
 	height: 266px;
 }
-
-
 
 .company-offer {
 	list-style: none;
@@ -653,6 +817,7 @@ h3 {
 }
 
 .popular-item {
+	width: 220px;
 	border: 1px solid #eaeaea;
 }
 
@@ -807,7 +972,8 @@ h3 {
 	background-color: #f4f8f9;
 }
 /* Стили для текста блока выбора услуги - начало */
-.services .services-block-title {
+.services .services-block-title,
+.info-block-title {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	line-height: 30px;
@@ -816,7 +982,8 @@ h3 {
 	text-transform: uppercase;
 }
 
-.services .slogan {
+.services .slogan,
+.info .info-item {
 	font-family: "PT Sans", "Arial", sans-serif;;
 	font-size: 13px;
 	line-height: 24px;
