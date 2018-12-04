@@ -16,20 +16,31 @@ a {
 	text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Универсальный класс 
 для скрытых эл-тов */
-.visually-hidden {
-	position: absolute;
-	clip: rect(0 0 0 0);
-  	
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  	position: absolute;
+
   	width: 1px;
   	height: 1px;
   	margin: -1px;
   	border: 0;
   	padding: 0;
 
+  	white-space: nowrap;
+
+  	clip-path: inset(100%);
+  	clip: rect(0 0 0 0);
   	overflow: hidden;
 }
+
 
 /* =====Верхняя панель хедера ==================*/
 /* Сеточные стили */
@@ -46,14 +57,28 @@ body {
 
 /*========================*/
 /*==Логотип Техномарт=====*/
-.logo-bottom {
+.logo-button {
+	display: inline-block;
+	margin-right: 17px;
+	padding: 9px 50px;
+	min-width: 120px;
 	text-align: center;
+	vertical-align: middle;
+	
+	background-color: #ee3643;
+	box-shadow: 0px 6px 0px 1px #b52933;
 }
 
-.logo-bottom {
-	width: 220px;
-	height: 42px;
+.search {
+	margin: 0;
+	padding: 0;
 }
+
+.search {
+	
+}
+
+
 /*=========================*/
 .header-top-menu {
 	display: flex;
@@ -172,7 +197,7 @@ h3 {
 	background-color: #63a63e;
 }
 /* Подключение фоновых картинок */
-.search::before {
+/*.search::before {
 	display: inline-block;
 	content: " ";
 	background-image: url(../img/icon-search.svg);
@@ -180,7 +205,7 @@ h3 {
 	width: 15px;
 	height: 15px;
 	padding-left: 15px;
-}
+}*/
 
 .bookmarks::before {
 	display: inline-block;
@@ -1133,12 +1158,6 @@ h3 {
 .footer-top {
 	display: flex;
 	justify-content: space-between; 
-}
-
-.footer-top-logo {
-	width: 220px;
-	height: 42px;
-	background-color: #ee3643;
 }
 
 .footer-user-navigation {
