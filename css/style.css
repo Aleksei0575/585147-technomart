@@ -59,14 +59,13 @@ body {
 /*==Логотип Техномарт=====*/
 .logo-button {
 	display: inline-block;
-	margin-right: 17px;
 	padding: 9px 50px;
 	min-width: 120px;
 	text-align: center;
 	vertical-align: middle;
 	
 	background-color: #ee3643;
-	box-shadow: 0px 6px 0px 1px #b52933;
+	box-shadow: 0px 5px 0px 1px #b52933;
 }
 
 .search {
@@ -74,9 +73,9 @@ body {
 	padding: 0;
 }
 
-.search {
-	
-}
+/*.search {
+	padding-left: 30px;
+}*/
 
 
 /*=========================*/
@@ -84,7 +83,88 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
+
+/*.left-menu {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}*/
+
+/*.right-menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}*/
+
+.search-button {
+	background-image: url("../img/icon-search.svg");
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+	background-color: transparent;
+	border: none;
+}
+
+/*.search-button:active {
+	background-image: url("../img/icon-search-active.svg");
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+	z-index: 1;
+}*/
+
+.search {
+	position: relative;
+}
+
+input[type="search"] {
+	background-color: transparent;
+	border: none;
+	min-width: 270px;
+	height: 42px;
+	color: red;
+}
+
+input[placeholder] {
+	padding-left: 48px;
+}
+
+.search-button {
+	position: absolute;
+	top: 12px;
+	left: 17px;
+	margin-right: 15px;
+}
+
+/*input[type="search"] {
+	position: relative;
+	z-index: 1;
+	left: 17px;
+	background-color: transparent;
+	border: none;
+	min-width: 270px;
+	height: 42px;
+}*/
+
+.user-items {
+	margin-left: auto;
+}
+
+/*.search::before {
+	display: inline-block;
+	content: "";
+	position: absolute;
+	background-image: url(../img/icon-search.svg);
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+	background-color: #ff0000;
+
+	padding-left: 15px;
+}*/
+
 
 /*=========================*/
 /*Кнопка Оформить заказ*/
@@ -207,7 +287,7 @@ h3 {
 	padding-left: 15px;
 }*/
 
-.bookmarks::before {
+/*.bookmarks::before {
 	display: inline-block;
 	content: " ";
 	background-image: url("../img/icon-bookmark.svg");
@@ -215,9 +295,9 @@ h3 {
 	width: 14px;
 	height: 16px;
 	padding-left: 15px;
-}
+}*/
 
-.cart::before {
+/*.cart::before {
 	display: inline-block;
 	content: " ";
 	background-image: url("../img/icon-cart.svg");
@@ -225,7 +305,7 @@ h3 {
 	width: 15px;
 	height: 15px;
 	padding-left: 15px;
-}
+}*/
 
 /* =====Средняя панель хедера ================*/
 /* Стили для текста - начало */
