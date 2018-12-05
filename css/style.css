@@ -59,8 +59,11 @@ body {
 /*==Логотип Техномарт=====*/
 .logo-button {
 	display: inline-block;
-	padding: 9px 50px;
-	min-width: 120px;
+	padding-top: 9px;
+    padding-bottom: 8px;
+    padding-left: 50px;
+    padding-right: 48px;
+	min-width: 122px;
 	text-align: center;
 	vertical-align: middle;
 	
@@ -133,7 +136,7 @@ input[placeholder] {
 
 .user-items .bookmarks {
 	position: relative;
-  	margin-right: 41px;
+  	margin-right: 42px;
   	padding-left: 28px;
 }
 
@@ -203,9 +206,6 @@ input[placeholder] {
 	margin-left: auto;
 }
 /*=========================*/
-/*Состояния элементов*/
-
-
 
 /*==========================*/
 /*Сетка для блока*/
@@ -218,8 +218,10 @@ input[placeholder] {
 
 .header-page-title {
 	width: 200px;
-	margin-top: 44px;
-    margin-bottom: 44px;
+    margin-top: 49px;
+    margin-bottom: 40px;
+    margin-left: 53px;
+    margin-right: 40px;
 }
 /*===========================*/
 .user-navigation li {
@@ -238,13 +240,21 @@ input[placeholder] {
 
 .site-navigation {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
 .site-navigation {
 	width: 940px;
 	height: 55px;
+}
+
+.site-navigation {
+	box-shadow: 0px 5px #293449;
+}
+
+.site-navigation li:nth-child(4) {
+	margin-right: 2px;
 }
 
 
@@ -307,36 +317,7 @@ h3 {
 .order {
 	background-color: #63a63e;
 }
-/* Подключение фоновых картинок */
-/*.search::before {
-	display: inline-block;
-	content: " ";
-	background-image: url(../img/icon-search.svg);
-	background-repeat: no-repeat;
-	width: 15px;
-	height: 15px;
-	padding-left: 15px;
-}*/
 
-/*.bookmarks::before {
-	display: inline-block;
-	content: " ";
-	background-image: url("../img/icon-bookmark.svg");
-	background-repeat: no-repeat;
-	width: 14px;
-	height: 16px;
-	padding-left: 15px;
-}*/
-
-/*.cart::before {
-	display: inline-block;
-	content: " ";
-	background-image: url("../img/icon-cart.svg");
-	background-repeat: no-repeat;
-	width: 15px;
-	height: 15px;
-	padding-left: 15px;
-}*/
 
 /* =====Средняя панель хедера ================*/
 /* Стили для текста - начало */
@@ -357,20 +338,10 @@ h3 {
 
 .contact-information a {
 	font-size: 21px;
-	font-style: italic;
+	font-style: normal;
 	line-height: 21px;
 	font-weight: normal;
 	color: #ee3643;
-}
-
-.contact-information a::before {
-	display: inline-block;
-	content: " ";
-	background-image: url("../img/icon-phone.svg");
-	background-repeat: no-repeat;
-	width: 19px;
-	height: 19px;
-	padding-left: 40px;
 }
 
 .address {
@@ -402,8 +373,16 @@ h3 {
 	background-color: #f3f7f8;
 }
 
-.contact-information a {
-	border: 3px solid #ffffff;
+.contact .contact-information {
+	margin: 0;
+}
+
+.contact .contact-information {
+	margin-top: 8px;
+    margin-right: 35px;
+    margin-bottom: 5px;
+    border: 3px solid #ffffff;
+    margin-left: 26px;
 }
 
 .contact-information a {
@@ -411,17 +390,112 @@ h3 {
 	text-align: center;
 }
 
-.contact-information a {
-	width: 260px;
-	height: 40px;
+.contact-information {
+	width: 252px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 13px;
 }
 
-.login-link a,
-.registration a {
+.contact-information a {
+	position: relative;
+    padding-left: 33px;
+}
+
+.contact-information a::before {
+	content: "";
+	
+	position: absolute;
+	top: 1px;
+	left: 13px;
+	
+	width: 19px;
+	height: 19px;
+	
+	background-image: url("../img/icon-phone.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	border-color: red;
+}
+
+.contact .address {
+	margin: 0;
+	margin-left: 37px;
+}
+
+.user-navigation li {
+	margin: 0;
+}
+
+.user-navigation a {
+	color: #000000;
+}
+
+.user-navigation .login-link {
+	display: inline-block;
+	padding-top: 10px;
+	padding-right: 22px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+    min-width: 59px;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 4px;
+	
 	background-color: #ffffff;
 }
 
+.user-navigation {
+	margin-left: auto;
+	margin-bottom: 20px;
+}
+
+.user-navigation .registration {
+	display: inline-block;
+	padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+	min-width: 100px;
+	text-align: center;
+	vertical-align: middle;
+	
+	background-color: #ffffff;
+}
+
+.user-navigation .login-link {
+	position: relative;
+}
+
 .login-link::before {
+  content: "";
+  
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  
+  width: 19px;
+  height: 19px;
+  
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
+  opacity: 0.3;
+}
+
+.login-link a:hover,
+.registration a:hover {
+	color: #ee3643;
+}
+
+.login-link a:active,
+.registration a:active {
+	color: #cacaca;
+}
+
+/*.login-link::before {
 	display: inline-block;
 	content: "";
 	background-image: url(../img/icon-login.svg);
@@ -431,11 +505,11 @@ h3 {
 	padding-left: 10px;
 	padding-bottom: 2px;
 	background-color: #ffffff;
-}
+}*/
 
-.user-login {
+/*.user-login {
 	background-color: #ffffff;
-}
+}*/
 
 .user-login::before {
 	display: inline-block;
