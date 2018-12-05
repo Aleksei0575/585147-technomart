@@ -244,6 +244,12 @@ input[placeholder] {
 	align-items: center;
 }
 
+.site-navigation a {
+	display: block;
+	padding: 18px 6px;
+  	vertical-align: middle;
+}
+
 .site-navigation {
 	width: 940px;
 	height: 55px;
@@ -253,10 +259,10 @@ input[placeholder] {
 	box-shadow: 0px 5px #293449;
 }
 
-.site-navigation li:nth-child(4) {
-	margin-right: 2px;
+.site-navigation a:hover,
+.site-navigation a:focus {
+	background-color: #293449;
 }
-
 
 /*Тянучка фона хедера 
 на ширину браузера и верхней 
@@ -495,7 +501,7 @@ h3 {
 	color: #cacaca;
 }
 
-/*.login-link::before {
+.login-link::before {
 	display: inline-block;
 	content: "";
 	background-image: url(../img/icon-login.svg);
@@ -505,7 +511,7 @@ h3 {
 	padding-left: 10px;
 	padding-bottom: 2px;
 	background-color: #ffffff;
-}*/
+}
 
 /*.user-login {
 	background-color: #ffffff;
@@ -553,11 +559,6 @@ h3 {
 
 .header-navigation {
 	background-color: #32425c;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
-	background-color: #293449;
 }
 /* ==================================== */
 
@@ -806,6 +807,7 @@ h3 {
 
 .top-line {
 	margin-bottom: 20px;
+	padding-top: 4px;
 }
 
 .bottom-line {
@@ -814,11 +816,11 @@ h3 {
 	flex-wrap: wrap;
 }
 
-.cards-item {
+/*.cards-item {
 	display: flex;
     justify-content: space-around;
     align-items: center;
-}
+}*/
 
 .vertical-line .discount {
 	margin-bottom: 20px;
@@ -827,6 +829,42 @@ h3 {
 .promo-block {
 	margin-bottom: 53px;
 }
+
+.cards-item .btn {
+	display: inline-block;
+	padding-top: 10px;
+    padding-right: 23px;
+    padding-bottom: 10px;
+    padding-left: 23px;
+	min-width: 89px;
+	text-align: center;
+	vertical-align: middle;
+	
+	background-color: #e5e5e5;
+}
+
+.materials {
+	position: relative;
+}
+
+.materials p::after {
+  content: "";
+  
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  
+  width: 44px;
+  height: 65px;
+  
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
+  /*opacity: 0.3;*/
+}
+
+
 /*===========================*/
 /*Параметры блоков*/
 .materials,
@@ -836,6 +874,15 @@ h3 {
 .delivery {
 	width: 300px;
 	height: 123px;
+}
+
+.cards-item h3 {
+	margin-top: 21px;
+    margin-left: 23px;
+}
+
+.cards-item .btn {
+	margin-left: 24px;
 }
 
 .slider {
@@ -861,6 +908,8 @@ h3 {
 	line-height: 18px;
 	font-weight: normal;
 	color: #ffffff;
+	
+	text-transform: uppercase;
 }
 /* Стили для текста - конец */
 /* Здесь фоны и состояния для блочков товаров и услуг */
