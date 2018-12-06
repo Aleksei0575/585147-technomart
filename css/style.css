@@ -1232,13 +1232,24 @@ h3 {
 /*Сетка для блока*/
 .popular-items-block {
 	display: flex;
-	justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-left: 28px;
+    padding-top: 5px;
+    padding-right: 23px;
 }
 
 .btn-popular-items,
 .btn-popular-company {
-	width: 253px;
-	height: 38px;
+	display: inline-block;
+    padding: 11px 55px;
+    min-width: 111px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ee3643;
+    border-radius: 3px;
+    /* cursor: pointer; */
 }
 
 .popular-items-block {
@@ -1254,7 +1265,8 @@ h3 {
 	justify-content: space-between;
 }
 
-.card-item {
+.card-item,
+.popular-item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1282,6 +1294,7 @@ h3 {
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: normal;
+	text-transform: uppercase;
 	color: #32425c;
 }
 
