@@ -258,10 +258,14 @@ input[placeholder] {
 .site-navigation {
 	box-shadow: 0px 5px #293449;
 }
-
+/*Состояния элементов*/
 .site-navigation a:hover,
 .site-navigation a:focus {
 	background-color: #293449;
+}
+
+.site-navigation a:active {
+	background-color: #1d2739;
 }
 
 /*Тянучка фона хедера 
@@ -882,13 +886,13 @@ h3 {
   	background-repeat: no-repeat;
   	background-position: 0 0;
 }
-/*ПРОДОЛЖАТЬ ОТСЮДА*/
+
 .mechanism p::after {
 	content: "";
   
   	position: absolute;
-  	bottom: 20px;
-  	right: 10px;
+  	bottom: 30px;
+  	right: 31px;
   
   	width: 78px;
   	height: 62px;
@@ -902,8 +906,8 @@ h3 {
 	content: "";
   
   	position: absolute;
-  	bottom: 20px;
-  	right: 10px;
+  	bottom: 25px;
+  	right: 45px;
   
   	width: 59px;
   	height: 72px;
@@ -917,8 +921,8 @@ h3 {
 	content: "";
   
   	position: absolute;
-  	bottom: 20px;
-  	right: 10px;
+  	bottom: 28px;
+  	right: 31px;
   
   	width: 78px;
   	height: 63px;
@@ -941,8 +945,8 @@ h3 {
 }
 
 .cards-item h3 {
-	margin-top: 21px;
-    margin-left: 23px;
+	padding-top: 21px;
+    padding-left: 23px;
 }
 
 .cards-item .btn {
@@ -1038,6 +1042,10 @@ h3 {
 	line-height: 24px;
 	font-weight: normal;
 	color: #ffffff;
+}
+
+.slider-list {
+	list-style: none;
 }
 
 .slider a {
