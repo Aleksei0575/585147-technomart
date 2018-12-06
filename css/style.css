@@ -1102,6 +1102,20 @@ h3 {
 	background-color: #ba2732;
 }
 
+.slider-controls label {
+	display: inline-block;
+	width: 10px;
+  	height: 10px;
+  	margin-right: 10px;
+  	
+  	vertical-align: top;
+  	
+  	background-color: transparent;
+  	border: 2px solid #ffffff;
+  	border-radius: 50%;
+  	cursor: pointer;
+}
+
 /* Стили для текста - конец */
 /* Подключил фоновое изображение */
 .slider {
