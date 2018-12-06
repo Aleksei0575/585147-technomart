@@ -1069,6 +1069,10 @@ h3 {
 	margin: 0;
 }
 
+.slide {
+  display: none;
+}
+
 .slide-title {
 	width: 620px;
 	margin-left: 24px;
@@ -1102,6 +1106,15 @@ h3 {
 	background-color: #ba2732;
 }
 
+.slider-controls {
+  position: absolute;
+  bottom: 35px;
+  right: 295px;
+  z-index: 20;
+  
+  font-size: 0;
+}
+
 .slider-controls label {
 	display: inline-block;
 	width: 10px;
@@ -1114,6 +1127,11 @@ h3 {
   	border: 2px solid #ffffff;
   	border-radius: 50%;
   	cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-list #slide1,
+#btn-2:checked ~ .slider-list #slide2 {
+  display: block;
 }
 
 /* Стили для текста - конец */
