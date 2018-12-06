@@ -1055,6 +1055,8 @@ h3 {
 /*Слайдер и его стили*/
 /*стиль для обертки слайдера*/
 .slider {
+	width: 620px;
+
 	position: relative;
 	/*text-align: center;*/
 }
@@ -1081,11 +1083,13 @@ h3 {
 
 .slide-description {
 	margin-left: 24px;
+	padding-bottom: 122px;
 }
 
 .slider-btn {
 	display: inline-block;
 	margin-left: 24px;
+	margin-bottom: 23px;
 	padding: 11px 44px;
 	
 	/*min-width: 89px;*/
@@ -1107,12 +1111,68 @@ h3 {
 }
 
 .slider-controls {
-  position: absolute;
-  bottom: 35px;
-  right: 295px;
-  z-index: 20;
+  	position: absolute;
+  	bottom: 27px;
+  	right: 278px;
+  	z-index: 20;
   
-  font-size: 0;
+  	font-size: 0;
+}
+
+.arrow-left:before {
+	content: "";
+    position: absolute;
+    z-index: 20;
+    left: 22px;
+    top: 123px;
+    transform: rotate(-45deg);
+    display: block;
+    width: 28px;
+    height: 4px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.arrow-left:after {
+	content: "";
+    position: absolute;
+    z-index: 20;
+    left: 22px;
+    top: 140px;
+    transform: rotate(45deg);
+    display: block;
+    width: 28px;
+    height: 4px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.arrow-right:before {
+	content: "";
+    position: absolute;
+    z-index: 20;
+    right: 21px;
+    top: 123px;
+    transform: rotate(45deg);
+    display: block;
+    width: 28px;
+    height: 4px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.arrow-right:after {
+	content: "";
+    position: absolute;
+    z-index: 20;
+    right: 21px;
+    top: 140px;
+    transform: rotate(-45deg);
+    display: block;
+    width: 28px;
+    height: 4px;
+    background: #ffffff;
+    cursor: pointer;
 }
 
 .slider-controls label {
@@ -1127,6 +1187,14 @@ h3 {
   	border: 2px solid #ffffff;
   	border-radius: 50%;
   	cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-list {
+  background-image: url("../img/slider.jpg");
+}
+
+#btn-2:checked ~ .slider-list {
+  background-image: url("../img/slider2.jpg");
 }
 
 #btn-1:checked ~ .slider-list #slide1,
@@ -1146,10 +1214,10 @@ h3 {
 
 /* Стили для текста - конец */
 /* Подключил фоновое изображение */
-.slider {
+/*.slider {
 	background-image: url(../img/slider.jpg);
 	background-repeat: no-repeat;
-}
+}*/
 
 /*=====Блок популярные товары ==*/
 /*Сетка для блока*/
