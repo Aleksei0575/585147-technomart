@@ -1054,11 +1054,19 @@ h3 {
 
 /*Слайдер и его стили*/
 /*стиль для обертки слайдера*/
+
+.slider::after {
+	content: "";
+  	visibility: hidden;
+}
+
+.slider::after {
+	background-image: url("../img/slider2.jpg");
+}
+
 .slider {
 	width: 620px;
-
 	position: relative;
-	/*text-align: center;*/
 }
 /*дефолтные стили - сброс*/
 .slider-list {
@@ -1083,16 +1091,17 @@ h3 {
 
 .slide-description {
 	margin-left: 24px;
-	padding-bottom: 122px;
+	padding-bottom: 125px;
 }
 
 .slider-btn {
 	display: inline-block;
-	margin-left: 24px;
-	margin-bottom: 23px;
-	padding: 11px 44px;
 	
-	/*min-width: 89px;*/
+	margin-left: 27px;
+	margin-bottom: 20px;
+	padding: 11px 44px;
+	min-width: 105px;
+	
 	text-align: center;
 	vertical-align: middle;
 	
@@ -1112,14 +1121,14 @@ h3 {
 
 .slider-controls {
   	position: absolute;
-  	bottom: 27px;
-  	right: 278px;
+  	bottom: 23px;
+  	right: 286px;
   	z-index: 20;
   
   	font-size: 0;
 }
 
-.arrow-left:before {
+.arrow-left::before {
 	content: "";
     position: absolute;
     z-index: 20;
@@ -1133,7 +1142,7 @@ h3 {
     cursor: pointer;
 }
 
-.arrow-left:after {
+.arrow-left::after {
 	content: "";
     position: absolute;
     z-index: 20;
@@ -1147,7 +1156,7 @@ h3 {
     cursor: pointer;
 }
 
-.arrow-right:before {
+.arrow-right::before {
 	content: "";
     position: absolute;
     z-index: 20;
@@ -1161,7 +1170,7 @@ h3 {
     cursor: pointer;
 }
 
-.arrow-right:after {
+.arrow-right::after {
 	content: "";
     position: absolute;
     z-index: 20;
@@ -1177,9 +1186,9 @@ h3 {
 
 .slider-controls label {
 	display: inline-block;
-	width: 10px;
-  	height: 10px;
-  	margin-right: 10px;
+	width: 8px;
+  	height: 8px;
+  	margin-right: 8px;
   	
   	vertical-align: top;
   	
