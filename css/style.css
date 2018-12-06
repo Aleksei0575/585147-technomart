@@ -1134,6 +1134,16 @@ h3 {
   display: block;
 }
 
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
+  background-color: #ee3643;
+}
+
+#btn-1:not(:checked) ~ .slider-controls label[for="btn-1"],
+#btn-2:not(:checked) ~ .slider-controls label[for="btn-2"] {
+  background-color: #ffffff;
+}
+
 /* Стили для текста - конец */
 /* Подключил фоновое изображение */
 .slider {
