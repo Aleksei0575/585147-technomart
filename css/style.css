@@ -1279,11 +1279,9 @@ h3 {
     position: relative;
     display: inline-block;
     width: 220px;
-    /*margin-right: 20px;
-    margin-bottom: 20px;*/
+    
     border: 1px solid #eaeaea;
-    /*line-height: 20px;
-    font-weight: bold;*/
+ 
     text-align: center;
 }
 
@@ -1481,25 +1479,6 @@ h3 {
 .item-discount a {
 	color: #ffffff;
 }
-/* Стили для текста - конец */
-/* Фоновые стили элементов блока */
-/*.popular-items-block a {
-	background-color: #ee3643;
-}*/
-
-/*.popular-items-list,
-.catalog-item-list {
-	list-style: none;
-}*/
-
-/*.item-buy {
-	background-color: #63a63e;
-}*/
-
-/*.item-discount {
-	background-image: url(../img/red-button.svg);
-	background-repeat: no-repeat;
-}*/
 
 /* ====Блок популярные компании ==*/
 /*Сетка для блока*/
@@ -1530,7 +1509,12 @@ h3 {
 }
 
 .popular-company {
-	margin-bottom: 85px;
+	margin-bottom:58px;
+}
+
+.brand-company:hover {
+	box-shadow: -2px 1px 15px 0px #a9adb5,
+				2px 15px 25px 0px #a9adb5;
 }
 
 
@@ -1693,7 +1677,7 @@ h3 {
 	content: "";
 	position: absolute;
 	z-index: 0;
-	background-image: url("../img/delivery.jpg");
+	background-image: url("../img/delivery.png");
 	background-repeat: no-repeat;
 	width: 468px;
 	height: 261px;
