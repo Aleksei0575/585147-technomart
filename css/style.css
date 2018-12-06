@@ -1030,7 +1030,7 @@ h3 {
 .slider .slide-title {
 	font-family: "Cuprum", "Arial", sans-serif;;
 	font-size: 36px;
-	line-height: 36px;
+	line-height: 30px;
 	font-weight: bold;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -1044,10 +1044,6 @@ h3 {
 	color: #ffffff;
 }
 
-.slider-list {
-	list-style: none;
-}
-
 .slider a {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
@@ -1055,6 +1051,57 @@ h3 {
 	font-weight: normal;
 	color: #ffffff;
 }
+
+/*Слайдер и его стили*/
+/*стиль для обертки слайдера*/
+.slider {
+	position: relative;
+	/*text-align: center;*/
+}
+/*дефолтные стили - сброс*/
+.slider-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.slide-description {
+	margin: 0;
+}
+
+.slide-title {
+	width: 620px;
+	margin-left: 24px;
+	padding-top: 27px;
+}
+
+.slide-description {
+	margin-left: 24px;
+}
+
+.slider-btn {
+	display: inline-block;
+	margin-left: 24px;
+	padding: 11px 44px;
+	
+	/*min-width: 89px;*/
+	text-align: center;
+	vertical-align: middle;
+	
+	background-color: #ee3643;
+	border-radius: 3px;
+	
+	cursor: pointer;
+}
+
+.slider-btn:hover {
+	background-color: #ca2c37;
+}
+
+.slider-btn:active {
+	background-color: #ba2732;
+}
+
 /* Стили для текста - конец */
 /* Подключил фоновое изображение */
 .slider {
