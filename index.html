@@ -232,34 +232,35 @@
               </div>
               <div class="service-block-info">
                 <h3 class="visually-hidden">Выбор сервиса компании</h3>
+                <input class="input-radio visually-hidden" type="radio" name="selected-service" id="delivery" checked>
+                <input class="input-radio visually-hidden" type="radio" name="selected-service" id="guaranty">
+                <input class="input-radio visually-hidden" type="radio" name="selected-service" id="credit">
                 <ul class="list-services">
-                  <li class="delivery-selected-active"><!--Блок выбора сервиса-->
-                    <input class="input-radio" type="radio" name="selected-service" id="delivery" checked><!--Указал одинаковое имя для радиокнопок-->
-                  <label for="delivery">Доставка</label>
+                  <li class="delivery-active"><!--Блок выбора сервиса-->
+                    <label for="delivery">Доставка</label>
                   </li>
-                <li class="guaranty-selected-active">
-                      <input class="input-radio" type="radio" name="selected-service" id="guaranty">
+                  <li class="guaranty-active">
                     <label for="guaranty">Гарантия</label>
                   </li>
-                  <li class="credit-selected-active">
-                    <input class="input-radio" type="radio" name="selected-service" id="credit">
+                  <li class="credit-active">
                     <label for="credit">Кредит</label>
                   </li>
                 </ul>
-                <ul class="list-services">
-                  <li class="delivery-active">
-                    <span class="delivery">Доставка</span>
-                    <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+
+                <ul class="service">
+                  <li class="delivery-active slide" id="slide1">
+                    <span class="service-title">Доставка</span>
+                    <p class="service-description">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
                   </li>
-                  <li class="guaranty-active visually-hidden">
-                    <span class="guaranty">Гарантия</span>
-                    <p class="service-description">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                  <li class="guaranty-active slide" id="slide2">
+                    <span class="service-title">Гарантия</span>
+                    <p class="service-description">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
                   </li>
-                  <li class="credit-active visually-hidden">
-                    <span class="credit">Кредит</span>
-                    <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-                    <a href="#" class="btn">Отправить заявку</a>
+                  <li class="credit-active slide" id="slide3">
+                    <span class="service-title">Кредит</span>
+                    <p class="service-description">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
+                    <a href="#" class="slider-btn">Отправить заявку</a>
                   </li>
                 </ul>
               </div>

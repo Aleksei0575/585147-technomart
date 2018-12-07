@@ -1558,8 +1558,8 @@ h3 {
 
 /* =====Блок сервисы ========*/
 /*Сетка для блока*/
-.services-block h2,
-.services-block p {
+.services-block .services-block-title,
+.services-block .slogan {
 	margin: 0;
 	padding: 0;
 }
@@ -1578,7 +1578,7 @@ h3 {
 	width: 400px;
 	height: 105px;
 	padding-top: 63px;
-	padding-bottom: 63px;
+	padding-bottom: 68px;
 }
 
 .service-block-info {
@@ -1586,12 +1586,101 @@ h3 {
 	justify-content: flex-start;
 }
 
-.list-services {
-	width: 240px;
-	height: 183px;
+/*Слайдер в блоке сервисов*/
+/*Подготовка блока переключения*/
+.service-block-info {
+	position: relative;
 }
 
+.list-services li {
+	width: 240px;
+    height: 62px;
+    align-items: center;
+    color: #ffffff;
+    border-bottom: 1px solid #4d637b;
+    background-color: #32425c;
+}
 
+.list-services label {
+	display: block;
+	padding-left: 22px;
+	padding-top: 15px;
+}
+/*============================*/
+.list-services .credit-active {
+	border-bottom: none;
+	margin-bottom: 102px;
+}
+/*состояние при наведении*/
+.list-services li:hover {
+    background-color: #293449;
+}
+/*Картинки в псевдоэлементах*/
+.service::before,
+.service::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.service::before {
+  background-image: url("../img/guaranty.png");
+}
+
+.service::after {
+  background-image: url("../img/credit.png");
+}
+/*=============================*/
+
+/*Здесь подключены слайды*/
+#delivery:checked ~ .service {
+	background-image: url("../img/delivery.png");
+	background-repeat: no-repeat;
+  	background-position: 220px 0;
+}
+
+#guaranty:checked ~ .service {
+	background-image: url("../img/guaranty.png");
+	background-repeat: no-repeat;
+  	background-position: 315px 0;
+}
+
+#credit:checked ~ .service {
+	background-image: url("../img/credit.png");
+	background-repeat: no-repeat;
+  	background-position: 220px 0;
+}
+/*===========================*/
+
+/*Здесь состояние кнопок при
+нажатии*/
+#delivery:checked ~ .service #slide1,
+#guaranty:checked ~ .service #slide2,
+#credit:checked ~ .service #slide3 {
+  	display: block;
+}
+
+#delivery:checked ~ .list-services label[for="delivery"],
+#guaranty:checked ~ .list-services label[for="guaranty"],
+#credit:checked ~ .list-services label[for="credit"] {
+  	padding-bottom: 17px;
+  	color: #000000;
+    background-color: #ffffff;
+}
+
+#delivery:checked ~ .list-services label[for="delivery"]:visited,
+#guaranty:checked ~ .list-services label[for="guaranty"]:visited,
+#credit:checked ~ .list-services label[for="credit"]:visited {
+  	color: #000000;
+  	background-color: #ffffff;
+}
+
+.service,
+.service::before,
+.service::after {
+	width: auto;
+}
+/*============================*/
 
 /* Общий фон всего блока */
 .services-block-wrapper {
@@ -1629,28 +1718,32 @@ h3 {
 	display: none;
 }
 
-.list-services {
+.list-services,
+.service {
 	list-style: none;
 }
 
-.delivery-selected-active {
-	color: #32425c;
+.list-services {
+	position: relative
 }
 
-.delivery-selected-active {
-	background-color: #ffffff;
+.list-services::after {
+	content: "";
+    position: absolute;
+    z-index: 70;
+    top: -45px;
+    left: 230px;
+    width: 10px;
+    height: 284px;
+    background-image: url(../img/pattern-light.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
-.guaranty-selected-active,
-.credit-selected-active {
-	color: #ffffff;
-}
 
-.guaranty-selected-active,
-.credit-selected-active {
-	background-color: #32425c;
-}
-/* Стили для текста блока какая услуга выбрана - начало */
+
+/* Стили для текста блока 
+какая услуга выбрана - начало */
 .delivery-active span,
 .guaranty-active span,
 .credit-active span {
@@ -1672,30 +1765,32 @@ h3 {
 	color: #000000;
 }
 
-.delivery-active p::after {
-	display: inline-block;
-	content: "";
-	position: absolute;
-	z-index: 0;
-	background-image: url("../img/delivery.png");
-	background-repeat: no-repeat;
-	width: 468px;
-	height: 261px;
-	margin-left: 78px;
-	margin-top: -186px;
-}
-
 .credit-active a {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
 	color: #ffffff;
+	text-transform: uppercase;
 }
 /* Стили для текста - конец */
 .credit-active a {
-	background-color: #fb8a8d;
+	margin-left: 80px;
+	background-color: #ee3643;
 }
+
+.service-title {
+	padding-left: 80px;
+}
+
+.service-description {
+	width: 700px;
+	padding-left: 80px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+
 
 /*====Блок о компании и блок с адресом==========*/
 /*Сетка для блока*/
