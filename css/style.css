@@ -1565,7 +1565,7 @@ h3 {
 }
 
 .services-block {
-	margin-bottom: 82px;
+	margin-bottom: 76px;
 }
 
 .services {
@@ -1740,8 +1740,6 @@ h3 {
     background-position: 0 0;
 }
 
-
-
 /* Стили для текста блока 
 какая услуга выбрана - начало */
 .delivery-active span,
@@ -1773,6 +1771,15 @@ h3 {
 	color: #ffffff;
 	text-transform: uppercase;
 }
+
+.delivery-company li {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #000000;
+}
+
 /* Стили для текста - конец */
 .credit-active a {
 	margin-left: 80px;
@@ -1792,12 +1799,12 @@ h3 {
 
 
 
-/*====Блок о компании и блок с адресом==========*/
+/*====Блок о компании 
+и блок с адресом==========*/
 /*Сетка для блока*/
 .company-promo {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 10px;
 }
 
 .left-column {
@@ -1807,6 +1814,95 @@ h3 {
 .right-column {
 	width: 310px;
 }
+
+.company-promo .company-title,
+.company-promo .address-title {
+	margin: 0;
+	margin-bottom: 26px;
+}
+
+.company-promo .company-info,
+.company-promo .address-info,
+.company-promo .company-delivery {
+	margin: 0;
+	margin-bottom: 23px;
+}
+/*Элементы списка*/
+.delivery-company li {
+	position: relative;
+    padding-left: 36px;
+    padding-bottom: 19px;
+}
+
+.delivery-company li::before {
+	content: '';
+    position: absolute;
+    left: -2px;
+    top: 9px;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #fb565a;
+}
+
+.about-company .btn-company {
+	text-transform: uppercase;
+}
+
+.about-company {
+	margin: 0;
+    margin-top: 17px;
+    margin-bottom: 85px;
+}
+
+.about-company a {
+	margin: 0;
+}
+
+.open-modal {
+	margin: 0;
+	margin-top: 40px;
+}
+
+.btn-company {
+	display: inline-block;
+	
+	margin-left: 27px;
+	margin-bottom: 20px;
+	padding: 11px 44px;
+	min-width: 105px;
+	
+	text-align: center;
+	vertical-align: middle;
+	
+	background-color: #ee3643;
+	border-radius: 3px;
+	
+	cursor: pointer;
+}	
+
+.address-title, 
+.address-info {
+	padding-left: 10px;
+}
+
+/*.address-info img {
+	padding-top: 5px;
+}*/
+
+
+.modal-btn {
+	display: inline-block;
+    margin-bottom: 20px;
+    padding: 11px 61px;
+    min-width: 121px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ee3643;
+    border-radius: 3px;
+}
+	
+
 /*===========================*/
 
 .company-promo .delivery-company {
@@ -1828,6 +1924,7 @@ h3 {
 	line-height: 24px;
 	font-weight: normal;
 	color: #000000;
+	letter-spacing: 0.1px;
 }
 
 .company-promo .delivery {
@@ -1845,6 +1942,15 @@ h3 {
 	font-weight: normal;
 	color: #ffffff;
 }
+
+.open-modal a {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #ffffff;
+	text-transform: uppercase;
+}
 /* Стили для текста - конец */
 .company-promo a {
 	background-color: #ee3643;
@@ -1852,20 +1958,38 @@ h3 {
 
 /*=======Футер - верх=========*/
 /*Сетка для блока*/
+.footer-top-logo {
+	display: inline-block;
+    padding: 15px 42px;
+    min-width: 136px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ee3643;
+}
+
 .footer-top {
 	display: flex;
-	justify-content: space-between; 
+	justify-content: space-between;
+	margin-bottom: 18px; 
 }
 
 .footer-user-navigation {
 	display: flex;
-	justify-content: space-between;
-	width: 550px;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 550px;
+    margin-top: 36px;
+}
+
+.footer-user-navigation {
+	
 }
 
 .footer-middle {
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 31px;
 }
 
 .footer-address {
@@ -1875,6 +1999,8 @@ h3 {
 .footer-goods-company {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+
 	width: 540px;
 }
 
@@ -1887,7 +2013,7 @@ h3 {
 
 .footer-bottom {
 	display: flex;
-	padding: 30px 0;
+    align-items: center;
 }
 
 .footer-contacts {
@@ -1909,15 +2035,14 @@ h3 {
 	margin-right: auto;
 }
 
-
 .footer {
 	background-color: #32425c;
 }
 /* Стили для текста - начало */
 .footer-top-logo {
 	font-family: "Cuprum", "Arial", sans-serif;
-	font-size: 24px;
-	line-height: 24px;
+	font-size: 30px;
+	line-height: 30px;
 	font-weight: normal;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -1938,6 +2063,11 @@ h3 {
 /* Стили для текста - конец */
 .footer-user-navigation li {
 	display: inline-block;
+}
+
+.footer-user-navigation a:hover,
+.footer-goods-company a:hover {
+	text-decoration: underline;
 }
 
 /*======== Футер середина ================*/
