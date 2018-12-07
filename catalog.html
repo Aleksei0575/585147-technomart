@@ -78,24 +78,27 @@
           <section class="filter-block">
             <h2 class="block-title">Фильтр:</h2>
             <form class="filter" method="GET" action="https://echo.htmlacademy.ru" aria-label="Форма с фильтром"><!-- Блок с фильтром -->
-              <fieldset>
-                <legend aria-label="Цена от и до">Цена:</legend>
-                <div class="price-control">
-                  <div class="price-scale">
-                    <span class="scale"></span>
-                    <span class="toggle-min"></span>
-                    <span class="toggle-max"></span>
+              <fieldset class="filter-item">
+
+                <legend>Цена:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
                   </div>
-                  <div class="input-price">
-                    <label class="visually-hidden" for="min-price">Минимальная цена</label>
-                    <input class="min-price" id="min-price" type="text" name="text" value="0" placeholder="0">-
-                    <label class="visually-hidden" for="max-price">Максимальная цена</label>
-                    <input class="max-price" id="max-price" type="text" name="text" value="30000" placeholder="30000">
+                  <div class="price-controls">
+                    <label class="min-price">
+                      <input name="min-price" type="text" value="0">-
+                    </label>
+                    <label class="max-price">
+                      <input name="max-price" type="text" value="30000">
+                    </label>
                   </div>
                 </div>
-<!-- Этот код отключен. Спросить у наставника -->
-              <!-- <label for="price"></label> -->
-                <!-- 0 <input type="range" name="range" min="0" max="30000" id="price" step="1"> 30000 -->
+
               </fieldset>
               <fieldset>
                 <legend aria-label="Здесь выбираем производителей">Призводители:</legend>
