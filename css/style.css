@@ -575,11 +575,16 @@ h3 {
 .filter legend,
 .filter-button,
 .pagination-list {
-	font-family: "PT Sans", "Arial", sans-serif;;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
 	color: #000000;
+}
+
+.filter legend {
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 /*.inner-page .header {
@@ -633,6 +638,101 @@ h3 {
 .catalog-columns {
 	display: flex;
 }
+
+.filter-item {
+  	margin: 0;
+  	padding: 0;
+  
+  	border: none;
+}
+
+.range-filter {
+  	width: 220px;
+  	margin-top: 18px;
+}
+
+.range-controls {
+  	position: relative;
+
+  	height: 41px;
+  	padding-top: 39px;
+	margin-bottom: 9px;
+	padding-right: 20px;
+	padding-left: 20px;
+  	background-color: #f7f3ec;
+  
+  	border-radius: 5px;
+}
+
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+
+	background: #00ca74;
+}
+
+.range-controls .scale {
+	height: 2px;
+
+	background: #d7dcde;
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: 31px;
+	left: 0;
+
+	width: 4px;
+	height: 4px;
+	padding: 0;
+
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	background-color: #ababab;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	cursor: pointer;
+}
+
+.range-controls .toggle-min {
+	left: 18px;
+}
+
+.range-controls .toggle-max {
+	left: 160px;
+}
+
+.price-controls {
+	font-size: 0;
+}
+
+.price-controls label {
+	display: inline-block;
+	width: 50%;
+	
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+.price-controls input {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
+	/*line-height: 18px;*/
+	text-align: center;
+	color: #000000;
+	
+	width: 95px;
+	padding: 8px 0;
+	/*margin-right: 8px;*/
+	
+	border: none;
+	border-radius: 5px;
+	background: #f7f3ec;
+}
+
+.max-price {
+	text-align: right;
+}
+
 
 /*Сетка для сортировки*/
 /*========================*/
