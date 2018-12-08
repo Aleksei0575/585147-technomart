@@ -34,7 +34,7 @@
       <div class="header-info-wrapper"><!--Блок средней панели шапки сайта-->
         <div class="container">
           <div class="header-info">
-            <h1 class="header-page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1><!--Далее шрифт уменьшу с помощью стилей CSS-->
+            <h1 class="header-page-title">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1><!--Далее шрифт уменьшу с помощью стилей CSS-->
             <div class="contact">
               <p class="contact-information">
               <a href="tel:+1234567890" aria-label="Номер телефона компании">+7 (812) 555-05-55</a>
@@ -66,9 +66,9 @@
     <main class="main-content"><!--Блок основного контента страницы-->
       <div class="container"> <!--Блок центровщик страницы-->
         <ul class="breadcrumbs"><!--Делал по образу и подобию как в видео Barbershop-->
-          <li><a href="#">&gt;</a></li>
-          <li><a href="#">Каталог&gt;</a></li>
-          <li><a href="#">Инструменты&gt;</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Инструменты</a></li>
           <li class="breadcrumbs-current">Перфораторы</li>
         </ul>
         <div class="title">
@@ -76,7 +76,9 @@
         </div>
         <div class="catalog-columns">
           <aside class="filter-block">
-            <h2 class="block-title">Фильтр:</h2>
+            <div class="wrapper-filter">
+              <h2 class="block-title">Фильтр:</h2>
+            </div>
             <form class="filter" method="GET" action="https://echo.htmlacademy.ru" aria-label="Форма с фильтром"><!-- Блок с фильтром -->
               <fieldset class="filter-item">
                 <legend>Цена:</legend>
@@ -98,41 +100,44 @@
                   </div>
                 </div>
               </fieldset>
+              <hr>
               <fieldset>
-                <legend aria-label="Здесь выбираем производителей">Призводители:</legend>
+                <legend class="manufacturer">Призводители:</legend>
                 <ul>
+                  
                   <li class="filter-option">
-                    <input class="filter-input filter-input-checkbox" type="checkbox" name="bosch" value="bosch" id="filter-bosch" checked>
-                    <label for="filter-bosch">Bosch</label>
+                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="bosch" value="bosch" id="bosch" checked>
+                    <label class="checkbox-on" for="bosch">Bosch</label>
                   </li>
                   <li class="filter-option">
-                    <input class="filter-input filter-input-checkbox" type="checkbox" name="интерскол" value="интерскол" id="filter-interskol">
-                    <label for="filter-interskol">Интерскол</label>
+                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="интерскол" value="интерскол" id="interskol">
+                    <label class="checkbox" for="interskol">Интерскол</label>
                   </li>
                   <li class="filter-option">
-                    <input class="filter-input filter-input-checkbox" type="checkbox" name="makita" value="makita" id="filter-makita" checked>
-                    <label for="filter-makita">Makita</label>
+                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="makita" value="makita" id="makita" checked>
+                    <label class="checkbox-on" for="makita">Makita</label>
                   </li>
                   <li class="filter-option">
-                    <input class="filter-input filter-input-checkbox" type="checkbox" name="dewalt" value="dewalt" id="filter-dewalt">
-                    <label for="filter-dewalt">Dewalt</label>
+                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="dewalt" value="dewalt" id="dewalt">
+                    <label class="checkbox" for="dewalt">Dewalt</label>
                   </li>
                   <li class="filter-option">
-                    <input class="filter-input filter-input-checkbox" type="checkbox" name="hitachi" value="hitachi" id="filter-hitachi">
-                    <label for="filter-hitachi">Hitachi</label>
+                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="hitachi" value="hitachi" id="hitachi">
+                    <label class="checkbox" for="hitachi">Hitachi</label>
                   </li>
                 </ul>
               </fieldset>
+              <hr>
               <fieldset>
                 <legend aria-label="Здесь выбираем, от чего будет запитан иструмент">Питание:</legend>
                 <ul>
                   <li class="filter-option">
-                    <input class="filter-input filter-input-radio" type="radio" name="power-supply" value="аккумуляторные" id="filter-battery" checked>
-                    <label for="filter-battery">Аккумуляторные</label>
+                    <input class="filter-input filter-input-radio visually-hidden" type="radio" name="power-supply" value="аккумуляторные" id="battery" checked>
+                    <label class="radio-on" for="battery">Аккумуляторные</label>
                   </li>
                   <li class="filter-option">
-                    <input class="filter-input filter-input-radio" type="radio" name="power-supply" value="сетевые" id="power-grid">
-                    <label for="power-grid">Сетевые</label>
+                    <input class="filter-input filter-input-radio visually-hidden" type="radio" name="power-supply" value="сетевые" id="power-grid">
+                    <label class="radio" for="power-grid">Сетевые</label>
                   </li>
                 </ul>
               </fieldset>
@@ -316,7 +321,7 @@
               <li class="pagination-item pagination-btn-activ"><a href="#">1</a></li><!--Текущая страница-->
               <li class="pagination-item pagination-btn"><a href="#">2</a></li>
               <li class="pagination-item pagination-btn"><a href="#">3</a></li>
-              <li class="pagination-item pagination-btn"><a href="#">Следующая</a></li>
+              <li class="pagination-item pagination-btn last-page"><a href="#">Следующая</a></li>
             </ul>
           </div>
         </div>  
