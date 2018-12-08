@@ -1664,6 +1664,11 @@ h3 {
     /* cursor: pointer; */
 }
 
+.btn-popular-items:hover,
+.btn-popular-company:hover {
+	background-color: #ca2c37;
+}
+
 .popular-items-block {
 	margin-bottom: 20px;
 }
@@ -2299,6 +2304,10 @@ h3 {
 	border-radius: 3px;
 	
 	cursor: pointer;
+}
+
+.btn-company:hover {
+	background-color: #ca2c37;
 }	
 
 .address-title, 
@@ -2321,6 +2330,10 @@ h3 {
     background-color: #ee3643;
     border-radius: 3px;
 }
+
+.modal-btn:hover {
+	background-color: #ca2c37;
+}	
 	
 
 /*===========================*/
