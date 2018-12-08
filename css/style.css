@@ -2438,7 +2438,8 @@ h3 {
 
 .footer-contacts {
 	width: 235px;
-	margin-right: 160px;
+	margin-right: 155px;
+	margin-top: 21px;
 }
 
 .footer-social {
@@ -2534,33 +2535,71 @@ h3 {
 	color: #ffffff;
 }
 
+.social-btn-vk {
+	position: relative;
+    display: inline-block;
+    margin-top: 32px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-decoration: none;
+    background: #212a3a;
+    border-radius: 50px;
+}
+
 .social-btn-vk::before {
-	display: inline-block;
 	content: "";
+    position: absolute;
+	top: 13px;
+    left: 8px;
+    width: 26px;
+	height: 15px;
 	background-image: url("../img/icon-vk.svg");
 	background-repeat: no-repeat;
-	width: 26px;
-	height: 15px;
+}
+
+.social-btn-fb {
+	position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-decoration: none;
+    background: #212a3a;
+    border-radius: 50px;
 }
 
 .social-btn-fb::before {
-	display: inline-block;
 	content: "";
+    position: absolute;
+    top: 9px;
+    left: 14px;
+    width: 12px;
+	height: 22px;
 	background-image: url("../img/icon-fb.svg");
 	background-repeat: no-repeat;
-	width: 12px;
-	height: 22px;
-	margin-left: 10px;
+}
+
+.social-btn-inst {
+	position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-decoration: none;
+    background: #212a3a;
+    border-radius: 50px;
 }
 
 .social-btn-inst::before {
-	display: inline-block;
 	content: "";
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    width: 21px;
+	height: 21px;
 	background-image: url("../img/icon-insta.svg");
 	background-repeat: no-repeat;
-	width: 21px;
-	height: 21px;
-	margin-left: 10px;
 }
 .social-btn span {
 	display: none;
