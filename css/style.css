@@ -2543,8 +2543,12 @@ h3 {
     height: 42px;
     line-height: 42px;
     text-decoration: none;
-    background: #212a3a;
+    background-color: #212a3a;
     border-radius: 50px;
+}
+
+.social-btn-vk:hover {
+	background-color: #ee3643;
 }
 
 .social-btn-vk::before {
@@ -2565,8 +2569,12 @@ h3 {
     height: 42px;
     line-height: 42px;
     text-decoration: none;
-    background: #212a3a;
+    background-color: #212a3a;
     border-radius: 50px;
+}
+
+.social-btn-fb:hover {
+	background-color: #ee3643;
 }
 
 .social-btn-fb::before {
@@ -2587,8 +2595,12 @@ h3 {
     height: 42px;
     line-height: 42px;
     text-decoration: none;
-    background: #212a3a;
+    background-color: #212a3a;
     border-radius: 50px;
+}
+
+.social-btn-inst:hover {
+	background-color: #ee3643;
 }
 
 .social-btn-inst::before {
