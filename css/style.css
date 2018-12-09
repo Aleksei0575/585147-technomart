@@ -2516,8 +2516,13 @@ h3 {
 }
 
 .footer-copyright {
-	width: 130px;
-	margin-right: auto;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: auto;
+    
+    margin-left: 46px;
+    padding-top: 26px;
 }
 
 .footer {
@@ -2683,7 +2688,11 @@ h3 {
 
 /* Блок обратной связи */
 .footer-contacts-mail {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 	text-align: right;
+	padding-top: 27px;
 }
 
 .footer-contacts-mail span {
