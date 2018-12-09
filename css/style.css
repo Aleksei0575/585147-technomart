@@ -1293,6 +1293,23 @@ h3 {
 	position: relative;
 }
 
+.materials p::before {
+	content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    
+    width: 60px;
+    height: 60px;
+  
+	background-image: url("../img/new-flag.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+  
+  /*opacity: 0.3;*/
+}
+
 .materials p::after {
 	content: "";
   
@@ -1414,6 +1431,7 @@ h3 {
 	line-height: 18px;
 	font-weight: normal;
 	color: #ffffff;
+	border-radius: 2px;
 	
 	text-transform: uppercase;
 }
@@ -1423,46 +1441,36 @@ h3 {
 	background-color: #ffbf47;
 }
 
-.materials a:hover,
-.materials a:focus {
-	background-color: #cccccc;
-}
-
 .company-offer .tools {
 	background-color: #3bbce3;
-}
-
-.tools a:hover,
-.tools a:focus {
-	background-color: #cccccc;
 }
 
 .company-offer .mechanism {
 	background-color: #dc91d8;
 }
 
-.mechanism a:hover,
-.mechanism a:focus {
-	background-color: #cccccc;
-}
-
 .company-offer .discount {
 	background-color: #8ed78f;
-}
-
-.discount a:hover,
-.discount a:focus {
-	background-color: #cccccc;
 }
 
 .company-offer .delivery {
 	background-color: #ffc047;
 }
 
-.delivery a:hover,
-.delivery a:focus {
-	background-color: #cccccc;
+.cards-item .btn {
+	background-color: rgba(0, 0, 0, 0.1);
 }
+
+.cards-item .btn:hover,
+.cards-item .btn:focus {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cards-item .btn:active {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+
 /* Здесь стилизация для слайдера */
 /* Стили для текста - начало */
 .slider .slide-title {
@@ -2428,9 +2436,9 @@ h3 {
 	text-transform: uppercase;
 }
 /* Стили для текста - конец */
-.company-promo a {
+/*.company-promo a {
 	background-color: #ee3643;
-}
+}*/
 
 /*=======Футер - верх=========*/
 /*Сетка для блока*/
