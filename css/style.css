@@ -58,7 +58,7 @@ body {
 /*========================*/
 /*==Логотип Техномарт=====*/
 .logo-button {
-	display: inline-block;
+	/*display: inline-block;*/
 	padding-top: 9px;
     padding-bottom: 8px;
     padding-left: 50px;
@@ -120,7 +120,7 @@ input[type="search"] {
 	background-color: #ffffff;
 }*/
 
-input[placeholder] {
+.search input[placeholder] {
 	padding-left: 48px;
 }
 
@@ -206,6 +206,18 @@ input[placeholder] {
 
 /*==========================*/
 /*Сетка для блока*/
+.middle-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.middle-wrapper {
+	min-width: 940px;
+}
+
+
 .header-info {
 	display: flex;
 	justify-content: space-around;
@@ -243,6 +255,7 @@ input[placeholder] {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .site-navigation a {
@@ -278,7 +291,7 @@ input[placeholder] {
 }
 
 .top-menu-wrapper {
-	width: 100%;
+	/*width: 100%;*/
 	background-color: #293449
 }
 
@@ -290,8 +303,16 @@ input[placeholder] {
 .user-navigation,
 .site-navigation,
 .company-offer,
-ul,
-h3 {
+.cards-item h3,
+.slider-list,
+.slide-title,
+.popular-items h3,
+.popular-items-list,
+.popular-company-list,
+.list-services,
+.service,
+.delivery-company,
+.footer-user-navigation {
 	margin: 0;
 	padding: 0;
 }
@@ -443,13 +464,13 @@ h3 {
 	color: #000000;
 }
 
-.user-navigation .login-link {
+.login-link a {
 	display: inline-block;
 	padding-top: 10px;
-	padding-right: 22px;
-	padding-bottom: 10px;
-	padding-left: 40px;
-    min-width: 59px;
+    padding-right: 22px;
+    padding-bottom: 10px;
+    padding-left: 26px;
+    min-width: 71px;
 	text-align: center;
 	vertical-align: middle;
 	margin-right: 4px;
@@ -458,11 +479,17 @@ h3 {
 }
 
 .user-navigation {
-	margin-left: auto;
-	padding-bottom: 21px;
+	 margin-left: auto; 
+	 padding-bottom: 21px; 
 }
 
-.user-navigation .registration {
+.inner-page .user-navigation {
+	margin-left: auto;
+    padding-top: 6px;
+    padding-bottom: 0px;
+}
+
+.registration a {
 	display: inline-block;
 	padding-top: 10px;
     padding-right: 25px;
@@ -599,13 +626,13 @@ h3 {
 	background-color: #000000;
 }
 
-.inner-page .user-orders,
-.inner-page .user-account {
+.inner-page .user-orders a,
+.inner-page .user-account a {
 	color: #32425c;
 }
 
 .inner-page .user-navigation li {
-	padding-left: 20px;
+	padding-left: 19px;
 }
 
 
@@ -990,6 +1017,15 @@ h3 {
 
 /*Сетка для сортировки*/
 /*========================*/
+.filter-block ul,
+.inner-page .sort-panel,
+.catalog-block h3,
+.inner-page .footer-user-navigation,
+.inner-page .footer-goods-company {
+	margin: 0;
+	padding: 0;
+}
+
 .sort-block {
 	width: 685px;
     margin-bottom: 20px;
@@ -1117,13 +1153,13 @@ h3 {
 	border: 1px solid #eaeaea;
 }
 
-.pagination-btn-activ {
+.pagination-btn-active {
 	border: 1px solid #eaeaea;
 	color: #fef5f6;
     background-color: #ee3643;
 }
 
-.pagination-btn-activ {
+.pagination-btn-active {
 	display: inline-block;
 	
 	padding-top: 10px;
@@ -1293,7 +1329,7 @@ h3 {
 	position: relative;
 }
 
-.materials p::before {
+.flag-new p::before {
 	content: '';
     position: absolute;
     top: 0;
@@ -2102,7 +2138,7 @@ h3 {
 #delivery:checked ~ .service {
 	background-image: url("../img/delivery.png");
 	background-repeat: no-repeat;
-  	background-position: 220px 0;
+  	background-position: 232px 27px;
 }
 
 #guaranty:checked ~ .service {
@@ -2120,9 +2156,9 @@ h3 {
 
 /*Здесь состояние кнопок при
 нажатии*/
-#delivery:checked ~ .service #slide1,
-#guaranty:checked ~ .service #slide2,
-#credit:checked ~ .service #slide3 {
+#delivery:checked ~ .service #sl1,
+#guaranty:checked ~ .service #sl2,
+#credit:checked ~ .service #sl3 {
   	display: block;
 }
 
@@ -2218,15 +2254,17 @@ h3 {
 
 /* Стили для текста блока 
 какая услуга выбрана - начало */
-.delivery-active span,
-.guaranty-active span,
-.credit-active span {
+.delivery-active h3,
+.guaranty-active h3,
+.credit-active h3 {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: normal;
 	color: #32425c;
 	text-transform: uppercase;
+	margin: 0;
+    margin-top: 4px;
 }
 
 .delivery-active p,
@@ -2328,7 +2366,7 @@ h3 {
 .about-company {
 	margin: 0;
     margin-top: 17px;
-    margin-bottom: 85px;
+    margin-bottom: 87px;
 }
 
 .about-company a {
@@ -2454,7 +2492,7 @@ h3 {
 .footer-top {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 18px; 
+	margin-bottom: 36px; 
 }
 
 .footer-user-navigation {
@@ -2473,11 +2511,19 @@ h3 {
 .footer-middle {
 	display: flex;
     justify-content: space-between;
-    margin-bottom: 31px;
+    margin-bottom: 47px;
 }
 
 .footer-address {
 	width: 380px;
+}
+
+.address-company a {
+	font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #f3f7f9;
 }
 
 .footer-goods-company {
@@ -2486,6 +2532,7 @@ h3 {
 	align-items: center;
 
 	width: 540px;
+	margin: 0;
 }
 
 .footer-bottom,
@@ -2568,6 +2615,7 @@ h3 {
 	line-height: 24px;
 	font-weight: normal;
 	color: #f3f7f9;
+	margin: 0;
 }
 
 .footer-goods-company a {

@@ -34,19 +34,21 @@
       <div class="header-info-wrapper"><!--Блок средней панели шапки сайта-->
         <div class="container">
           <div class="header-info">
-            <h1 class="header-page-title">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1><!--Далее шрифт уменьшу с помощью стилей CSS-->
-            <div class="contact">
-              <p class="contact-information">
-              <a href="tel:+1234567890" aria-label="Номер телефона компании">+7 (812) 555-05-55</a>
-              </p>
-              <p class="address" aria-label="Адрес компании">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            </div>
-            <div class="user-navigation">
-              <a class="user-login" href="#">Равшан Джамшутович</a>
-              <ul class="user-navigation">
-                <li class="user-orders"><a href="#">Мои заказы</a></li>
-                <li class="user-account"><a href="#">Личный кабинет</a></li>
-              </ul>
+            <div class="middle-wrapper">
+              <h1 class="header-page-title">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1><!--Далее шрифт уменьшу с помощью стилей CSS-->
+              <div class="contact">
+                <div class="contact-information">
+                  <a href="tel:+1234567890" aria-label="Номер телефона компании">+7 (812) 555-05-55</a>
+                </div>
+                <p class="address" aria-label="Адрес компании">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              </div>
+              <div class="user-navigation">
+                <a class="user-login" href="#">Равшан Джамшутович</a>
+                <ul class="user-navigation">
+                  <li class="user-orders"><a href="#">Мои заказы</a></li>
+                  <li class="user-account"><a href="#">Личный кабинет</a></li>
+                </ul>
+              </div>
             </div>
             <nav class="header-navigation" aria-label="Меню главнйо страницы"><!--Навигация в шапке сайта-->
               <ul class="site-navigation">
@@ -319,7 +321,7 @@
               </ul>
             </section>
             <ul class="pagination-list"><!--Пагинатор-->
-              <li class="pagination-item pagination-btn-activ"><a href="#">1</a></li><!--Текущая страница-->
+              <li class="pagination-item pagination-btn-active"><a href="#">1</a></li><!--Текущая страница-->
               <li class="pagination-item pagination-btn"><a href="#">2</a></li>
               <li class="pagination-item pagination-btn"><a href="#">3</a></li>
               <li class="pagination-item pagination-btn last-page"><a href="#">Следующая</a></li>
@@ -351,7 +353,10 @@
           </ul>
         </div>
         <div class="footer-middle"><!--Блок с адресом компании-->
-          <p class="footer-address" aria-label="Адрес компании">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55</p>
+          <div class="address-company">
+            <p class="footer-address" aria-label="Адрес компании">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a href="tel:+1234567890" aria-label="Номер телефона компании">+7 (812) 555-05-55</a>
+          </div>
           <ul class="footer-goods-company">
             <li><a href="#" aria-label="Переход на страницу строительных материалов">Материалы</a></li>
             <li><a href="#" aria-label="Переход на страницу со строительной техникой">Техника</a></li>

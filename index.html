@@ -32,21 +32,23 @@
       </div>  
       <div class="header-info-wrapper"><!--Блок обертка (тянется на всю ширину)-->
         <div class="header-info container"><!--Блок средней панели он же центровщик-->
-          <h1 class="header-page-title">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1><!--Далее шрифт уменьшу с помощью стилей CSS-->
-          <div class="contact">
-            <p class="contact-information">
-              <a href="tel:+1234567890" aria-label="Номер телефона компании">+7 (812) 555-05-55</a>
-            </p>
-            <p class="address" aria-label="Адрес компании">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <div class="middle-wrapper">
+            <h1 class="header-page-title">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1><!--Далее шрифт уменьшу с помощью стилей CSS-->
+            <div class="contact">
+              <div class="contact-information">
+                <a href="tel:+1234567890" aria-label="Номер телефона компании">+7 (812) 555-05-55</a>
+              </div>
+              <p class="address" aria-label="Адрес компании">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </div>
+            <ul class="user-navigation">
+              <li class="login-link" aria-label="Войти в личный кабинет">
+                <a href="#">Войти</a>
+              </li>
+              <li class="registration" aria-label="Форма регистрации">
+                <a href="#">Регистрация</a>
+              </li>
+            </ul>
           </div>
-          <ul class="user-navigation">
-            <li class="login-link" aria-label="Войти в личный кабинет">
-              <a href="#">Войти</a>
-            </li>
-            <li class="registration" aria-label="Форма регистрации">
-              <a href="#">Регистрация</a>
-            </li>
-          </ul>
           <nav class="header-navigation" aria-label="Меню главнйо страницы"><!--Навигация в шапке сайта-->
             <ul class="site-navigation">
               <li><a href="#">Главная</a></li>
@@ -68,7 +70,7 @@
           <ul class="company-offer">
             <li class="company-offer-item">
               <div class="top-line">
-                <div class="cards-item materials">
+                <div class="cards-item materials flag-new">
                   <h3>Материалы</h3>
                   <p>
                     <a href="#" class="btn">На любой вкус</a>
@@ -144,7 +146,7 @@
               <p class="image">
                 <img src="img/bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
               </p>
-              <h3>
+              <h3 class="popular-title">
                 <span class="catalog-item-title">Перфоратор BOSCH BFG 9000</span>
               </h3>
               <p class="catalog-item-price">
@@ -161,7 +163,7 @@
               <p class="image">
                 <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
               </p>
-              <h3>
+              <h3 class="popular-title">
                 <span class="catalog-item-title">Перфоратор BOSCH BFG 3000</span>
               </h3>
               <p class="catalog-item-price">
@@ -178,7 +180,7 @@
               <p class="image">
                 <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </p>
-              <h3>
+              <h3 class="popular-title">
                 <span class="catalog-item-title">Перфоратор BOSCH BFG 6000</span>
               </h3>
               <p class="catalog-item-price">
@@ -196,7 +198,7 @@
               <p class="image">
                 <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
               </p>
-              <h3>
+              <h3 class="popular-title">
                 <span class="catalog-item-title">Перфоратор BOSCH BFG 2000</span>
               </h3>
               <p class="catalog-item-price">
@@ -212,14 +214,29 @@
             <a href="#" class="btn-popular-company">Все производители</a>
           </div>
           <ul class="popular-company-list">
-            <li class="brand-company"><a href="#"><img src="img/bosch.jpg" width="126" height="37" alt="Bosch"></a></li>
-            <li class="brand-company"><a href="#"><img src="img/makita.jpg" width="123" height="40" alt="Makita"></a></li>
-            <li class="brand-company"><a href="#"><img src="img/de-walt.jpg" width="146" height="44" alt="DeWalt"></a></li>
-            <li class="brand-company"><a href="#"><img src="img/inter.jpg" width="200" height="88" alt="Интерскол"></a></li>
-            <li class="brand-company"><a href="#"><img src="img/hitachi.jpg" width="169" height="31" alt="Hitachi"></a></li>
-            <li class="brand-company"><a href="#"><img src="img/lg.jpg" width="121" height="73" alt="LG"></a></li>
-            <li class="brand-company"><a href="#"><img src="img/aeg.jpg" width="151" height="96" alt="AEG"></a></li>
-            <li class="brand-company"><a href="#"><img src="img/metabo.jpg" width="204" height="69" alt="Metabo"></a></li>
+            <li>
+              <a href="#" class="brand-company"><img src="img/bosch.jpg" width="126" height="37" alt="Bosch"></a>
+            </li>
+            <li><a href="#" class="brand-company"><img src="img/makita.jpg" width="123" height="40" alt="Makita"></a>
+            </li>
+            <li>
+              <a href="#" class="brand-company"><img src="img/de-walt.jpg" width="146" height="44" alt="DeWalt"></a>
+            </li>
+            <li>
+              <a href="#" class="brand-company"><img src="img/inter.jpg" width="200" height="88" alt="Интерскол"></a>
+            </li>
+            <li>
+              <a href="#" class="brand-company"><img src="img/hitachi.jpg" width="169" height="31" alt="Hitachi"></a>
+            </li>
+            <li>
+              <a href="#" class="brand-company"><img src="img/lg.jpg" width="121" height="73" alt="LG"></a>
+            </li>
+            <li>
+              <a href="#" class="brand-company"><img src="img/aeg.jpg" width="151" height="96" alt="AEG"></a>
+            </li>
+            <li>
+              <a href="#" class="brand-company"><img src="img/metabo.jpg" width="204" height="69" alt="Metabo"></a>
+            </li>
           </ul>
         </section>
       </div>
@@ -248,17 +265,17 @@
                 </ul>
 
                 <ul class="service">
-                  <li class="delivery-active slide" id="slide1">
-                    <span class="service-title">Доставка</span>
+                  <li class="delivery-active slide" id="sl1">
+                    <h3 class="service-title">Доставка</h3>
                     <p class="service-description">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>
                   Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
                   </li>
-                  <li class="guaranty-active slide" id="slide2">
-                    <span class="service-title">Гарантия</span>
+                  <li class="guaranty-active slide" id="sl2">
+                    <h3 class="service-title">Гарантия</h3>
                     <p class="service-description">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
                   </li>
-                  <li class="credit-active slide" id="slide3">
-                    <span class="service-title">Кредит</span>
+                  <li class="credit-active slide" id="sl3">
+                    <h3 class="service-title">Кредит</h3>
                     <p class="service-description">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
                     <a href="#" class="slider-btn">Отправить заявку</a>
                   </li>
@@ -308,7 +325,10 @@
   				</ul>
   			</div>
   			<div class="footer-middle"><!--Блок с адресом компании-->
-  				<p class="footer-address" aria-label="Адрес компании">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55</p>
+  				<div class="address-company">
+            <p class="footer-address" aria-label="Адрес компании">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a href="tel:+1234567890" aria-label="Номер телефона компании">+7 (812) 555-05-55</a>
+          </div>
   				<ul class="footer-goods-company">
   					<li><a href="#" aria-label="Переход на страницу строительных материалов">Материалы</a></li>
   					<li><a href="#" aria-label="Переход на страницу со строительной техникой">Техника</a></li>
