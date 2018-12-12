@@ -365,27 +365,31 @@
       <h2 class="visually-hidden">Форма связи с компанией</h2>
         <!-- Модальное окно - форма для связи с компанией -->
       <form class="user-data" action="https://echo.htmlacademy.ru" method="POST">
-        <p class="appointment-item">
-          <label for="user-name">Ваше имя:</label>
-          <input class="user-name" id="user-name" type="text" value="" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p class="appointment-item">
-          <label for="user-emale">Ваш e-mail:</label>
-          <input class="user-email" id="user-emale" type="email" value="" name="email" placeholder="email@example.com">
-        </p>
-        <p class="appointment-item textarea">
-          <label for="text-letter">Текст письма:</label>
-          <textarea id="text-letter" name="letter" rows="5">В свободной форме</textarea>
-        </p>
-        <button class="button-submit" type="submit" value="Отправить">
-          <span>Отправить</span><!-- Для чтения ридером и стилизации -->
-        </button>
+        <div class="feedback-form">
+          <p class="appointment-item name">
+            <label for="user-name">Ваше имя:</label>
+            <input class="user-name" id="user-name" type="text" value="" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="appointment-item emale">
+            <label for="user-emale">Ваш e-mail:</label>
+            <input class="user-email" id="user-emale" type="email" value="" name="email" placeholder="email@example.com">
+          </p>
+          <p class="appointment-item textarea">
+            <label for="text-letter">Текст письма:</label>
+            <textarea id="text-letter" name="letter" rows="5">В свободной форме</textarea>
+          </p>
+        </div> 
+        <div class="button-form">
+          <button class="button-submit" type="submit" value="Отправить">
+            <span>Отправить</span><!-- Для чтения ридером и стилизации -->
+          </button>
+        </div>  
       </form>
       <button class="modal-close" type="button" value="Закрыть">
         <span>Закрыть</span><!-- Для чтения ридером и стилизации -->
       </button>
     </section>
-    <section class="modal modal-map visually-hidden">
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p>
       <img src="img/big-map.jpg" width="940" height="446" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">

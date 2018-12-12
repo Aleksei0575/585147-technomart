@@ -1717,11 +1717,21 @@ input[type="search"] {
     padding-right: 23px;
 }
 
-.btn-popular-items,
-.btn-popular-company {
+.btn-popular-items {
 	display: inline-block;
     padding: 11px 55px;
     min-width: 111px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ee3643;
+    border-radius: 3px;
+    /* cursor: pointer; */
+}
+
+.btn-popular-company {
+	display: inline-block;
+    padding: 11px 61px;
+    min-width: 131px;
     text-align: center;
     vertical-align: middle;
     background-color: #ee3643;
@@ -1989,8 +1999,8 @@ input[type="search"] {
     justify-content: space-between;
     align-items: center;
     padding-left: 28px;
-    padding-top: 9px;
-    padding-right: 23px;
+    padding-top: 7px;
+    padding-right: 24px;
 }
 
 .popular-company-list {
@@ -2782,14 +2792,56 @@ input[type="search"] {
 
 /* Модальные окна */
 /* Форма связи*/
+.modal {
+	position: fixed;
+
+	color: #000000;
+	background-color: #ffffff;
+	
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-close {
+	position: absolute;
+	top: 7px;
+	right: 7px;
+
+	width: 21px;
+	height: 21px;
+	
+	font-size: 0;
+	border: 0;
+	background-color: #ffffff;
+	
+	cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: 0px;
+	
+	width: 21px;
+	height: 3px;
+	
+	background-color: #ee3643;
+}
+
+.modal-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-close::after {
+	transform: rotate(-45deg);
+}
+
 .modal-login {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: normal;
-	color: #000000;
-
-	background-color: #ffffff;
 }
 
 .user-data input[type="text"],
@@ -2804,24 +2856,51 @@ input[type="search"] {
 }
 
 .modal-login {
-	border-top: 7px solid #ee3643;
-    width: 620px;
+	width: 620px;
+    margin-left: -310px;
+    padding-top: 48px;
+    
+    top: 135px;
+	left: 50%;
+    
+    border-top: 7px solid #ee3643;
 }
 
 .user-data {
-	width: 460px;
+	/*width: 460px;*/
 	margin: 0 auto;
 }
 
-.user-data {
+.user-data,
+.feedback-form,
+.button-form {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
+.feedback-form {
+	width: 460px;
+	margin: 0;
+	padding: 0;
+}
+
+.appointment-item {
+	margin: 0;
+}
+
+.button-form {
+	width: 620px;
+    background-color: #f4f4f4;
+}
+
 .appointment-item {
 	width: 220px;
-	margin-bottom: 10px;
+}
+
+.name {
+	margin-right: 20px;
+	margin-bottom: 22px;
 }
 
 .textarea,
@@ -2836,7 +2915,7 @@ input[type="search"] {
 
 .appointment-item input {
   	box-sizing: border-box;
-  	width: 200px;
+  	width: 220px;
   	padding-top: 10px;
   	padding-left: 14px;
   	padding-right: 14px;
@@ -2860,20 +2939,30 @@ input[type="search"] {
   	border-radius: 2px;
 }
 
-.user-data .button-submit {
+.user-data textarea {
+	margin-bottom: 37px;
+}
+
+.button-form .button-submit {
 	display: block;
 	padding-top: 14px;
   	/*padding-left: 14px;
   	padding-right: 14px;*/
   	padding-bottom: 14px;
-	width: 100%;
+	width: 460px;
 	border-radius: 5px;
-	margin-top: 74px;
+	margin-top: 37px;
+    margin-bottom: 37px;
 }
 
+.size-background {
+	width: 100%;
+	min-height: 112px;
+	background-color: #f4f4f4;
+}
 
-.modal .visually-hidden {
-	display: none;
+.modal {
+	display: block;
 }
 
 /* текстовый стиль кнопки*/
