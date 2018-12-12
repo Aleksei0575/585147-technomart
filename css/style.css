@@ -2073,8 +2073,13 @@ input[type="search"] {
 .services-block .services-block-title,
 .services-block .slogan {
 	margin: 0;
-	padding: 0;
+	/*padding: 0;*/
 }
+
+.services-block .services-block-title {
+	padding-bottom: 24px;
+}
+
 
 .services-block {
 	margin-bottom: 76px;
@@ -2088,8 +2093,8 @@ input[type="search"] {
 
 .services {
 	width: 400px;
-	height: 105px;
-	padding-top: 63px;
+	/*height: 105px;*/
+	padding-top: 70px;
 	padding-bottom: 68px;
 }
 
@@ -2106,7 +2111,7 @@ input[type="search"] {
 
 .list-services li {
 	width: 240px;
-    height: 62px;
+    height: 61px;
     align-items: center;
     color: #ffffff;
     border-bottom: 1px solid #4d637b;
@@ -2117,6 +2122,7 @@ input[type="search"] {
 	display: block;
 	padding-left: 22px;
 	padding-top: 15px;
+	padding-bottom: 16px;
 }
 /*============================*/
 .list-services .credit-active {
@@ -2175,7 +2181,7 @@ input[type="search"] {
 #delivery:checked ~ .list-services label[for="delivery"],
 #guaranty:checked ~ .list-services label[for="guaranty"],
 #credit:checked ~ .list-services label[for="credit"] {
-  	padding-bottom: 17px;
+  	padding-bottom: 18px;
   	color: #000000;
     background-color: #ffffff;
 }
@@ -2257,7 +2263,7 @@ input[type="search"] {
     left: 230px;
     width: 10px;
     height: 284px;
-    background-image: url(../img/pattern-light.jpg);
+    background-image: url(../img/line.png);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -2333,6 +2339,7 @@ input[type="search"] {
 
 .left-column {
 	width: 540px;
+	margin-right: 113px;
 }
 
 .right-column {
@@ -2349,13 +2356,13 @@ input[type="search"] {
 .company-promo .address-info,
 .company-promo .company-delivery {
 	margin: 0;
-	margin-bottom: 23px;
+	margin-bottom: 24px;
 }
 /*Элементы списка*/
 .delivery-company li {
 	position: relative;
     padding-left: 36px;
-    padding-bottom: 19px;
+    padding-bottom: 20px;
 }
 
 .delivery-company li::before {
@@ -2376,7 +2383,7 @@ input[type="search"] {
 .about-company {
 	margin: 0;
     margin-top: 17px;
-    margin-bottom: 87px;
+    margin-bottom: 83px;
 }
 
 .about-company a {
@@ -2393,7 +2400,7 @@ input[type="search"] {
 	
 	margin-left: 27px;
 	margin-bottom: 20px;
-	padding: 11px 44px;
+	padding: 11px 40px;
 	min-width: 105px;
 	
 	text-align: center;
@@ -2409,10 +2416,10 @@ input[type="search"] {
 	background-color: #ca2c37;
 }	
 
-.address-title, 
+/*.address-title, 
 .address-info {
 	padding-left: 10px;
-}
+}*/
 
 /*.address-info img {
 	padding-top: 5px;
@@ -2492,7 +2499,7 @@ input[type="search"] {
 /*Сетка для блока*/
 .footer-top-logo {
 	display: inline-block;
-    padding: 15px 42px;
+    padding: 16px 42px;
     min-width: 136px;
     text-align: center;
     vertical-align: middle;
@@ -2539,7 +2546,7 @@ input[type="search"] {
 .footer-goods-company {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 
 	width: 540px;
 	margin: 0;
