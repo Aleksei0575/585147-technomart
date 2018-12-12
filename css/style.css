@@ -553,12 +553,13 @@ input[type="search"] {
 .inner-page .cart {
 	position: relative;
     margin-right: -1px;
-    padding-left: 32px;
+    padding-left: 28px;
     display: inline-block;
     padding-top: 12px;
     padding-right: 25px;
     padding-bottom: 12px;
     padding-left: 40px;
+    min-width: 0px;
     text-align: center;
     vertical-align: middle;
     background-color: #ee3643;
@@ -678,6 +679,10 @@ input[type="search"] {
 	line-height: 18px;
 	font-weight: normal;
 	color: #000000;
+}
+
+.inner-page .bookmarks {
+	margin-right: 37px;
 }
 
 .breadcrumbs {
@@ -2521,6 +2526,10 @@ input[type="search"] {
     margin-top: 36px;
 }
 
+.inner-page .footer-user-navigation{
+	align-items: flex-end;
+}
+
 .footer-user-navigation {
 	
 }
@@ -2551,6 +2560,11 @@ input[type="search"] {
 	width: 540px;
 	margin: 0;
 }
+
+.inner-page .footer-goods-company {
+	width: 525px;
+}
+
 
 .footer-bottom,
 .footer-contacts,
