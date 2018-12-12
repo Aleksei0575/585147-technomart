@@ -389,19 +389,20 @@
         </div>
       </div>
     </footer>
-    <section class="modal modal-buy-curt visually-hidden">
+    <section class="modal modal-buy-curt">
       <h2 class="visually-hidden">Форма оформления заказа</h2>
       <!-- Модальное окно - форма оформления заказа -->
-      <p>
-        Товар добавлен в корзину!
-      </p>
-      <div class="buy-order">
+      <div class="info-order">
+        <img src="img/icon-mark.svg" width="66" height="66" alt="Успешная операция">
+        <p>Товар добавлен в корзину!</p>
+      </div>
+      <div class="button-form">
         <form class="buy-order">
-          <button class="button-submit" type="submit" aria-label="Здесь откроется форма заказа товара">Оформить заказ</button>
-          <a href="#" class="button modal-close" aria-label="Продолжить покупки">Продолжить покупки</a>
+          <button class="submit-order button" type="submit" aria-label="Здесь откроется форма заказа товара">Оформить заказ</button>
+          <a href="#" class="order-close button" aria-label="Продолжить покупки">Продолжить покупки</a>
         </form>
       </div>
-      <button type="button" class="order-close button" aria-label="Кнопка закрытия этого окна">
+      <button class="modal-close" type="button" value="Закрыть">
         <span>Закрыть</span><!-- Для чтения ридером и стилизации -->
       </button>
     </section>

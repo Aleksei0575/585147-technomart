@@ -2867,7 +2867,6 @@ input[type="search"] {
 }
 
 .user-data {
-	/*width: 460px;*/
 	margin: 0 auto;
 }
 
@@ -2961,9 +2960,23 @@ input[type="search"] {
 	background-color: #f4f4f4;
 }
 
-.modal {
-	display: block;
+.modal-map {
+	width: 940px;
+	height: 446px;
+    margin-left: -470px;
+    /*padding-top: 48px;*/
+    
+    top: 135px;
+	left: 50%;
 }
+
+.modal-map p {
+	margin: 0;
+}
+
+/*.modal {
+	display: none;
+}*/
 
 /* текстовый стиль кнопки*/
 .button-submit {
@@ -3008,5 +3021,67 @@ input[type="search"] {
 }
 
 .modal-buy-curt {
-	background-color: #f1f1f1;
+	width: 620px;
+    margin-left: -310px;
+    /*padding-top: 48px;*/
+    
+    top: 47px;
+	left: 50%;
+	
+	border-top: 7px solid #ee3643;
+}
+
+.info-order {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.info-order img {
+	margin-top: 48px;
+	margin-right: 32px;
+	margin-bottom: 49px;
+}
+
+.button-form .submit-order {
+	display: inline-block;
+	padding-top: 14px;
+  	padding-left: 59px;
+  	padding-right: 62px;
+  	padding-bottom: 14px;
+	min-width: 99px;
+	border-radius: 5px;
+	margin-top: 37px;
+    margin-bottom: 37px;
+    margin-right: 20px;
+    
+    color: #ffffff;
+    background-color: #ee3643;
+    
+    border: 0;
+}
+
+.button-form .submit-order:hover {
+	background-color: #ca2c37;
+}
+
+.button-form .order-close {
+	display: inline-block;
+	padding-top: 14px;
+  	padding-left: 44px;
+  	padding-right: 48px;
+  	padding-bottom: 14px;
+	min-width: 128px;
+	border-radius: 5px;
+	margin-top: 37px;
+    margin-bottom: 37px;
+}
+
+.button-form .order-close:hover {
+	background-color: #ee3643;
+}
+
+.modal-buy-curt {
+	/*background-color: #f1f1f1;*/
 }
