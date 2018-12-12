@@ -2859,6 +2859,7 @@ input[type="search"] {
 	width: 620px;
     margin-left: -310px;
     padding-top: 48px;
+    z-index: 30;/*Временно*/
     
     top: 135px;
 	left: 50%;
@@ -2966,7 +2967,7 @@ input[type="search"] {
     margin-left: -470px;
     /*padding-top: 48px;*/
     
-    top: 135px;
+    top: 55px;/*Координаты будут как и у формы*/
 	left: 50%;
 }
 
