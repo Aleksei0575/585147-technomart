@@ -2855,6 +2855,16 @@ input[type="search"] {
 	border: 2px solid #dee3e4;
 }
 
+.user-data input[type="text"]:hover,
+.user-data input[type="email"]:hover {
+	border-color: #b5b5b5;
+}
+
+.user-data input[type="text"]:focus,
+.user-data input[type="email"]:focus {
+	border-color: #ee3643;
+}
+
 .modal-login {
 	width: 620px;
     margin-left: -310px;
@@ -2908,6 +2918,14 @@ input[type="search"] {
 	width: 460px;
 }
 
+.user-data textarea[name="letter"]:hover {
+	border-color: #b5b5b5;
+}
+
+.user-data textarea[name="letter"]:focus {
+	border-color: #ee3643;
+}
+
 .appointment-item label {
   	display: block;
   	margin-bottom: 15px;
@@ -2954,6 +2972,12 @@ input[type="search"] {
 	margin-top: 37px;
     margin-bottom: 37px;
 }
+
+.button-form .button-submit:hover {
+	background-color: #ca2c37;
+}
+
+
 
 .size-background {
 	width: 100%;
