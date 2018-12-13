@@ -266,11 +266,11 @@ input[type="search"] {
 
 .site-navigation {
 	width: 940px;
-	height: 55px;
+	/*height: 55px;*/
 }
 
 .site-navigation {
-	box-shadow: 0px 5px #293449;
+	box-shadow: 0px 6px #293449;
 }
 /*Состояния элементов*/
 .site-navigation a:hover,
@@ -315,6 +315,11 @@ input[type="search"] {
 .footer-user-navigation {
 	margin: 0;
 	padding: 0;
+}
+
+.site-navigation {
+	padding-top: 1px;
+    padding-bottom: 0px;
 }
 
 /* Стили для текста - начало */
@@ -1120,10 +1125,10 @@ input[type="search"] {
 	display: flex;
 }
 
-.pagination-list li {
+/*.pagination-list li {
 	width: 15px;
 	margin-right: 10px;
-}
+}*/
 
 .title {
 	background-color: #f2f6f8;
@@ -1165,29 +1170,31 @@ input[type="search"] {
 }
 
 .pagination-btn-active {
-	display: inline-block;
-	
-	padding-top: 10px;
-    padding-right: 11px;
+	display: flex;
+    
+    margin-right: 9px;
+    padding-top: 10px;
+    padding-right: 15px;
     padding-bottom: 10px;
-    padding-left: 11px;
-	/*min-width: 89px;*/
-	
-	text-align: center;
-	vertical-align: middle;
-	color: #000000;
-	
+    padding-left: 15px;
+    /* min-width: 89px; */
+    
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+    
     border: 1px solid #e5e5e5;
     border-radius: 3px;
 }    
 	
 .pagination-btn {
-	display: inline-block;
+	display: flex;
 	
+	margin-right: 10px;
 	padding-top: 10px;
-    padding-right: 10px;
+    padding-right: 14px;
     padding-bottom: 10px;
-    padding-left: 11px;
+    padding-left: 15px;
     
     text-align: center;
 	vertical-align: middle;
@@ -1197,8 +1204,9 @@ input[type="search"] {
 }
 
 .last-page {
-	display: inline-block;
+	display: flex;
 	
+	margin-right: 10px;
 	padding-top: 10px;
     padding-right: 32px;
     padding-bottom: 10px;
@@ -1899,7 +1907,7 @@ input[type="search"] {
 .catalog-item .item-discount {
     position: relative;
     width: 80px;
-    margin: 10px 44px;
+    margin: 10px 43px;
     margin-bottom: 20px;
     padding: 10px 29px;
     color: white;
@@ -2989,6 +2997,7 @@ input[type="search"] {
   	padding-right: 14px;*/
   	padding-bottom: 14px;
 	width: 460px;
+	border: 0;
 	border-radius: 5px;
 	margin-top: 37px;
     margin-bottom: 37px;
