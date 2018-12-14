@@ -370,7 +370,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal modal-login visually-hidden">
+    <div class="modal modal-login">
       <h2 class="visually-hidden">Форма связи с компанией</h2>
         <!-- Модальное окно - форма для связи с компанией -->
       <form class="user-data" action="https://echo.htmlacademy.ru" method="POST">
@@ -385,7 +385,7 @@
           </div>
           <div class="appointment-item textarea">
             <label for="text-letter">Текст письма:</label>
-            <textarea id="text-letter" name="letter" rows="5">В свободной форме</textarea>
+            <textarea id="text-letter" name="letter" rows="5" value="" placeholder="В свободной форме"></textarea>
           </div>
         </div> 
         <div class="button-form">
@@ -398,7 +398,7 @@
         <span>Закрыть</span><!-- Для чтения ридером и стилизации -->
       </button>
     </div>
-    <div class="modal modal-map visually-hidden">
+    <div class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <div>
       <img src="img/big-map.jpg" width="940" height="446" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
@@ -407,5 +407,6 @@
         <span>Закрыть</span><!-- Для чтения ридером и стилизации -->
       </button>
     </div>
+    <script src="js/popup.js" type="text/javascript"></script>
   </body>
 </html>

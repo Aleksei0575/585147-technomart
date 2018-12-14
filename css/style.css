@@ -116,12 +116,28 @@ input[type="search"] {
 	height: 42px;
 }
 
+input[type="search"]:focus,
+input[type="search"]:active {
+	/*background-color: #ffffff;*/
+	background-image: url("../img/icon-search-active.svg");
+	/*background-repeat: no-repeat;
+	background-position: 0 0;*/
+}
+
+input[type="search"]::placeholder {
+ 	color: #ffffff; 
+ }
 /*input[type="search"]:focus {
 	background-color: #ffffff;
 }*/
 
 .search input[placeholder] {
 	padding-left: 48px;
+	/*color: #ffffff;*/
+}
+
+input[type="search"]:focus {
+	background-color: #ffffff;
 }
 
 .search-button {
@@ -181,7 +197,7 @@ input[type="search"] {
 	opacity: 0.3;
 }
 
-.cart:hover::before{
+.cart:hover::before {
 	opacity: 1;
 }
 
@@ -1342,7 +1358,7 @@ input[type="search"] {
 	position: relative;
 }
 
-.flag-new p::before {
+.flag-new::before {
 	content: '';
     position: absolute;
     top: 0;
@@ -3029,10 +3045,6 @@ input[type="search"] {
 	margin: 0;
 }
 
-/*.modal {
-	display: none;
-}*/
-
 /* текстовый стиль кнопки*/
 .button-submit {
 	font-family: "Cuprum", "Arial", sans-serif;
@@ -3059,9 +3071,6 @@ input[type="search"] {
 .button-submit {
 	text-align: center;
 }
-
-
-/*#delivery:checked ~ .service #slide1*/
 
 
 /* Форма закза */
@@ -3137,6 +3146,45 @@ input[type="search"] {
 	background-color: #ee3643;
 }
 
-.modal-buy-curt {
-	/*background-color: #f1f1f1;*/
+.modal {
+	display: none;
+}
+
+
+.modal-show {
+	display: block;
+	animation-name: bounce;
+	animation-duration: 0.6s
+}
+
+.modal-error {
+	animation-name: shake;
+	animation-duration: 0.6s
+}
+
+@keyframes bounce {
+	0% {
+	transform: translateY(-1000px);
+  	}
+  	70% {
+	transform: translateY(30px);
+  	}
+  	90% {
+	transform: translateY(-10px);
+  	}
+  	100% {
+	transform: translateY(0);
+  	}
+}
+
+@keyframes shake {
+	0%, 100% {
+	transform: translateX(0);
+  	}
+  	10%, 30%, 50%, 70%, 90% {
+	transform: translateX(-10px);
+  	}
+  	20%, 40%, 60%, 80% {
+	transform: translateY(10px);
+  	}
 }
