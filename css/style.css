@@ -653,6 +653,11 @@ input[type="search"]:focus {
 	color: #32425c;
 }
 
+.inner-page .user-orders a:hover,
+.inner-page .user-account a:hover {
+	color: #ee3643;
+}
+
 .inner-page .user-navigation li {
 	padding-left: 19px;
 }
@@ -955,6 +960,10 @@ input[type="search"]:focus {
 	margin-bottom: 14px;
 }
 
+.manufacturer input:focus {
+	
+}
+
 .power-grid {
 	margin-bottom: 14px;
 }
@@ -1171,7 +1180,8 @@ input[type="search"]:focus {
 	line-height: 18px;
 }
 
-.pagination-list a {
+.pagination-list .pagination-btn,
+.pagination-list .last-page {
 	color: #000000;
 }
 
@@ -1197,7 +1207,7 @@ input[type="search"]:focus {
     
     text-align: center;
     vertical-align: middle;
-    color: #000000;
+    color: #ffffff;
     
     border: 1px solid #e5e5e5;
     border-radius: 3px;
@@ -1270,12 +1280,26 @@ input[type="search"]:focus {
 	padding-right: 46px;
 }
 
+.by-function a {
+	color: #acaaa5;
+    border-bottom: 1px dashed #ee3643;
+}
+
 .sort-panel .by-type {
 	padding-right: 65px;
 }
 
+.by-type a {
+	color: #acaaa5;
+    border-bottom: 1px dashed #ee3643;
+}
+
 .sort-panel .by-price {
 	padding-right: 71px;
+}
+
+.by-price a {
+    color: #ee3643;
 }
 
 .info-items-block {
@@ -1865,10 +1889,27 @@ input[type="search"]:focus {
     border-radius: 3px;
 }
 
+.actions .item-buy:hover {
+	background-color: #5fbb2d;
+}
+
+.actions .item-buy:active {
+	background-color: #518534;
+}
+
 .actions .item-bookmarks {
     color: #32425c;
     background-color: #ffffff;
     border-bottom-color: #63a63e;
+}
+
+.actions .item-bookmarks:hover {
+	border-color: #32425c;
+}
+
+.actions .item-bookmarks:active {
+	color: rgba(50, 66, 92, 0.3);
+	border-color: rgba(0, 0, 0, 0.3);;
 }
 
 .popular-item .actions,
