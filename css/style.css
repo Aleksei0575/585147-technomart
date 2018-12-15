@@ -2859,6 +2859,8 @@ input[type="search"]:focus {
 	background-color: #ffffff;
 	
 	cursor: pointer;
+	
+	z-index: 3;
 }
 
 .modal-close::before,
@@ -2914,7 +2916,7 @@ input[type="search"]:focus {
 	width: 620px;
     margin-left: -310px;
     padding-top: 48px;
-    z-index: 30;/*Временно*/
+    z-index: 1000;
     
     top: 135px;
 	left: 50%;
@@ -3035,10 +3037,27 @@ input[type="search"]:focus {
 	width: 940px;
 	height: 446px;
     margin-left: -470px;
-    /*padding-top: 48px;*/
+    
+    z-index: 1000;
     
     top: 55px;/*Координаты будут как и у формы*/
 	left: 50%;
+}
+
+.modal-map p {
+ 	position: absolute;
+ 	top: 0;
+	left: 0;
+	z-index: 1;
+
+	margin: 0;
+}
+
+.modal-map iframe {
+  	position: relative;
+  	z-index: 2;
+
+  	border: none;
 }
 
 .modal-map p {
@@ -3053,6 +3072,7 @@ input[type="search"]:focus {
 	font-weight: normal;
 	color: #ffffff;
 	text-transform: uppercase;
+	text-align: center;
 
 	background-color: #ee3643;
 }
@@ -3068,9 +3088,9 @@ input[type="search"]:focus {
 	background-color: #ffffff;
 }
 
-.button-submit {
+/*.button-submit {
 	text-align: center;
-}
+}*/
 
 
 /* Форма закза */
@@ -3082,6 +3102,8 @@ input[type="search"]:focus {
 	color: #000000;
 
 	background-color: #ffffff;
+	
+	z-index: 1000;
 }
 
 .modal-buy-curt {
