@@ -85,10 +85,10 @@ body {
 }
 
 .search-button {
-	background-image: url("../img/icon-search.svg");
-	background-repeat: no-repeat;
-	width: 15px;
-	height: 15px;
+	/*background-image: url("../img/icon-search.svg");
+	background-repeat: no-repeat;*/
+	width: 17px;
+	height: 17px;
 	background-color: transparent;
 	border: none;
 	opacity: 0.3;
@@ -96,6 +96,13 @@ body {
 
 .search-button:hover {
 	opacity: 1;
+}
+
+.search-button:focus path,
+.search-button:active path {
+	fill: #ee3643;
+	opacity: 1;
+	z-index: 100;
 }
 
 /*.search-button:focus {
@@ -109,48 +116,53 @@ body {
 	position: relative;
 }
 
-input[type="search"] {
+.search input[type="text"] {
 	background-color: transparent;
 	border: none;
-	min-width: 270px;
-	height: 42px;
+	min-width: 238px;
+	height: 41px;
+	
+	cursor: pointer;
 }
 
-input[type="search"]:focus,
-input[type="search"]:active {
-	/*background-color: #ffffff;*/
-	background-image: url("../img/icon-search-active.svg");
-	/*background-repeat: no-repeat;
+.inner-page .search input[type="text"] {
+	min-width: 236px;
+}
+
+
+input[type="text"]:focus,
+input[type="text"]:active {
+	background-color: #ffffff;
+	/*background-image: url("../img/icon-search-active.svg");
+	background-repeat: no-repeat;
 	background-position: 0 0;*/
 }
 
-input[type="search"]::placeholder {
+input[type="text"]::placeholder {
  	color: #ffffff; 
- }
-/*input[type="search"]:focus {
-	background-color: #ffffff;
-}*/
+}
+
+input[type="text"]:focus::placeholder,
+input[type="text"]:active::placeholder {
+ 	color: #000000;
+}
 
 .search input[placeholder] {
 	padding-left: 48px;
 	/*color: #ffffff;*/
 }
 
-input[type="search"]:focus {
-	background-color: #ffffff;
-}
-
 .search-button {
 	position: absolute;
 	top: 12px;
-	left: 17px;
-	margin-right: 15px;
+	left: 10px;
+	/*margin-right: 15px;*/
 }
 
 .user-items .bookmarks {
 	position: relative;
-  	margin-right: 42px;
-  	padding-left: 28px;
+  	margin-right: 41px;
+    padding-left: 28px;
 }
 
 .bookmarks::before {
@@ -244,7 +256,7 @@ input[type="search"]:focus {
 .header-page-title {
 	width: 200px;
     margin-top: 49px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
     margin-left: 53px;
     margin-right: 40px;
 }
@@ -260,7 +272,7 @@ input[type="search"]:focus {
 /*Главное меню хедера*/
 /*Сетка для блока*/
 .header-navigation {
-	margin-bottom: 60px;
+	margin-bottom: 67px;
 }
 
 .inner-page .header-navigation {
@@ -312,7 +324,7 @@ input[type="search"]:focus {
 }
 
 .header {
-	margin-bottom: 60px;
+	margin-bottom: 58px;
 }
 
 /* Сброс маргинов и паддиногов */
@@ -350,7 +362,7 @@ input[type="search"]:focus {
 	background-color: #ee3643;
 }
 
-.search input[type="search"],
+.search input[type="text"],
 .bookmarks,
 .cart,
 .order {
@@ -487,11 +499,11 @@ input[type="search"]:focus {
 
 .login-link a {
 	display: inline-block;
-	padding-top: 10px;
-    padding-right: 22px;
-    padding-bottom: 10px;
-    padding-left: 26px;
-    min-width: 71px;
+	padding-top: 12px;
+    padding-right: 29px;
+    padding-bottom: 12px;
+    padding-left: 43px;
+    min-width: 49px;
 	text-align: center;
 	vertical-align: middle;
 	margin-right: 4px;
@@ -512,9 +524,9 @@ input[type="search"]:focus {
 
 .registration a {
 	display: inline-block;
-	padding-top: 10px;
+	padding-top: 12px;
     padding-right: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     padding-left: 22px;
 	min-width: 100px;
 	text-align: center;
@@ -528,26 +540,32 @@ input[type="search"]:focus {
 }
 
 .login-link::before {
-  content: "";
+  	content: "";
   
-  position: absolute;
-  top: 12px;
-  left: 13px;
+  	position: absolute;
+    top: 13px;
+    left: 13px;
   
-  width: 19px;
-  height: 19px;
+  	width: 20px;
+  	height: 17px;
   
-  background-image: url("../img/icon-login.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  	/*background-image: url("../img/icon-login.svg");
+  	background-repeat: no-repeat;
+  	background-position: 0 0;*/
   
-  opacity: 0.3;
+  	opacity: 0.6;
 }
 
 .login-link a:hover,
 .registration a:hover {
 	color: #ee3643;
 }
+
+/*.login-link a:hover::before {
+	background-image: url("../img/icon-login-hover.svg");
+  	background-repeat: no-repeat;
+  	background-position: 0 0;
+}*/
 
 .login-link a:active,
 .registration a:active {
@@ -566,6 +584,10 @@ input[type="search"]:focus {
 	background-color: #ffffff;
 }
 
+.login-link:hover::before {
+	opacity: 1;
+}
+
 /*.user-login {
 	background-color: #ffffff;
 }*/
@@ -576,21 +598,25 @@ input[type="search"]:focus {
     margin-right: -1px;
     padding-left: 28px;
     display: inline-block;
-    padding-top: 12px;
+    padding-top: 13px;
     padding-right: 25px;
     padding-bottom: 12px;
-    padding-left: 40px;
+    padding-left: 51px;
     min-width: 0px;
     text-align: center;
     vertical-align: middle;
-    background-color: #ee3643;
+    /*background-color: #ee3643;*/
+}
+
+.cart-background {
+	background-color: #ee3643;
 }
 
 .inner-page .cart::before {
 	content: "";
     position: absolute;
     top: 11px;
-    left: 12px;
+    left: 16px;
     width: 15px;
     height: 16px;
     background-image: url(../img/icon-cart.svg);
@@ -708,11 +734,16 @@ input[type="search"]:focus {
 }
 
 .inner-page .bookmarks {
-	margin-right: 37px;
+	margin-right: 23px;
+	vertical-align: middle;
 }
 
 .breadcrumbs {
 	font-size: 13px;
+}
+
+.breadcrumbs a {
+	color: #000000;
 }
 
 .filter legend {
@@ -723,7 +754,7 @@ input[type="search"]:focus {
 /*.inner-page .header {
 	margin-bottom: 23px; 
 }*/
-/*Сетка для пагинатора*/
+
 .breadcrumbs {
 	padding: 0;
   	margin: 0;
@@ -738,7 +769,7 @@ input[type="search"]:focus {
 .pagination-list {
 	text-transform: uppercase;
 }
-/*Сетка для пагинатора*/
+
 .inner-page .title {
 	height: 89px;
 	margin-bottom: 18px;
@@ -898,9 +929,14 @@ input[type="search"]:focus {
 	font-size: 0;
 }
 
+.price-controls span {
+	font-size: 12px;
+	margin-right: 12px;
+}
+
 .price-controls label {
 	display: inline-block;
-	width: 50%;
+	/*width: 50%;*/
 	
 	font-size: 17px;
 	text-transform: uppercase;
@@ -915,7 +951,7 @@ input[type="search"]:focus {
 	
 	width: 95px;
 	padding: 9px 0;
-	/*margin-right: 8px;*/
+	margin-right: 12px;
 	
 	border: none;
 	border-radius: 5px;
@@ -924,6 +960,10 @@ input[type="search"]:focus {
 
 .max-price {
 	text-align: right;
+}
+
+.max-price input {
+	margin-right: 0;
 }
 
 .filter-share1 {
@@ -1133,6 +1173,11 @@ input[type="search"]:focus {
 	justify-content: center;
 	align-items: center;
 }
+
+.catalog-item {
+	cursor: pointer;
+}
+
 /*===========================*/
 
 /*Сетка пагинатора*/
@@ -1285,6 +1330,12 @@ input[type="search"]:focus {
     border-bottom: 1px dashed #ee3643;
 }
 
+.by-function a:focus,
+.by-function a:active {
+	color: #ee3643;
+    border-bottom: none;
+}
+
 .sort-panel .by-type {
 	padding-right: 65px;
 }
@@ -1294,12 +1345,25 @@ input[type="search"]:focus {
     border-bottom: 1px dashed #ee3643;
 }
 
+.by-type a:focus,
+.by-type a:active {
+	color: #ee3643;
+    border-bottom: none;
+}
+
 .sort-panel .by-price {
 	padding-right: 71px;
 }
 
 .by-price a {
+    color: #acaaa5;
+    border-bottom: 1px dashed #ee3643;
+}
+
+.by-price a:focus,
+.by-price a:active {
     color: #ee3643;
+    border-bottom: none;
 }
 
 .info-items-block {
@@ -1338,7 +1402,6 @@ input[type="search"]:focus {
 
 .top-line {
 	margin-bottom: 20px;
-	padding-top: 4px;
 }
 
 .bottom-line {
@@ -2518,8 +2581,11 @@ input[type="search"]:focus {
 	list-style: none;
 }
 /* Стили для текста - начало */
-.company-promo h2 {
+.company-promo {
 	font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.company-promo h2 {
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: normal;
@@ -2537,7 +2603,6 @@ input[type="search"]:focus {
 }
 
 .company-promo .delivery {
-	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: normal;
@@ -2545,7 +2610,6 @@ input[type="search"]:focus {
 }
 
 .company-promo a {
-	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
