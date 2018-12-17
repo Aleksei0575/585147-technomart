@@ -487,10 +487,19 @@ input[type="text"]:active::placeholder {
 	color: #000000;
 	list-style: none;
 }
+
+.inner-page .user-login {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #000000;
+	list-style: none;
+	text-decoration: none;
+}
 /*======= Стили для входа в 
 личн. кабинет ======*/
-.user-orders a,
-.user-account a {
+.inner-page .user-orders a,
+.inner-page .user-account a {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: normal;
@@ -615,7 +624,7 @@ input[type="text"]:active::placeholder {
 }
 
 .login-link:hover path {
-  fill: #293449;
+  	fill: #293449;
 }
 
 .login-link a:active,
@@ -624,7 +633,7 @@ input[type="text"]:active::placeholder {
 }
 
 .login-link:active path {
-  fill: #cacaca;
+  	fill: #cacaca;
 }
 
 .login-link:hover::before {
@@ -663,6 +672,11 @@ input[type="text"]:active::placeholder {
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.3;
+}
+
+.user-account-block {
+	display: flex;
+	justify-content: space-between;
 }
 
 
@@ -724,7 +738,8 @@ input[type="text"]:active::placeholder {
 	color: #cacaca;
 }
 
-.user-login:active path {
+.user-login:active path,
+.user-logout:active path {
 	fill: #cacaca;
 }
 
@@ -741,8 +756,7 @@ input[type="text"]:active::placeholder {
 }
 
 
-.inner-page .user-orders a,
-.inner-page .user-account a {
+.inner-page .user-block {
 	color: #32425c;
 }
 
