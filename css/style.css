@@ -422,6 +422,8 @@ input[type="text"]:active::placeholder {
 
 .site-navigation a:active {
 	background-color: #1d2739;
+	color: rgba(255, 255, 255, 0.5);
+
 }
 
 /*Тянучка фона хедера 
