@@ -36,7 +36,9 @@ input[type="radio"].visually-hidden {
 
   	white-space: nowrap;
 
-  	clip-path: inset(100%);
+  	-webkit-clip-path: inset(100%);
+
+  	        clip-path: inset(100%);
   	clip: rect(0 0 0 0);
   	overflow: hidden;
 }
@@ -58,7 +60,6 @@ body {
 /*========================*/
 /*==Логотип Техномарт=====*/
 .logo-button {
-	/*display: inline-block;*/
 	padding-top: 9px;
     padding-bottom: 8px;
     padding-left: 50px;
@@ -68,7 +69,8 @@ body {
 	vertical-align: middle;
 	
 	background-color: #ee3643;
-	box-shadow: 0px 5px 0px 0px #b52933;
+	-webkit-box-shadow: 0px 5px 0px 0px #b52933;
+	        box-shadow: 0px 5px 0px 0px #b52933;
 }
 
 .logo-button:hover {
@@ -78,10 +80,17 @@ body {
 
 /*=========================*/
 .header-top-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .search-button {
@@ -138,8 +147,35 @@ input[type="text"]:active {
 	background-position: 0 0;*/
 }
 
+input[type="text"]::-webkit-input-placeholder {
+ 	color: #ffffff; 
+}
+
+input[type="text"]:-ms-input-placeholder {
+ 	color: #ffffff; 
+}
+
+input[type="text"]::-ms-input-placeholder {
+ 	color: #ffffff; 
+}
+
 input[type="text"]::placeholder {
  	color: #ffffff; 
+}
+
+input[type="text"]:focus::-webkit-input-placeholder,
+input[type="text"]:active::-webkit-input-placeholder {
+ 	color: #000000;
+}
+
+input[type="text"]:focus:-ms-input-placeholder,
+input[type="text"]:active:-ms-input-placeholder {
+ 	color: #000000;
+}
+
+input[type="text"]:focus::-ms-input-placeholder,
+input[type="text"]:active::-ms-input-placeholder {
+ 	color: #000000;
 }
 
 input[type="text"]:focus::placeholder,
@@ -235,10 +271,17 @@ input[type="text"]:active::placeholder {
 /*==========================*/
 /*Сетка для блока*/
 .middle-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .middle-wrapper {
@@ -247,10 +290,16 @@ input[type="text"]:active::placeholder {
 
 
 .header-info {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .header-page-title {
@@ -280,10 +329,17 @@ input[type="text"]:active::placeholder {
 }
 
 .site-navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .site-navigation a {
@@ -292,13 +348,22 @@ input[type="text"]:active::placeholder {
   	vertical-align: middle;
 }
 
+.site-navigation li:first-child {
+	padding-left: 45px;
+}
+
+.site-navigation li:last-child {
+	padding-right: 45px;
+}
+
 .site-navigation {
 	width: 940px;
 	/*height: 55px;*/
 }
 
 .site-navigation {
-	box-shadow: 0px 6px #293449;
+	-webkit-box-shadow: 0px 6px #293449;
+	        box-shadow: 0px 6px #293449;
 }
 /*Состояния элементов*/
 .site-navigation a:hover,
@@ -383,7 +448,6 @@ input[type="text"]:active::placeholder {
 	background-color: #63a63e;
 }
 
-
 /* =====Средняя панель хедера ================*/
 /* Стили для текста - начало */
 .header-page-title,
@@ -423,7 +487,8 @@ input[type="text"]:active::placeholder {
 	color: #000000;
 	list-style: none;
 }
-/*======= Стили для входа в личн. кабинет ======*/
+/*======= Стили для входа в 
+личн. кабинет ======*/
 .user-orders a,
 .user-account a {
 	font-size: 16px;
@@ -502,13 +567,18 @@ input[type="text"]:active::placeholder {
 	padding-top: 12px;
     padding-right: 29px;
     padding-bottom: 12px;
-    padding-left: 43px;
     min-width: 49px;
 	text-align: center;
 	vertical-align: middle;
 	margin-right: 4px;
 	
 	background-color: #ffffff;
+}
+
+.login-link svg {
+    padding-left: 13px;
+    padding-right: 7px;
+    vertical-align: middle;
 }
 
 .user-navigation {
@@ -539,58 +609,28 @@ input[type="text"]:active::placeholder {
 	position: relative;
 }
 
-.login-link::before {
-  	content: "";
-  
-  	position: absolute;
-    top: 13px;
-    left: 13px;
-  
-  	width: 20px;
-  	height: 17px;
-  
-  	/*background-image: url("../img/icon-login.svg");
-  	background-repeat: no-repeat;
-  	background-position: 0 0;*/
-  
-  	opacity: 0.6;
-}
-
 .login-link a:hover,
 .registration a:hover {
 	color: #ee3643;
 }
 
-/*.login-link a:hover::before {
-	background-image: url("../img/icon-login-hover.svg");
-  	background-repeat: no-repeat;
-  	background-position: 0 0;
-}*/
+.login-link:hover path {
+  fill: #293449;
+}
 
 .login-link a:active,
 .registration a:active {
 	color: #cacaca;
 }
 
-.login-link::before {
-	display: inline-block;
-	content: "";
-	background-image: url(../img/icon-login.svg);
-	background-repeat: no-repeat;
-	width: 14px;
-	height: 14px;
-	padding-left: 10px;
-	padding-bottom: 2px;
-	background-color: #ffffff;
+.login-link:active path {
+  fill: #cacaca;
 }
 
 .login-link:hover::before {
 	opacity: 1;
 }
 
-/*.user-login {
-	background-color: #ffffff;
-}*/
 /*Страница каталога*/
 
 .inner-page .cart {
@@ -631,9 +671,9 @@ input[type="text"]:active::placeholder {
 	display: inline-block;
 	
     padding-top: 10px;
-    padding-right: 69px;
+   
     padding-bottom: 10px;
-    padding-left: 44px;
+   
     min-width: 184px;
     
     text-align: center;
@@ -643,36 +683,42 @@ input[type="text"]:active::placeholder {
 
 }
 
-.user-login::before {
-	position: absolute;
-	left: 10px;
+.user-login svg:first-child {
+	padding-left: 11px;
+    padding-right: 9px;
+    /*vertical-align: middle;*/
+}
+
+.user-login svg:last-child {
+	padding-left: 32px;
+    padding-right: 9px;
+    /*vertical-align: middle;*/
+}
+
+.user-login:hover path {
+	fill: #293449;
+}
+
+.user-login:active {
+	color: #cacaca;
+}
+
+.user-login:active path {
+	fill: #cacaca;
+}
+
+.inner-page .user-orders {
+	padding-left: 16px;
+    padding-right: 10px;
+} 
+
+.user-orders span {
+	font-size: 19px;
+	vertical-align: top;
 	
-	display: inline-block;
-    content: "";
-    width: 20px;
-    height: 18px;
-    padding-left: 10px;
-    
-    background-image: url(../img/icon-user.svg);
-    background-repeat: no-repeat;
+	padding-left: 10px;
 }
 
-.user-login::after {
-	position: absolute;
-    right: 10px;
-    
-	display: inline-block;
-    content: "";
-    background-image: url(../img/icon-logout.svg);
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 17px;
-}
-
-.user-login:hover {
-	color: #ee3643;
-	background-color: #000000;
-}
 
 .inner-page .user-orders a,
 .inner-page .user-account a {
@@ -684,12 +730,9 @@ input[type="text"]:active::placeholder {
 	color: #ee3643;
 }
 
-.inner-page .user-navigation li {
+/*.inner-page .user-navigation li {
 	padding-left: 19px;
-}
-
-
-
+}*/
 
 /* ===Панель главной навигаци ==*/
 .header-navigation li {
@@ -762,6 +805,8 @@ input[type="text"]:active::placeholder {
 }
 
 .breadcrumbs {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -860,6 +905,8 @@ input[type="text"]:active::placeholder {
 }
 
 .catalog-columns {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -913,7 +960,8 @@ input[type="text"]:active::placeholder {
 	border: 8px solid #ffffff;
 	border-radius: 50%;
 	background-color: #ababab;
-	box-shadow: 0 2px 1px 0 #cfcfcf;
+	-webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+	        box-shadow: 0 2px 1px 0 #cfcfcf;
 	cursor: pointer;
 }
 
@@ -1119,21 +1167,30 @@ input[type="text"]:active::placeholder {
     font-size: 13px;
     text-transform: uppercase;
     margin: 10px 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     padding-left: 18px;
 }
 
 .sort-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	
     background-color: #f7f3ec;
     text-transform: uppercase;
 }	
 
 .sort-panel {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 /*=============================*/
 
@@ -1156,9 +1213,14 @@ input[type="text"]:active::placeholder {
 }
 
 .catalog-item-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .catalog-item {
@@ -1168,16 +1230,24 @@ input[type="text"]:active::placeholder {
 }
 
 .catalog-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .catalog-item {
 	cursor: pointer;
 }
-
 /*===========================*/
 
 /*Сетка пагинатора*/
@@ -1192,6 +1262,8 @@ input[type="text"]:active::placeholder {
 }
 
 .pagination-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -1241,6 +1313,8 @@ input[type="text"]:active::placeholder {
 }
 
 .pagination-btn-active {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
     
     margin-right: 9px;
@@ -1259,6 +1333,8 @@ input[type="text"]:active::placeholder {
 }    
 	
 .pagination-btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	
 	margin-right: 10px;
@@ -1275,6 +1351,8 @@ input[type="text"]:active::placeholder {
 }
 
 .last-page {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	
 	margin-right: 10px;
@@ -1391,12 +1469,17 @@ input[type="text"]:active::placeholder {
     height: 100%;
 }
 
-/* =====Основной контент гл. страница =====*/
+/* =====Основной контент 
+гл. страница =====*/
 /* ========Промо-блок ======== */
 /* ========Сетка ======== */
 .top-line {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	/*align-items: center;*/
 }
 
@@ -1405,16 +1488,15 @@ input[type="text"]:active::placeholder {
 }
 
 .bottom-line {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
-
-/*.cards-item {
-	display: flex;
-    justify-content: space-around;
-    align-items: center;
-}*/
 
 .vertical-line .discount {
 	margin-bottom: 20px;
@@ -1459,7 +1541,7 @@ input[type="text"]:active::placeholder {
 	background-repeat: no-repeat;
 	background-position: 0 0;
   
-  /*opacity: 0.3;*/
+  	/*opacity: 0.3;*/
 }
 
 .materials p::after {
@@ -1476,7 +1558,7 @@ input[type="text"]:active::placeholder {
 	background-repeat: no-repeat;
 	background-position: 0 0;
   
-  /*opacity: 0.3;*/
+  	/*opacity: 0.3;*/
 }
 
 .tools p::after {
@@ -1538,7 +1620,6 @@ input[type="text"]:active::placeholder {
   	background-repeat: no-repeat;
   	background-position: 0 0;
 }
-
 
 /*===========================*/
 /*Параметры блоков*/
@@ -1622,7 +1703,6 @@ input[type="text"]:active::placeholder {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-
 /* Здесь стилизация для слайдера */
 /* Стили для текста - начало */
 .slider .slide-title {
@@ -1652,7 +1732,6 @@ input[type="text"]:active::placeholder {
 
 /*Слайдер и его стили*/
 /*стиль для обертки слайдера*/
-
 .slider::after {
 	content: "";
   	visibility: hidden;
@@ -1732,7 +1811,9 @@ input[type="text"]:active::placeholder {
     z-index: 20;
     left: 22px;
     top: 123px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     display: block;
     width: 28px;
     height: 4px;
@@ -1746,7 +1827,9 @@ input[type="text"]:active::placeholder {
     z-index: 20;
     left: 22px;
     top: 140px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     display: block;
     width: 28px;
     height: 4px;
@@ -1760,7 +1843,9 @@ input[type="text"]:active::placeholder {
     z-index: 20;
     right: 21px;
     top: 123px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     display: block;
     width: 28px;
     height: 4px;
@@ -1774,7 +1859,9 @@ input[type="text"]:active::placeholder {
     z-index: 20;
     right: 21px;
     top: 140px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     display: block;
     width: 28px;
     height: 4px;
@@ -1819,14 +1906,18 @@ input[type="text"]:active::placeholder {
   background-color: #ffffff;
 }
 
-
-
 /*=====Блок популярные товары ==*/
 /*Сетка для блока*/
 .popular-items-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
     padding-left: 28px;
     padding-top: 7px;
@@ -1869,15 +1960,26 @@ input[type="text"]:active::placeholder {
 }
 
 .popular-items-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .card-item,
 .popular-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .catalog-category,
@@ -2021,8 +2123,6 @@ input[type="text"]:active::placeholder {
 	margin-top: -3px;
 }
 
-
-
 .popular-item .item-discount,
 .catalog-item .item-discount {
     position: relative;
@@ -2049,7 +2149,9 @@ input[type="text"]:active::placeholder {
 
 .popular-item:hover,
 .catalog-item:hover {
-	box-shadow: -2px 1px 15px 0px #a9adb5,
+	-webkit-box-shadow: -2px 1px 15px 0px #a9adb5,
+				2px 15px 25px 0px #a9adb5;
+	        box-shadow: -2px 1px 15px 0px #a9adb5,
 				2px 15px 25px 0px #a9adb5;
 }
 
@@ -2128,25 +2230,43 @@ input[type="text"]:active::placeholder {
 /* ====Блок популярные компании ==*/
 /*Сетка для блока*/
 .popular-company-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 28px;
     padding-top: 7px;
     padding-right: 24px;
 }
 
 .popular-company-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-content: space-between;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-line-pack: justify;
+	    align-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .brand-company {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .popular-company-block {
@@ -2158,10 +2278,11 @@ input[type="text"]:active::placeholder {
 }
 
 .brand-company:hover {
-	box-shadow: -2px 1px 15px 0px #a9adb5,
+	-webkit-box-shadow: -2px 1px 15px 0px #a9adb5,
+				2px 15px 25px 0px #a9adb5;
+	        box-shadow: -2px 1px 15px 0px #a9adb5,
 				2px 15px 25px 0px #a9adb5;
 }
-
 
 /* Общий фон всего блока */
 .popular-company-block {
@@ -2219,9 +2340,14 @@ input[type="text"]:active::placeholder {
 }
 
 .services {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .services {
@@ -2232,8 +2358,12 @@ input[type="text"]:active::placeholder {
 }
 
 .service-block-info {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 }
 
 /*Слайдер в блоке сервисов*/
@@ -2245,7 +2375,9 @@ input[type="text"]:active::placeholder {
 .list-services li {
 	width: 240px;
     height: 61px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #ffffff;
     border-bottom: 1px solid #4d637b;
     background-color: #32425c;
@@ -2282,7 +2414,6 @@ input[type="text"]:active::placeholder {
   background-image: url("../img/credit.png");
 }
 /*=============================*/
-
 /*Здесь подключены слайды*/
 #delivery:checked ~ .service {
 	background-image: url("../img/delivery.png");
@@ -2302,7 +2433,6 @@ input[type="text"]:active::placeholder {
   	background-position: 220px 0;
 }
 /*===========================*/
-
 /*Здесь состояние кнопок при
 нажатии*/
 #delivery:checked ~ .service #sl1,
@@ -2332,7 +2462,6 @@ input[type="text"]:active::placeholder {
 	width: auto;
 }
 /*============================*/
-
 /* Общий фон всего блока */
 .services-block-wrapper {
 	width: 100%;
@@ -2349,11 +2478,9 @@ input[type="text"]:active::placeholder {
 	text-transform: uppercase;
 }
 
-
 .inner-page .info-block-title {
 	letter-spacing: 0.16px;
 }
-
 
 .services .slogan,
 .info .info-item {
@@ -2460,14 +2587,16 @@ input[type="text"]:active::placeholder {
     padding-top: 10px;
 }
 
-
-
 /*====Блок о компании 
 и блок с адресом==========*/
 /*Сетка для блока*/
 .company-promo {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .left-column {
@@ -2549,16 +2678,6 @@ input[type="text"]:active::placeholder {
 	background-color: #ca2c37;
 }	
 
-/*.address-title, 
-.address-info {
-	padding-left: 10px;
-}*/
-
-/*.address-info img {
-	padding-top: 5px;
-}*/
-
-
 .modal-btn {
 	display: inline-block;
     margin-bottom: 20px;
@@ -2573,8 +2692,6 @@ input[type="text"]:active::placeholder {
 .modal-btn:hover {
 	background-color: #ca2c37;
 }	
-	
-
 /*===========================*/
 
 .company-promo .delivery-company {
@@ -2641,31 +2758,43 @@ input[type="text"]:active::placeholder {
 }
 
 .footer-top {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin-bottom: 36px; 
 }
 
 .footer-user-navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
     width: 550px;
     margin-top: 36px;
 }
 
 .inner-page .footer-user-navigation{
-	align-items: flex-end;
-}
-
-.footer-user-navigation {
-	
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
 }
 
 .footer-middle {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 47px;
 }
 
@@ -2682,9 +2811,15 @@ input[type="text"]:active::placeholder {
 }
 
 .footer-goods-company {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 
 	width: 540px;
 	margin: 0;
@@ -2694,7 +2829,6 @@ input[type="text"]:active::placeholder {
 	width: 525px;
 }
 
-
 .footer-bottom,
 .footer-contacts,
 .footer-contacts-mail,
@@ -2703,8 +2837,12 @@ input[type="text"]:active::placeholder {
 }
 
 .footer-bottom {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .footer-contacts {
@@ -2723,9 +2861,16 @@ input[type="text"]:active::placeholder {
 }
 
 .footer-copyright {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-right: auto;
     
     margin-left: 46px;
@@ -2896,9 +3041,16 @@ input[type="text"]:active::placeholder {
 
 /* Блок обратной связи */
 .footer-contacts-mail {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 	text-align: right;
 	padding-top: 27px;
 }
@@ -2919,7 +3071,7 @@ input[type="text"]:active::placeholder {
 	color: #ffd180;
 }
 /* Стили для текста - конец */
-/* ============== Блок разработчика =====================*/
+/* ===== Блок разработчика =====*/
 .footer-copyright {
 	text-align: right;
 }
@@ -2948,7 +3100,9 @@ input[type="text"]:active::placeholder {
 	color: #000000;
 	background-color: #ffffff;
 	
-	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	
+	        box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
 .modal-close {
@@ -2982,11 +3136,15 @@ input[type="text"]:active::placeholder {
 }
 
 .modal-close::before {
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 }
 
 .modal-close::after {
-	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
 }
 
 .modal-login {
@@ -3036,9 +3194,13 @@ input[type="text"]:active::placeholder {
 .user-data,
 .feedback-form,
 .button-form {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .feedback-form {
@@ -3084,7 +3246,8 @@ input[type="text"]:active::placeholder {
 }
 
 .appointment-item input {
-  	box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+  	        box-sizing: border-box;
   	width: 220px;
   	padding-top: 10px;
   	padding-left: 14px;
@@ -3097,7 +3260,8 @@ input[type="text"]:active::placeholder {
 }  
 
 .user-data textarea[name="letter"] {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
   	width: 460px;
   	padding-top: 10px;
   	padding-left: 14px;
@@ -3129,8 +3293,6 @@ input[type="text"]:active::placeholder {
 .button-form .button-submit:hover {
 	background-color: #ca2c37;
 }
-
-
 
 .size-background {
 	width: 100%;
@@ -3223,10 +3385,17 @@ input[type="text"]:active::placeholder {
 }
 
 .info-order {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .info-order img {
@@ -3280,38 +3449,83 @@ input[type="text"]:active::placeholder {
 
 .modal-show {
 	display: block;
-	animation-name: bounce;
-	animation-duration: 0.6s
+	-webkit-animation-name: bounce;
+	        animation-name: bounce;
+	-webkit-animation-duration: 0.6s;
+	        animation-duration: 0.6s
 }
 
 .modal-error {
-	animation-name: shake;
-	animation-duration: 0.6s
+	-webkit-animation-name: shake;
+	        animation-name: shake;
+	-webkit-animation-duration: 0.6s;
+	        animation-duration: 0.6s
+}
+
+@-webkit-keyframes bounce {
+	0% {
+	-webkit-transform: translateY(-1000px);
+	        transform: translateY(-1000px);
+  	}
+  	70% {
+	-webkit-transform: translateY(30px);
+	        transform: translateY(30px);
+  	}
+  	90% {
+	-webkit-transform: translateY(-10px);
+	        transform: translateY(-10px);
+  	}
+  	100% {
+	-webkit-transform: translateY(0);
+	        transform: translateY(0);
+  	}
 }
 
 @keyframes bounce {
 	0% {
-	transform: translateY(-1000px);
+	-webkit-transform: translateY(-1000px);
+	        transform: translateY(-1000px);
   	}
   	70% {
-	transform: translateY(30px);
+	-webkit-transform: translateY(30px);
+	        transform: translateY(30px);
   	}
   	90% {
-	transform: translateY(-10px);
+	-webkit-transform: translateY(-10px);
+	        transform: translateY(-10px);
   	}
   	100% {
-	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	        transform: translateY(0);
+  	}
+}
+
+@-webkit-keyframes shake {
+	0%, 100% {
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
+  	}
+  	10%, 30%, 50%, 70%, 90% {
+	-webkit-transform: translateX(-10px);
+	        transform: translateX(-10px);
+  	}
+  	20%, 40%, 60%, 80% {
+	-webkit-transform: translateY(10px);
+	        transform: translateY(10px);
   	}
 }
 
 @keyframes shake {
 	0%, 100% {
-	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
   	}
   	10%, 30%, 50%, 70%, 90% {
-	transform: translateX(-10px);
+	-webkit-transform: translateX(-10px);
+	        transform: translateX(-10px);
   	}
   	20%, 40%, 60%, 80% {
-	transform: translateY(10px);
+	-webkit-transform: translateY(10px);
+	        transform: translateY(10px);
   	}
 }
