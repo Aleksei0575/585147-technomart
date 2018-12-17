@@ -23,9 +23,10 @@ window.addEventListener("keydown", function(evt) {
 
 var purchase = document.querySelector(".catalog-item-list");
 var byCart = document.querySelector(".cart-active");
-var toClear = document.querySelector(".cart-active");
+// var toClear = document.querySelector(".cart-active");
 
 purchase.addEventListener("click", function (evt) {
   evt.preventDefault();
   byCart.classList.add("cart-background");
+  console.log("Click");
 });

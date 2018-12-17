@@ -60,8 +60,8 @@ body {
 /*========================*/
 /*==Логотип Техномарт=====*/
 .logo-button {
-	padding-top: 9px;
-    padding-bottom: 8px;
+	padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 50px;
     padding-right: 48px;
 	min-width: 122px;
@@ -138,6 +138,9 @@ body {
 	min-width: 236px;
 }
 
+input[type="text"]:hover {
+	background-color: #212a3a;
+}
 
 input[type="text"]:focus,
 input[type="text"]:active {
@@ -197,16 +200,30 @@ input[type="text"]:active::placeholder {
 
 .user-items .bookmarks {
 	position: relative;
-  	margin-right: 41px;
-    padding-left: 28px;
+  	display: inline-block;
+  	
+	padding-top: 13px;
+    padding-right: 36px;
+    padding-bottom: 13px;
+    padding-left: 25px;
+    min-width: 49px;
+    
+	text-align: center;
+	vertical-align: middle;
+	
+	background-color: #293449;
+}
+
+.inner-page .bookmarks {
+    padding-right: 30px;
 }
 
 .bookmarks::before {
 	content: "";
 	
 	position: absolute;
-	top: 1px;
-	left: 1px;
+	top: 12px;
+	left: 0px;
 	
 	width: 14px;
 	height: 16px;
@@ -222,18 +239,46 @@ input[type="text"]:active::placeholder {
 	opacity: 1;
 }
 
-.user-items .cart {
+.bookmarks:hover {
+	background-color: #212a3a;
+}
+
+.cart-background {
+	background-color: #ee3643;
+	color: green;
+}
+
+.cart {
 	position: relative;
-  	margin-right: 30px;
-  	padding-left: 32px;
+ 
+  	display: inline-block;
+  	
+	padding-top: 13px;
+    padding-right: 31px;
+    padding-bottom: 13px;
+    padding-left: 35px;
+    min-width: 49px;
+    
+	text-align: center;
+	vertical-align: middle;
+	
+	background-color: #293449;
+}
+
+.inner-page .cart {
+	background-color: #293449;
+}
+
+.inner-page .cart-background {
+	background-color: #ee3643;
 }
 
 .cart::before {
 	content: "";
 	
 	position: absolute;
-	top: 1px;
-	left: 1px;
+	top: 12px;
+	left: 5px;
 	
 	width: 15px;
 	height: 16px;
@@ -249,9 +294,13 @@ input[type="text"]:active::placeholder {
 	opacity: 1;
 }
 
+.cart:hover {
+	background-color: #212a3a;
+}
+
 .order {
 	display: inline-block;
-	padding: 12px 10px;
+	padding: 13px 10px;
 	min-width: 130px;
 	text-align: center;
 	vertical-align: middle;
@@ -444,9 +493,9 @@ input[type="text"]:active::placeholder {
 	background-color: #293449;
 }
 
-.order {
+/*.order {
 	background-color: #63a63e;
-}
+}*/
 
 /* =====Средняя панель хедера ================*/
 /* Стили для текста - начало */
@@ -648,17 +697,13 @@ input[type="text"]:active::placeholder {
     padding-left: 28px;
     display: inline-block;
     padding-top: 13px;
-    padding-right: 25px;
-    padding-bottom: 12px;
-    padding-left: 51px;
+    padding-right: 28px;
+    padding-bottom: 13px;
+    padding-left: 44px;
     min-width: 0px;
     text-align: center;
     vertical-align: middle;
     /*background-color: #ee3643;*/
-}
-
-.cart-background {
-	background-color: #ee3643;
 }
 
 .inner-page .cart::before {
@@ -811,10 +856,10 @@ input[type="text"]:active::placeholder {
 	color: #000000;
 }
 
-.inner-page .bookmarks {
+/*.inner-page .bookmarks {
 	margin-right: 23px;
 	vertical-align: middle;
-}
+}*/
 
 .breadcrumbs {
 	font-size: 13px;
