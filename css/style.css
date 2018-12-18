@@ -3344,6 +3344,7 @@ input[type="text"]:active {
   	
   	border: 2px solid #dee3e4;
   	border-radius: 2px;
+  	outline: none;
 }  
 
 .user-data textarea[name="letter"] {
@@ -3358,6 +3359,7 @@ input[type="text"]:active {
   	
   	border: 2px solid #dee3e4;
   	border-radius: 2px;
+  	outline: none;
 }
 
 .user-data textarea {
