@@ -61,7 +61,7 @@ body {
 /*==Логотип Техномарт=====*/
 .logo-button {
 	padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     padding-left: 50px;
     padding-right: 48px;
 	min-width: 122px;
@@ -77,6 +77,9 @@ body {
 	background-color: #ca2c37;
 }
 
+.logo-button:active {
+	background-color: #ba2732;
+}
 
 /*=========================*/
 .header-top-menu {
@@ -103,33 +106,35 @@ body {
 	opacity: 0.3;
 }
 
+.search {
+	position: relative;
+}
+
 .search-button:hover {
 	opacity: 1;
 }
 
-.search-button:focus path,
-.search-button:active path {
-	fill: #ee3643;
-	opacity: 1;
-	z-index: 100;
+.search input[type="text"]:focus {
+	color: #000000;
 }
 
-/*.search-button:focus {
-	background-image: url("../img/icon-search-active.svg");
-	background-repeat: no-repeat;
-	width: 15px;
-	height: 15px;
-}*/
+.search input[type="text"]:focus + button {
+	opacity: 1;
+}
 
-.search {
-	position: relative;
+.search input[type="text"]:focus + button path {
+	fill: red;
 }
 
 .search input[type="text"] {
 	background-color: transparent;
 	border: none;
+	padding-top: 12px;
+    /*padding-right: 36px;*/
+    padding-bottom: 12px;
+    /*padding-left: 25px;*/
 	min-width: 238px;
-	height: 41px;
+	/*height: 41px;*/
 	
 	cursor: pointer;
 }
@@ -142,48 +147,13 @@ input[type="text"]:hover {
 	background-color: #212a3a;
 }
 
+input[type="text"]:hover + button {
+	opacity: 1;
+}
+
 input[type="text"]:focus,
 input[type="text"]:active {
 	background-color: #ffffff;
-	/*background-image: url("../img/icon-search-active.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;*/
-}
-
-input[type="text"]::-webkit-input-placeholder {
- 	color: #ffffff; 
-}
-
-input[type="text"]:-ms-input-placeholder {
- 	color: #ffffff; 
-}
-
-input[type="text"]::-ms-input-placeholder {
- 	color: #ffffff; 
-}
-
-input[type="text"]::placeholder {
- 	color: #ffffff; 
-}
-
-input[type="text"]:focus::-webkit-input-placeholder,
-input[type="text"]:active::-webkit-input-placeholder {
- 	color: #000000;
-}
-
-input[type="text"]:focus:-ms-input-placeholder,
-input[type="text"]:active:-ms-input-placeholder {
- 	color: #000000;
-}
-
-input[type="text"]:focus::-ms-input-placeholder,
-input[type="text"]:active::-ms-input-placeholder {
- 	color: #000000;
-}
-
-input[type="text"]:focus::placeholder,
-input[type="text"]:active::placeholder {
- 	color: #000000;
 }
 
 .search input[placeholder] {
@@ -193,7 +163,7 @@ input[type="text"]:active::placeholder {
 
 .search-button {
 	position: absolute;
-	top: 12px;
+	top: 11px;
 	left: 10px;
 	/*margin-right: 15px;*/
 }
@@ -202,9 +172,9 @@ input[type="text"]:active::placeholder {
 	position: relative;
   	display: inline-block;
   	
-	padding-top: 13px;
+	padding-top: 12px;
     padding-right: 36px;
-    padding-bottom: 13px;
+    padding-bottom: 12px;
     padding-left: 25px;
     min-width: 49px;
     
@@ -223,7 +193,7 @@ input[type="text"]:active::placeholder {
 	
 	position: absolute;
 	top: 12px;
-	left: 0px;
+	left: -2px;
 	
 	width: 14px;
 	height: 16px;
@@ -243,6 +213,10 @@ input[type="text"]:active::placeholder {
 	background-color: #212a3a;
 }
 
+.bookmarks:active {
+	background-color: #161d29;
+}
+
 .cart-background {
 	background-color: #ee3643;
 	color: green;
@@ -253,9 +227,9 @@ input[type="text"]:active::placeholder {
  
   	display: inline-block;
   	
-	padding-top: 13px;
+	padding-top: 12px;
     padding-right: 31px;
-    padding-bottom: 13px;
+    padding-bottom: 12px;
     padding-left: 35px;
     min-width: 49px;
     
@@ -278,7 +252,7 @@ input[type="text"]:active::placeholder {
 	
 	position: absolute;
 	top: 12px;
-	left: 5px;
+	left: 6px;
 	
 	width: 15px;
 	height: 16px;
@@ -294,13 +268,21 @@ input[type="text"]:active::placeholder {
 	opacity: 1;
 }
 
+.inner-page .cart:hover::before {
+	opacity: 1;
+}
+
 .cart:hover {
 	background-color: #212a3a;
 }
 
+.cart:active {
+	background-color: #161d29;
+}
+
 .order {
 	display: inline-block;
-	padding: 13px 10px;
+	padding: 12px 10px;
 	min-width: 130px;
 	text-align: center;
 	vertical-align: middle;
@@ -310,6 +292,10 @@ input[type="text"]:active::placeholder {
 
 .order:hover {
 	background-color: #5fbb2d;
+}
+
+.order:active {
+	background-color: #518534;
 }
 
 .user-items {
@@ -354,7 +340,7 @@ input[type="text"]:active::placeholder {
 .header-page-title {
 	width: 200px;
     margin-top: 49px;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
     margin-left: 53px;
     margin-right: 40px;
 }
@@ -423,7 +409,6 @@ input[type="text"]:active::placeholder {
 .site-navigation a:active {
 	background-color: #1d2739;
 	color: rgba(255, 255, 255, 0.5);
-
 }
 
 /*Тянучка фона хедера 
@@ -557,6 +542,7 @@ input[type="text"]:active::placeholder {
 	color: #32425c;
 	text-decoration: underline;
 }
+
 /* Стили для текста - конец */
 /* Фон оставшейся части хедера */
 .header-info {
@@ -618,9 +604,9 @@ input[type="text"]:active::placeholder {
 	margin: 0;
 }
 
-.user-navigation a {
+/*.user-navigation a {
 	color: #000000;
-}
+}*/
 
 .login-link a {
 	display: inline-block;
@@ -631,6 +617,7 @@ input[type="text"]:active::placeholder {
 	text-align: center;
 	vertical-align: middle;
 	margin-right: 4px;
+	color: #000000;
 	
 	background-color: #ffffff;
 }
@@ -661,6 +648,7 @@ input[type="text"]:active::placeholder {
 	min-width: 100px;
 	text-align: center;
 	vertical-align: middle;
+	color: #000000;
 	
 	background-color: #ffffff;
 }
@@ -802,19 +790,15 @@ input[type="text"]:active::placeholder {
 	padding-left: 10px;
 }
 
-
-.inner-page .user-block {
-	color: #32425c;
-}
-
 .inner-page .user-orders a:hover,
 .inner-page .user-account a:hover {
 	color: #ee3643;
 }
 
-/*.inner-page .user-navigation li {
-	padding-left: 19px;
-}*/
+.inner-page .user-orders a:active,
+.inner-page .user-account a:active {
+	color: rgba(50, 66, 92, 0.3);
+}
 
 /* ===Панель главной навигаци ==*/
 .header-navigation li {
@@ -1385,38 +1369,6 @@ input[type="text"]:active::placeholder {
 }
 
 .pagination-btn {
-	border: 1px solid #eaeaea;
-}
-
-.pagination-btn-active {
-	border: 1px solid #eaeaea;
-	color: #fef5f6;
-    background-color: #ee3643;
-}
-
-.pagination-btn-active {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-    
-    margin-right: 9px;
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    /* min-width: 89px; */
-    
-    text-align: center;
-    vertical-align: middle;
-    color: #ffffff;
-    
-    border: 1px solid #e5e5e5;
-    border-radius: 3px;
-}    
-	
-.pagination-btn {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	
 	margin-right: 10px;
@@ -1433,10 +1385,6 @@ input[type="text"]:active::placeholder {
 }
 
 .last-page {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	
 	margin-right: 10px;
 	padding-top: 10px;
     padding-right: 32px;
@@ -1451,15 +1399,19 @@ input[type="text"]:active::placeholder {
     border-radius: 3px;
 }
 
-.pagination-item:hover {
-	border-color: #bdc6ca;
+.pagination-btn:hover {
+	border: 1px solid #bdc6ca;
 }
 
-.pagination-item:active {
-	border-color: #ee3643;
+.pagination-btn:focus,
+.pagination-btn:active {
+	color: #fef5f6;
+    background-color: #ee3643;
+	border: 1px solid #ee3643;
 }
 
 .sort-panel li,
+.sort-up-down li,
 .pagination-list,
 .filter-option {
 	list-style: none;
@@ -1481,6 +1433,34 @@ input[type="text"]:active::placeholder {
 	padding-right: 21px;
 }
 
+.sort-up a path {
+	opacity: 0.2; 
+}
+
+.sort-up a:hover path {
+	opacity: 1; 
+}
+
+.sort-up a:focus path,
+.sort-up a:active path {
+	fill: #ee3643;
+	opacity: 1; 
+}
+
+.sort-down a path {
+	opacity: 0.2;
+}
+
+.sort-down a:hover path {
+	opacity: 1; 
+}
+
+.sort-down a:focus path,
+.sort-down a:active path {
+	fill: #ee3643; 
+	opacity: 1;
+}
+
 .sort-panel .by-function {
 	padding-right: 46px;
 }
@@ -1488,6 +1468,11 @@ input[type="text"]:active::placeholder {
 .by-function a {
 	color: #acaaa5;
     border-bottom: 1px dashed #ee3643;
+}
+
+.by-function a:hover {
+	color: #000000;
+	border-bottom: 1px dashed #ee3643;
 }
 
 .by-function a:focus,
@@ -1505,6 +1490,11 @@ input[type="text"]:active::placeholder {
     border-bottom: 1px dashed #ee3643;
 }
 
+.by-type a:hover {
+	color: #000000;
+	border-bottom: 1px dashed #ee3643;
+}
+
 .by-type a:focus,
 .by-type a:active {
 	color: #ee3643;
@@ -1518,6 +1508,11 @@ input[type="text"]:active::placeholder {
 .by-price a {
     color: #acaaa5;
     border-bottom: 1px dashed #ee3643;
+}
+
+.by-price a:hover {
+	color: #000000;
+	border-bottom: 1px dashed #ee3643;
 }
 
 .by-price a:focus,
@@ -2702,6 +2697,15 @@ input[type="text"]:active::placeholder {
 	margin: 0;
 	margin-bottom: 24px;
 }
+
+.company-promo .company-delivery {
+	padding-right: 132px;
+}
+
+.company-promo .address-info {
+	padding-right: 119px;
+}
+
 /*Элементы списка*/
 .delivery-company li {
 	position: relative;
@@ -2809,6 +2813,7 @@ input[type="text"]:active::placeholder {
 }
 
 .company-promo a {
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
