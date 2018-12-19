@@ -1,4 +1,4 @@
-/*Базовая стилизауия*/
+/*Базовая стилизация*/
 body {
 	margin: 0;
 	padding: 0;
@@ -39,7 +39,7 @@ input[type="radio"].visually-hidden {
   	-webkit-clip-path: inset(100%);
 
   	        clip-path: inset(100%);
-  	clip: rect(0 0 0 0);
+  	clip: rect(0, 0, 0, 0);
   	overflow: hidden;
 }
 
@@ -97,8 +97,6 @@ body {
 }
 
 .search-button {
-	/*background-image: url("../img/icon-search.svg");
-	background-repeat: no-repeat;*/
 	width: 17px;
 	height: 17px;
 	background-color: transparent;
@@ -288,6 +286,10 @@ input[type="text"]:active {
 	vertical-align: middle;
 	
 	background-color: #63a63e;
+}
+
+.inner-page .order {
+	padding: 13px 10px;
 }
 
 .order:hover {
@@ -1072,6 +1074,10 @@ input[type="text"]:active {
 	background: #f7f3ec;
 }
 
+.price-controls:hover input {
+	background: #f7f3ec;
+}
+
 .max-price {
 	text-align: right;
 }
@@ -1112,10 +1118,6 @@ input[type="text"]:active {
 
 .manufacturer {
 	margin-bottom: 14px;
-}
-
-.manufacturer input:focus {
-	
 }
 
 .power-grid {
@@ -1783,7 +1785,7 @@ input[type="text"]:active {
 /* Здесь стилизация для слайдера */
 /* Стили для текста - начало */
 .slider .slide-title {
-	font-family: "Cuprum", "Arial", sans-serif;;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 36px;
 	line-height: 30px;
 	font-weight: bold;
@@ -1792,7 +1794,7 @@ input[type="text"]:active {
 }
 
 .slider .slide-description {
-	font-family: "PT Sans", "Arial", sans-serif;;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: normal;
@@ -2151,7 +2153,7 @@ input[type="text"]:active {
 
 .actions .item-bookmarks:active {
 	color: rgba(50, 66, 92, 0.3);
-	border-color: rgba(0, 0, 0, 0.3);;
+	border-color: rgba(0, 0, 0, 0.3);
 }
 
 .popular-item .actions,
@@ -2265,7 +2267,7 @@ input[type="text"]:active {
 .popular-item  h3,
 .catalog-item h3,
 .catalog-item-new h3 {
-	font-family: "PT Sans", "Arial", sans-serif;;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: bold;
@@ -2292,7 +2294,7 @@ input[type="text"]:active {
 .catalog-item-price b,
 .item-discount,
 .item-discount a {
-	font-family: "PT Sans", "Arial", sans-serif;;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;
@@ -2561,7 +2563,7 @@ input[type="text"]:active {
 
 .services .slogan,
 .info .info-item {
-	font-family: "PT Sans", "Arial", sans-serif;;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: normal;
@@ -2623,7 +2625,7 @@ input[type="text"]:active {
 .delivery-active p,
 .guaranty-active p,
 .credit-active p {
-	font-family: "PT Sans", "Arial", sans-serif;;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: normal;
