@@ -69,7 +69,6 @@ var mapClose = mapPopup.querySelector(".modal-close");
 mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapPopup.classList.add("modal-show");
-    console.log("Click");
 });
 
 mapClose.addEventListener("click", function (evt) {
@@ -100,11 +99,15 @@ window.addEventListener("keydown", function(evt) {
 //   byPopup.classList.remove("modal-show");
 // });
 
+// if (typeof byPopup === true) {
+//     byPopup.classList.remove("modal-show");
+// }
+
 // window.addEventListener("keydown", function(evt) { 
 //   if (evt.keyCode === 27) {
-//     if (byPopup.classList.contains("modal-show")) { Это правили не уберешь т.к.
-//       evt.preventDefault();                          здесь идет ссылка на byPopup
-//       byPopup.classList.remove("modal-show");
+//     if (byPopup.classList.contains("modal-show")) {
+//         evt.preventDefault();
+//         byPopup.classList.remove("modal-show");
 //     }
 //   }
 // });
