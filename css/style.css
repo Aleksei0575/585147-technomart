@@ -557,8 +557,8 @@ body {
 }
 /*======= Стили для входа в 
 личн. кабинет ======*/
-.inner-page .user-orders a,
-.inner-page .user-account a {
+.user-orders a,
+.user-account a {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: normal;
@@ -1173,82 +1173,84 @@ body {
 /*.filter-option input[type="radio"],
 .filter-option input[type="checkbox"] {
 	display: none;
-}*/
+} Из-за этого не работал фокус*/
 
-.filter-option input[type=checkbox] + label::before {
+.filter-input-checkbox + label::before {
 	content: "";
 	position: absolute;
 	width: 26px;
 	height: 26px;
 	top: -3px;
 	left: -2px;
-	background-image: url("../img/css_sprites.png");
+	background-image: url("../img/checkbox-off.png");
 	background-repeat: no-repeat;
-	background-position: -55px -55px;
 }
 
-.filter-option input[type="checkbox"]:checked + label::after {
-	content: '';
+.filter-input-checkbox:checked + label::before {
+	content: "";
 	position: absolute;
 	width: 26px;
 	height: 26px;
 	top: -3px;
 	left: -2px;
-	background-image: url("../img/css_sprites.png");
+	background-image: url("../img/checkbox-on.png");
 	background-repeat: no-repeat;
-	background-position: -8px -55px;
 }
 
-.filter-option input[type="checkbox"] + label {
-	opacity: 0.7;
+.filter-input-checkbox:hover + label::before {
+	background-image: url("../img/checkbox-off-hover.png");
+	background-repeat: no-repeat;
 }
 
-.filter-option input[type="checkbox"] + label:hover {
-	opacity: 1;
+.filter-input-checkbox:checked:hover + label::before {
+	background-image: url("../img/checkbox-on-hover.png");
+	background-repeat: no-repeat;
 }
 
-.filter-option input[type="checkbox"]:checked + label {
-	opacity: 0.4;
+.filter-input-checkbox:checked + label {
+	color: rgba(0, 0, 0, 0.4);
+	opacity: 0.3;
+}
+
+.filter-input-radio + label::before {
+	content: "";
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	top: -3px;
+	left: -2px;
+	background-image: url("../img/radio-off.png");
+	background-repeat: no-repeat;
+}
+
+.filter-input-radio:checked + label::before {
+	content: "";
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	top: -3px;
+	left: -2px;
+	background-image: url("../img/radio-on.png");
+	background-repeat: no-repeat;
+}
+
+.filter-input-radio:hover + label::before {
+	background-image: url("../img/radio-off-hover.png");
+	background-repeat: no-repeat;
+}
+
+.filter-input-radio:checked:hover + label::before {
+	background-image: url("../img/radio-on-hover.png");
+	background-repeat: no-repeat;
+}
+
+.filter-input-radio:checked + label {
+	color: rgba(0, 0, 0, 0.4);
+	opacity: 0.3;
 }
 
 .filter-input:focus + label::before {
 	outline: 1px solid #4cb7d6;
-}
-
-.filter-option input[type="radio"] + label::before {
-	content: "";
-	position: absolute;
-	width: 26px;
-	height: 26px;
-	top: -3px;
-	left: -2px;
-	background-image: url("../img/css_sprites.png");
-	background-repeat: no-repeat;
-	background-position: -10px -10px;
-}
-
-.filter-option input[type="radio"]:checked + label::after {
-	content: "";
-	position: absolute;
-	width: 26px;
-	height: 26px;
-	top: -3px;
-	left: -2px;
-	background-image: url("../img/css_sprites.png");
-	background-repeat: no-repeat;
-	background-position: -55px -10px;
-}
-
-.filter-option input[type="radio"] + label {
-	opacity: 0.7;
-}
-
-.filter-option input[type="radio"] + label:hover {
-	opacity: 1;
-}
-
-.filter-option input[type="radio"]:checked + label {
-	opacity: 0.4;
 }
 
 .inner-page .filter-button {
@@ -2294,8 +2296,8 @@ body {
 	position: relative;
 }
 
-.popular-item .image img,
-.catalog-item .image img {
+.image img,
+.image img {
 	max-width: 100%;
 }
 
