@@ -1174,7 +1174,7 @@ body {
 .filter-option input[type="checkbox"] {
 	display: none;
 } Из-за этого не работал фокус*/
-
+/*Здесь использовал svg*/
 .filter-input-checkbox + label::before {
 	content: "";
 	position: absolute;
@@ -1182,7 +1182,7 @@ body {
 	height: 26px;
 	top: -3px;
 	left: -2px;
-	background-image: url("../img/checkbox-off.png");
+	background-image: url("../img/checkbox-off.svg");
 	background-repeat: no-repeat;
 }
 
@@ -1193,25 +1193,25 @@ body {
 	height: 26px;
 	top: -3px;
 	left: -2px;
-	background-image: url("../img/checkbox-on.png");
+	background-image: url("../img/checkbox-on.svg");
 	background-repeat: no-repeat;
 }
 
 .filter-input-checkbox:hover + label::before {
-	background-image: url("../img/checkbox-off-hover.png");
+	background-image: url("../img/checkbox-off-hover.svg");
 	background-repeat: no-repeat;
 }
 
 .filter-input-checkbox:checked:hover + label::before {
-	background-image: url("../img/checkbox-on-hover.png");
+	background-image: url("../img/checkbox-on-hover.svg");
 	background-repeat: no-repeat;
 }
 
-.filter-input-checkbox:checked + label {
+.filter-input-checkbox:checked:disabled + label {
 	color: rgba(0, 0, 0, 0.4);
 	opacity: 0.3;
 }
-
+/*Здесь использовал png*/
 .filter-input-radio + label::before {
 	content: "";
 	position: absolute;
@@ -3606,7 +3606,7 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	/*z-index: 1;*/
 
 	margin: 0;
 }
